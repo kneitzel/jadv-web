@@ -1,0 +1,5 @@
+baseURL = 'https://jadventure.de/'
+languageCode = 'de-de'
+title = 'JAdventure Java Kurs'
+theme = 'hugo-geekdoc'
+
