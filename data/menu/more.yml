@@ -5,4 +5,8 @@ more:
   - name: Impressum
     ref: "/impressum"
   - name: Kontakt
-    ref: "/konrad neitzel"
+    ref: "/contact"
+  - name: History
+    ref: "/history"
+  - name: Technology
+    ref: "/technology"

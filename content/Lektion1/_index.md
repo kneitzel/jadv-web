@@ -2,13 +2,11 @@
 title: "1. Übersicht Projekt"
 ---
 
-# Achtung - diese Seite entsteht erst noch!
-Derzeit sind noch keine Lehrinhalte vorhanden! Ich rechne nicht mit sinnvollen Inhalten vor **März 2023**! Bitte schauen sie ab März wieder rein!
-
 {{< toc >}}
 
+# PeerTube & YouTube Video
 <img src="video-übersicht.png" width="100%"><br>
-|<a href="" target="_blank">PeerTube (extern)</a>|<a href="" target="_blank">YouTube (extern)</a>|
+|<a href="https://cliptube.org/a/konradn" target="_blank">PeerTube (extern)</a>|<a href="https://www.youtube.com/@KonradN" target="_blank">YouTube (extern)</a>|
 |-|-|
 
 Wenn man etwas programmieren will, dann ist es immer notwendig, sich erst einmal darüber klar zu werden, was man bauen möchte.

@@ -12,6 +12,8 @@ Diese Webseite ist eine statische Webseite und somit sind keine Cookies notwendi
 # Links
 Ich verweise auch auf andere Sites. Wenn Sie einem Link folgen, dann übermitteln sie personenbezogene Daten (z.B. Ihre IP Ardesse) an den Zielserver, der diese dann auswerten kann. Dies liegt aber nicht innerhalb meiner Verantwortung und kann von mir nicht beeinflusst werden.
 
+Externe Links in den Kurs Inhalten zeigen entweder deutlich die fremde URL oder sind durch ein (extern) gekennzeichnet (z.B. <a href="https://www.youtube.com/@KonradN" target="_blank">YouTube (extern)</a>)
+
 # Gespeicherte Daten beim Provider
 Diese Website wird bei Ionos gehostet und es werden Logs über die Zugriffe auf diese Seite erstellt, die auch die IP der Nutzer speichern. Diese Daten dienen aber nur der normalen Administration der Webseite und werden nicht weiter von mir ausgewertet.
 Die gespeicherten, personenbezogenen Daten umfassen dabei speziell Ihre IP Adresse und welche Inhalte sie aufrufen.

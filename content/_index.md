@@ -2,15 +2,19 @@
 title: "JAdventure Java Kurs"
 ---
 
-# Achtung - diese Seite entsteht erst noch!
-Derzeit sind noch keine Lehrinhalte vorhanden! Ich rechne nicht mit sinnvollen Inhalten vor **März 2023**! Bitte schauen sie ab März wieder rein!
-
-
-
 {{< toc >}}
 
+# Status
+Derzeit ist der Kurs noch komplett im Aufbau. Die grobe Struktur der ersten Lektionen steht aber die erste Lektion muss erst einmal komplett erstellt werden.
+
+Ich bitte um Verständnis, dass sich dies noch bis ca. **März 2023** hin ziehen wird.
+
+Bis die Arbeiten abgeschlossen sind, werden die PeerTube und YouTube Links nur auf meinen jeweiligen Account verweisen.
+
+# PeerTube & YouTube Video
+
 <img src="video-der_kurs.png" width="100%"><br>
-|<a href="" target="_blank">PeerTube (extern)</a>|<a href="" target="_blank">YouTube (extern)</a>|
+|<a href="https://cliptube.org/a/konradn" target="_blank">PeerTube (extern)</a>|<a href="https://www.youtube.com/@KonradN" target="_blank">YouTube (extern)</a>|
 |-|-|
 
 # Was ist JAdventure
@@ -27,10 +31,10 @@ Am Anfang wird die Entwicklung in Richtung eines Spieles gehen, das ähnlich wie
 (Bis dahin ist es aber ein weiter Weg und es ist unklar, ob dieses Ziel erreicht werden kann!)
 
 # Umsetzung
-Diesen Java Kurs werde ich sowohl hier auf der Webseite gestalten als auch mit Videos untermalen. Zu jeder Lektion / Kapitel soll es ein Video geben, welches entweder auf PeerTube oder YouTube (mit Werbung) angesehen werden kann. Die entsprechenden Links finden sich direkt im Kopf der jeweiligen Seite.
+Diesen Java Kurs werde ich sowohl hier auf der Webseite gestalten als auch mit Videos untermalen. Zu jeder Lektion / Kapitel soll es ein Video geben, welches entweder auf PeerTube (ohne Werbung) oder YouTube (mit Werbung) angesehen werden kann. Die entsprechenden Links finden sich direkt im Kopf der jeweiligen Seite.
 
 # Welche Inhalte sollen vermittelt werden?
-In diesem Kurs geht es vor allem um
+In diesem Kurs geht es vor allem um folgende Punkte
 - Wie kann ein Projekt agil angegangen werden?
 - Wie strukturiert man ein Projekt
 - Umsetzung von Clean Code Vorgaben
