@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. Übersicht Projekt on JAdventure Java Kurs</title>
+    <link>https://jadventure.de/Lektion1/</link>
+    <description>Recent content in 1. Übersicht Projekt on JAdventure Java Kurs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language><atom:link href="https://jadventure.de/Lektion1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1. Vision</title>
+      <link>https://jadventure.de/Lektion1/Vision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/Vision/</guid>
+      <description>PeerTube (extern) YouTube (extern) #TODO</description>
+    </item>
+    
+    <item>
+      <title>1.2. Schritte</title>
+      <link>https://jadventure.de/Lektion1/Schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/Schritte/</guid>
+      <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>1.3. Tasks / TODO Liste</title>
+      <link>https://jadventure.de/Lektion1/Tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/Tasks/</guid>
+      <description>TODO</description>
+    </item>
+    
+  </channel>
+</rss>

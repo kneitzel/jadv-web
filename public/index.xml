@@ -8,12 +8,17 @@
     <language>de-de</language><atom:link href="https://jadventure.de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://jadventure.de/contact/</link>
+      <link>https://jadventure.de/datenschutz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/contact/</guid>
-      <description> Konrad Neitzel Sie erreichen mich:
-Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 </description>
+      <guid>https://jadventure.de/datenschutz/</guid>
+      <description>Verantwortlich / Ansprechpartner Konrad Neitzel
+Bornstr. 5
+61250 Usingen
+eMail: konrad@kneitzel.de
+Datenschutz ist mir wichtig! So vermeide ich – soweit möglich – die Verwendung von Add-Ons und Tools, die Anwender tracken.
+Cookies Diese Webseite ist eine statische Webseite und somit sind keine Cookies notwendig.
+Links Ich verweise auch auf andere Sites. Wenn Sie einem Link folgen, dann übermitteln sie personenbezogene Daten (z.B. Ihre IP Ardesse) an den Zielserver, der diese dann auswerten kann.</description>
     </item>
     
     <item>
@@ -22,7 +27,7 @@ Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/impressum/</guid>
-      <description>Impressum Die Webseite https://jadventure.de ist die persönliche Webseite von Konrad Neitzel.
+      <description>Die Webseite https://jadventure.de ist die persönliche Webseite von Konrad Neitzel.
 Die Webseite wird betrieben von Konrad Neitzel
 Bornstraße 5
 61250 Usingen
@@ -31,6 +36,52 @@ eMail: konrad@kneitzel.de
 Inhaber und Webmaster: Konrad Neitzel
 Für den Inhalt verantwortlich: Konrad Neitzel
 Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seiten dürfen nur nach vorheriger schriftlicher Einwilligung zum eigenen Gebrauch vervielfältigt, geändert, gedruckt, weitergegeben oder in sonstiger Art und Weise reproduziert werden.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jadventure.de/konrad-neitzel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/konrad-neitzel/</guid>
+      <description>Sie erreichen mich:
+Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 </description>
+    </item>
+    
+    <item>
+      <title>1.1. Vision</title>
+      <link>https://jadventure.de/Lektion1/Vision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/Vision/</guid>
+      <description>PeerTube (extern) YouTube (extern) #TODO</description>
+    </item>
+    
+    <item>
+      <title>1.2. Schritte</title>
+      <link>https://jadventure.de/Lektion1/Schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/Schritte/</guid>
+      <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>1.3. Tasks / TODO Liste</title>
+      <link>https://jadventure.de/Lektion1/Tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/Tasks/</guid>
+      <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>Agiles Arbeiten</title>
+      <link>https://jadventure.de/Anhang/AgilesArbeiten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/AgilesArbeiten/</guid>
+      <description>TODO</description>
     </item>
     
   </channel>

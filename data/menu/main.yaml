@@ -1,5 +1,20 @@
 ---
 main:
+  - name: "1. Übersicht"
+    ref: "/Lektion1"
+    sub:
+    - name: "Vision"
+      ref:  "/Lektion1/Vision"
+    - name: "Schritte"
+      ref: "/Lektion1/Schritte"
+    - name: "Nächste Schritte"
+      ref: "/Lektion1/NaechsteSchritte"
+    - name: "Agiles Arbeiten"
+      ref: "/Anhang/AgilesArbeiten"
+
+  - name: Anhang
+    ref: "/Anhang"
+
   - name: Administration
     sub:
     - name: Datenschutz
