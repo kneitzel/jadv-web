@@ -39,16 +39,6 @@ Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seite
     </item>
     
     <item>
-      <title></title>
-      <link>https://jadventure.de/konrad-neitzel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jadventure.de/konrad-neitzel/</guid>
-      <description>Sie erreichen mich:
-Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 </description>
-    </item>
-    
-    <item>
       <title>1.1. Vision</title>
       <link>https://jadventure.de/Lektion1/Vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -82,6 +72,35 @@ Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 </description>
       
       <guid>https://jadventure.de/Anhang/AgilesArbeiten/</guid>
       <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://jadventure.de/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/history/</guid>
+      <description> Durchgeführte Veränderungen Datum Veränderung 11.01.2023 Erstellung des Hugo Rahmens Planung der Struktur Gitea Repository für Hugo Sourcen und Website konfiguriert </description>
+    </item>
+    
+    <item>
+      <title>Konrad Neitzel</title>
+      <link>https://jadventure.de/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/contact/</guid>
+      <description>Sie erreichen mich:
+Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 KonradN bei https://java-forum.org Social Media Mastodon @konrad@mastodon.kneitzel.de PeerTube https://cliptube.org/a/konradn YouTube https://www.youtube.com/@KonradN Spendenmöglichkeit Falls sie meine Arbeit mit einer Spende unterstützen wollen:
+Paypal konrad@kneitzel.de </description>
+    </item>
+    
+    <item>
+      <title>Verwendete Technologien</title>
+      <link>https://jadventure.de/technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/technology/</guid>
+      <description> Website Hugo (extern) Ein Generator für statische Webseiten. Gitea (extern) Ein selfbst gehosteter Git Service. Erstellung Inhalte OBS Studio (extern) für Videoaufnahmen. iMovie von Apple zum Video-Schnitt und der Audio Nachbearbeitung Abricotine (extern) - ein Open Source Markdown Editor Apple MacBook Pro M1 UR 22 mk II von Steinberg zur Steuerung meine Microfons </description>
     </item>
     
   </channel>

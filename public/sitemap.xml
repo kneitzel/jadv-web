@@ -8,24 +8,36 @@
     <loc>https://jadventure.de/impressum/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://jadventure.de/konrad-neitzel/</loc>
-    <priority>0</priority>
-  </url><url>
     <loc>https://jadventure.de/Lektion1/</loc>
+    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion1/Vision/</loc>
+    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion1/Schritte/</loc>
+    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion1/Tasks/</loc>
+    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/AgilesArbeiten/</loc>
+    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/</loc>
+    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
+  </url><url>
+    <loc>https://jadventure.de/history/</loc>
+    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/</loc>
-    <lastmod>2023-01-11T10:16:06+01:00</lastmod>
+    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jadventure.de/contact/</loc>
+    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/tags/</loc>
+  </url><url>
+    <loc>https://jadventure.de/technology/</loc>
+    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url>
 </urlset>
