@@ -1,0 +1,10 @@
+---
+main:
+  - name: Administration
+    sub:
+    - name: Datenschutz
+      ref: "/datenschutz"
+    - name: Impressum
+      ref: "/impressum"
+    - name: Kontakt
+      ref: "/konrad neitzel"
