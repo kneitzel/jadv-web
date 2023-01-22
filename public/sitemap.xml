@@ -11,23 +11,34 @@
     <loc>https://jadventure.de/Lektion1/</loc>
     <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
-    <loc>https://jadventure.de/Lektion1/Vision/</loc>
-    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
+    <loc>https://jadventure.de/Lektion1/1.Vision/</loc>
   </url><url>
-    <loc>https://jadventure.de/Lektion1/Schritte/</loc>
-    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
+    <loc>https://jadventure.de/Lektion1/2.Schritte/</loc>
   </url><url>
-    <loc>https://jadventure.de/Lektion1/Tasks/</loc>
-    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
+    <loc>https://jadventure.de/Lektion1/3.Tasks/</loc>
   </url><url>
-    <loc>https://jadventure.de/Anhang/AgilesArbeiten/</loc>
-    <lastmod>2023-01-11T18:35:10+01:00</lastmod>
+    <loc>https://jadventure.de/Lektion1/4.-Implementation/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/A1-history/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/A2-abkuerzungen/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/A3-technology/</loc>
   </url><url>
     <loc>https://jadventure.de/Anhang/</loc>
     <lastmod>2023-01-11T18:35:10+01:00</lastmod>
   </url><url>
-    <loc>https://jadventure.de/history/</loc>
-    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
+    <loc>https://jadventure.de/Anhang/B1-AgilesArbeiten/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/B2-clean-code/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/C1-gson/</loc>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/C2-maven/</loc>
   </url><url>
     <loc>https://jadventure.de/</loc>
     <lastmod>2023-01-11T22:05:26+01:00</lastmod>
@@ -36,8 +47,5 @@
     <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/tags/</loc>
-  </url><url>
-    <loc>https://jadventure.de/technology/</loc>
-    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url>
 </urlset>

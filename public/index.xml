@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JAdventure Java Kurs</title>
+    <title>JAdventure - Kurs zur Softwareentwicklung in Java on JAdventure - Kurs zur Softwareentwicklung</title>
     <link>https://jadventure.de/</link>
-    <description>Recent content on JAdventure Java Kurs</description>
+    <description>Recent content in JAdventure - Kurs zur Softwareentwicklung in Java on JAdventure - Kurs zur Softwareentwicklung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="https://jadventure.de/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -40,47 +40,119 @@ Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seite
     
     <item>
       <title>1.1. Vision</title>
-      <link>https://jadventure.de/Lektion1/Vision/</link>
+      <link>https://jadventure.de/Lektion1/1.Vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/Vision/</guid>
-      <description>PeerTube (extern) YouTube (extern) #TODO</description>
+      <guid>https://jadventure.de/Lektion1/1.Vision/</guid>
+      <description>JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
+Es sind Interaktionen möglich:
+Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.</description>
     </item>
     
     <item>
       <title>1.2. Schritte</title>
-      <link>https://jadventure.de/Lektion1/Schritte/</link>
+      <link>https://jadventure.de/Lektion1/2.Schritte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/Schritte/</guid>
-      <description>TODO</description>
+      <guid>https://jadventure.de/Lektion1/2.Schritte/</guid>
+      <description>Den Umfang dieses Abschnitts halten wir kurz und notieren hier nur die Schritte, die wir wirklich als Erstes angehen werden.
+In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
     </item>
     
     <item>
       <title>1.3. Tasks / TODO Liste</title>
-      <link>https://jadventure.de/Lektion1/Tasks/</link>
+      <link>https://jadventure.de/Lektion1/3.Tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/Tasks/</guid>
+      <guid>https://jadventure.de/Lektion1/3.Tasks/</guid>
+      <description>Im nächsten Schritt wird der Arbeitsumfang für den folgenden Implementationsschritt festgelegt. Von den erfassten Schritten nehmen wir die ersten paar, die gut zusammen passen und sich gut zusammen entwickeln lassen werden:
+In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
+    </item>
+    
+    <item>
+      <title>1.4.1 Projekt in IntelliJ anlegen</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</guid>
+      <description>Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
+(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)
+Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!</description>
+    </item>
+    
+    <item>
+      <title>1.4.x Entity Klassendiagramm</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</guid>
+      <description>Das folgende Klassendiagram zeigt in erster Linie die Vererbung. Assoziationen / Kompositionen und Aggregationen sind nicht eingezeichnet um das Diagramm einfach zu halten.
+classDiagram class SavedObject { - String type } class Container { &amp;#43; getChilds() List~GameObject~ } &amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Container Container &amp;lt;|-- Level SavedObject &amp;lt;|-- Level class Level { - String name - int width - int height - List~GameObject~ objects &amp;#43; getName() String &amp;#43; getWidth() int &amp;#43; getHeight() int &amp;#43; getChilds() List~GameObject~ } SavedObject &amp;lt;|-- GameObject class GameObject { - String Name - Size size - Position position &amp;#43; getName() String &amp;#43; setName(newName) &amp;#43; getSize() Size &amp;#43; setSize(newSize) &amp;#43; getPosition() Position &amp;#43; setPosition(newPosition) } SavedObject &amp;lt;|-- Size class Size { } Size &amp;lt;|-- RectangleSize class RectangleSize { - int width - int height } Size &amp;lt;|-- CircleSize class CircleSize { - int radius } class Position { - int x - int y - Container parent } </description>
+    </item>
+    
+    <item>
+      <title>A1 - Versionierung des Kurses</title>
+      <link>https://jadventure.de/Anhang/A1-history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/A1-history/</guid>
+      <description> Version Datum Veränderung 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos. 0.0.2 12.01.2023 Erste Vision vom JAdventure Projekt Anhang: Abkürzungen Flaggen bei externen Links zur Anzeige der Sprache Überarbeitung Lektion 1 Übersicht 0.0.1 11.01.2023 Erstellung des Hugo Rahmens Planung der Struktur Gitea Repository für Hugo Sourcen und Website konfiguriert </description>
+    </item>
+    
+    <item>
+      <title>A2 - Abkürzungen</title>
+      <link>https://jadventure.de/Anhang/A2-abkuerzungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/A2-abkuerzungen/</guid>
+      <description> JSON JavaScript Object Notation MMORPG Massive Multiplayer Online Role Playing Game NPC Non Player Character, vom Computer gesteuerte Figur. </description>
+    </item>
+    
+    <item>
+      <title>A3 - Verwendete Technologien</title>
+      <link>https://jadventure.de/Anhang/A3-technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/A3-technology/</guid>
+      <description> Website Hugo (extern) Ein Generator für statische Webseiten. Geekdocs (extern) Ein Hugo Template unter MIT Lizenz. Gitea (extern) Ein selbst gehosteter Git Service. Erstellung von Medien-Inhalten OBS Studio (extern) für Videoaufnahmen. iMovie von Apple zum Video-Schnitt und der Audio Nachbearbeitung Abricotine (extern) - ein Open Source Markdown Editor Apple MacBook Pro M1 UR 22 mk II von Steinberg zur Steuerung meine Microfons Entwicklung IntelliJ (extern) als Entwicklungsumgebung Maven (extern) als Build-Werkzeug </description>
+    </item>
+    
+    <item>
+      <title>B1 - Agiles Arbeiten</title>
+      <link>https://jadventure.de/Anhang/B1-AgilesArbeiten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/B1-AgilesArbeiten/</guid>
       <description>TODO</description>
     </item>
     
     <item>
-      <title>Agiles Arbeiten</title>
-      <link>https://jadventure.de/Anhang/AgilesArbeiten/</link>
+      <title>B2 - Clean Code (Übersicht)</title>
+      <link>https://jadventure.de/Anhang/B2-clean-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Anhang/AgilesArbeiten/</guid>
-      <description>TODO</description>
+      <guid>https://jadventure.de/Anhang/B2-clean-code/</guid>
+      <description> TODO </description>
     </item>
     
     <item>
-      <title>History</title>
-      <link>https://jadventure.de/history/</link>
+      <title>C1 - Gson</title>
+      <link>https://jadventure.de/Anhang/C1-gson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/history/</guid>
-      <description> Durchgeführte Veränderungen Datum Veränderung 11.01.2023 Erstellung des Hugo Rahmens Planung der Struktur Gitea Repository für Hugo Sourcen und Website konfiguriert </description>
+      <guid>https://jadventure.de/Anhang/C1-gson/</guid>
+      <description>Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
+Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.
+Gson in ein Maven Projekt einbinden Um Gson zu nutzen zu können, binden wir einfach in Maven folgende Abhängigkeit ein:</description>
+    </item>
+    
+    <item>
+      <title>C2 - Maven (Übersicht)</title>
+      <link>https://jadventure.de/Anhang/C2-maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/C2-maven/</guid>
+      <description> TODO </description>
     </item>
     
     <item>
@@ -92,15 +164,6 @@ Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seite
       <description>Sie erreichen mich:
 Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 KonradN bei https://java-forum.org Social Media Mastodon @konrad@mastodon.kneitzel.de PeerTube https://cliptube.org/a/konradn YouTube https://www.youtube.com/@KonradN Spendenmöglichkeit Falls sie meine Arbeit mit einer Spende unterstützen wollen:
 Paypal konrad@kneitzel.de </description>
-    </item>
-    
-    <item>
-      <title>Verwendete Technologien</title>
-      <link>https://jadventure.de/technology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jadventure.de/technology/</guid>
-      <description> Website Hugo (extern) Ein Generator für statische Webseiten. Gitea (extern) Ein selfbst gehosteter Git Service. Erstellung von Medien-Inhalten OBS Studio (extern) für Videoaufnahmen. iMovie von Apple zum Video-Schnitt und der Audio Nachbearbeitung Abricotine (extern) - ein Open Source Markdown Editor Apple MacBook Pro M1 UR 22 mk II von Steinberg zur Steuerung meine Microfons Entwicklung IntelliJ (extern) als Entwicklungsumgebung Maven (extern) als Build-Werkzeug </description>
     </item>
     
   </channel>

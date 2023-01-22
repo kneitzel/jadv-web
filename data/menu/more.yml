@@ -6,7 +6,4 @@ more:
     ref: "/impressum"
   - name: Kontakt
     ref: "/contact"
-  - name: History
-    ref: "/history"
-  - name: Technology
-    ref: "/technology"
+

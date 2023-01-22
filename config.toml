@@ -1,6 +1,6 @@
 baseURL = 'https://jadventure.de/'
 languageCode = 'de-de'
-title = 'JAdventure Java Kurs'
+title = 'JAdventure - Kurs zur Softwareentwicklung'
 theme = 'hugo-geekdoc'
 
 # Required to get well formatted code blocks

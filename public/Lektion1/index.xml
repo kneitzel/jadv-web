@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1. Übersicht Projekt on JAdventure Java Kurs</title>
+    <title>1. Übersicht Projekt on JAdventure - Kurs zur Softwareentwicklung</title>
     <link>https://jadventure.de/Lektion1/</link>
-    <description>Recent content in 1. Übersicht Projekt on JAdventure Java Kurs</description>
+    <description>Recent content in 1. Übersicht Projekt on JAdventure - Kurs zur Softwareentwicklung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="https://jadventure.de/Lektion1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.1. Vision</title>
-      <link>https://jadventure.de/Lektion1/Vision/</link>
+      <link>https://jadventure.de/Lektion1/1.Vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/Vision/</guid>
-      <description>PeerTube (extern) YouTube (extern) #TODO</description>
+      <guid>https://jadventure.de/Lektion1/1.Vision/</guid>
+      <description>JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
+Es sind Interaktionen möglich:
+Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.</description>
     </item>
     
     <item>
       <title>1.2. Schritte</title>
-      <link>https://jadventure.de/Lektion1/Schritte/</link>
+      <link>https://jadventure.de/Lektion1/2.Schritte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/Schritte/</guid>
-      <description>TODO</description>
+      <guid>https://jadventure.de/Lektion1/2.Schritte/</guid>
+      <description>Den Umfang dieses Abschnitts halten wir kurz und notieren hier nur die Schritte, die wir wirklich als Erstes angehen werden.
+In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
     </item>
     
     <item>
       <title>1.3. Tasks / TODO Liste</title>
-      <link>https://jadventure.de/Lektion1/Tasks/</link>
+      <link>https://jadventure.de/Lektion1/3.Tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/Tasks/</guid>
-      <description>TODO</description>
+      <guid>https://jadventure.de/Lektion1/3.Tasks/</guid>
+      <description>Im nächsten Schritt wird der Arbeitsumfang für den folgenden Implementationsschritt festgelegt. Von den erfassten Schritten nehmen wir die ersten paar, die gut zusammen passen und sich gut zusammen entwickeln lassen werden:
+In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
     </item>
     
   </channel>

@@ -1,18 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anhang on JAdventure Java Kurs</title>
+    <title>Anhänge on JAdventure - Kurs zur Softwareentwicklung</title>
     <link>https://jadventure.de/Anhang/</link>
-    <description>Recent content in Anhang on JAdventure Java Kurs</description>
+    <description>Recent content in Anhänge on JAdventure - Kurs zur Softwareentwicklung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="https://jadventure.de/Anhang/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Agiles Arbeiten</title>
-      <link>https://jadventure.de/Anhang/AgilesArbeiten/</link>
+      <title>A1 - Versionierung des Kurses</title>
+      <link>https://jadventure.de/Anhang/A1-history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Anhang/AgilesArbeiten/</guid>
+      <guid>https://jadventure.de/Anhang/A1-history/</guid>
+      <description> Version Datum Veränderung 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos. 0.0.2 12.01.2023 Erste Vision vom JAdventure Projekt Anhang: Abkürzungen Flaggen bei externen Links zur Anzeige der Sprache Überarbeitung Lektion 1 Übersicht 0.0.1 11.01.2023 Erstellung des Hugo Rahmens Planung der Struktur Gitea Repository für Hugo Sourcen und Website konfiguriert </description>
+    </item>
+    
+    <item>
+      <title>A2 - Abkürzungen</title>
+      <link>https://jadventure.de/Anhang/A2-abkuerzungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/A2-abkuerzungen/</guid>
+      <description> JSON JavaScript Object Notation MMORPG Massive Multiplayer Online Role Playing Game NPC Non Player Character, vom Computer gesteuerte Figur. </description>
+    </item>
+    
+    <item>
+      <title>A3 - Verwendete Technologien</title>
+      <link>https://jadventure.de/Anhang/A3-technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/A3-technology/</guid>
+      <description> Website Hugo (extern) Ein Generator für statische Webseiten. Geekdocs (extern) Ein Hugo Template unter MIT Lizenz. Gitea (extern) Ein selbst gehosteter Git Service. Erstellung von Medien-Inhalten OBS Studio (extern) für Videoaufnahmen. iMovie von Apple zum Video-Schnitt und der Audio Nachbearbeitung Abricotine (extern) - ein Open Source Markdown Editor Apple MacBook Pro M1 UR 22 mk II von Steinberg zur Steuerung meine Microfons Entwicklung IntelliJ (extern) als Entwicklungsumgebung Maven (extern) als Build-Werkzeug </description>
+    </item>
+    
+    <item>
+      <title>B1 - Agiles Arbeiten</title>
+      <link>https://jadventure.de/Anhang/B1-AgilesArbeiten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/B1-AgilesArbeiten/</guid>
       <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>B2 - Clean Code (Übersicht)</title>
+      <link>https://jadventure.de/Anhang/B2-clean-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/B2-clean-code/</guid>
+      <description> TODO </description>
+    </item>
+    
+    <item>
+      <title>C1 - Gson</title>
+      <link>https://jadventure.de/Anhang/C1-gson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/C1-gson/</guid>
+      <description>Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
+Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.
+Gson in ein Maven Projekt einbinden Um Gson zu nutzen zu können, binden wir einfach in Maven folgende Abhängigkeit ein:</description>
+    </item>
+    
+    <item>
+      <title>C2 - Maven (Übersicht)</title>
+      <link>https://jadventure.de/Anhang/C2-maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/C2-maven/</guid>
+      <description> TODO </description>
     </item>
     
   </channel>

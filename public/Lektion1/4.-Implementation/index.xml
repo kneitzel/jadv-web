@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.4. Implementation on JAdventure - Kurs zur Softwareentwicklung</title>
+    <link>https://jadventure.de/Lektion1/4.-Implementation/</link>
+    <description>Recent content in 1.4. Implementation on JAdventure - Kurs zur Softwareentwicklung</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language><atom:link href="https://jadventure.de/Lektion1/4.-Implementation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.4.1 Projekt in IntelliJ anlegen</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</guid>
+      <description>Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
+(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)
+Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!</description>
+    </item>
+    
+    <item>
+      <title>1.4.x Entity Klassendiagramm</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</guid>
+      <description>Das folgende Klassendiagram zeigt in erster Linie die Vererbung. Assoziationen / Kompositionen und Aggregationen sind nicht eingezeichnet um das Diagramm einfach zu halten.
+classDiagram class SavedObject { - String type } class Container { &amp;#43; getChilds() List~GameObject~ } &amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Container Container &amp;lt;|-- Level SavedObject &amp;lt;|-- Level class Level { - String name - int width - int height - List~GameObject~ objects &amp;#43; getName() String &amp;#43; getWidth() int &amp;#43; getHeight() int &amp;#43; getChilds() List~GameObject~ } SavedObject &amp;lt;|-- GameObject class GameObject { - String Name - Size size - Position position &amp;#43; getName() String &amp;#43; setName(newName) &amp;#43; getSize() Size &amp;#43; setSize(newSize) &amp;#43; getPosition() Position &amp;#43; setPosition(newPosition) } SavedObject &amp;lt;|-- Size class Size { } Size &amp;lt;|-- RectangleSize class RectangleSize { - int width - int height } Size &amp;lt;|-- CircleSize class CircleSize { - int radius } class Position { - int x - int y - Container parent } </description>
+    </item>
+    
+  </channel>
+</rss>
