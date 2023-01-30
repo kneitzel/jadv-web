@@ -12,8 +12,8 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
-  <meta name="description" content="Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
-Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org.jadv ArtefactId: jadventure Im Anschluss am Besten noch über das Maven Toolfenster den Maven Wrapper hinzufügen durch einen mvn wrapper:wrapper Aufruf." />
+  <meta name="description" content="Projekt Entities Level GameObject Size Position Serialisierung mit Gson Problem 1: Serialisierung Abgeleiteter Klassen Problem 2: Zirkuläre Referenzen Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
+Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org." />
 
     <title>1.4. Implementation | JAdventure - Kurs zur Softwareentwicklung</title>
 
@@ -39,18 +39,22 @@ Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure ange
     content="1.4. Implementation"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content="Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
-Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org.jadv ArtefactId: jadventure Im Anschluss am Besten noch über das Maven Toolfenster den Maven Wrapper hinzufügen durch einen mvn wrapper:wrapper Aufruf." />
+  <meta property="og:description" content="Projekt Entities Level GameObject Size Position Serialisierung mit Gson Problem 1: Serialisierung Abgeleiteter Klassen Problem 2: Zirkuläre Referenzen Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
+Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jadventure.de/Lektion1/4.-Implementation/" />
 
 <meta property="article:section" content="Lektion1" />
+    <meta
+      property="article:modified_time"
+      content="2023-01-22T13:59:26+01:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="1.4. Implementation" />
-  <meta name="twitter:description" content="Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
-Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org.jadv ArtefactId: jadventure Im Anschluss am Besten noch über das Maven Toolfenster den Maven Wrapper hinzufügen durch einen mvn wrapper:wrapper Aufruf." />
+  <meta name="twitter:description" content="Projekt Entities Level GameObject Size Position Serialisierung mit Gson Problem 1: Serialisierung Abgeleiteter Klassen Problem 2: Zirkuläre Referenzen Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
+Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org." />
 
 
   <script type="application/ld+json">
@@ -61,8 +65,8 @@ Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure ange
       "name": "1.4. Implementation",
       "url" : "https://jadventure.de/Lektion1/4.-Implementation/",
       "headline": "1.4. Implementation",
-      "description": "Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:\nName: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org.jadv ArtefactId: jadventure Im Anschluss am Besten noch über das Maven Toolfenster den Maven Wrapper hinzufügen durch einen mvn wrapper:wrapper Aufruf.",
-      "wordCount" : "185",
+      "description": "Projekt Entities Level GameObject Size Position Serialisierung mit Gson Problem 1: Serialisierung Abgeleiteter Klassen Problem 2: Zirkuläre Referenzen Projekt Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:\nName: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure angelegt werden soll für das Projekt. Create Git repository: Ja Language: Java Build System: Maven JDK: 17 Add sample code: Ja Advanced Settings: GroupId: org.",
+      "wordCount" : "388",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -74,7 +78,7 @@ Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure ange
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2023-01-22T13:59:26.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -560,10 +564,82 @@ Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure ange
               
                 <span class="flex">
                   <a
-                    href="/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/"
+                    href="/Lektion1/4.-Implementation/1.4.2-Entities/"
                     class="gdoc-nav__entry"
                   >
-                    1.4.x Entity Klassendiagramm
+                    1.4.2 Entities
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/Lektion1/4.-Implementation/1.4.3-Serialisierung/"
+                    class="gdoc-nav__entry"
+                  >
+                    1.4.3 Serialisierung
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/"
+                    class="gdoc-nav__entry"
+                  >
+                    1.4.4 Entities und Klassendiagramm
                   </a>
                 </span>
               
@@ -1110,7 +1186,26 @@ Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure ange
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>1.4. Implementation</h1>
-    <div class="gdoc-page__anchorwrap">
+    <div class="gdoc-toc gdoc-toc__level--3">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#projekt">Projekt</a></li>
+    <li><a href="#entities">Entities</a>
+      <ul>
+        <li><a href="#level">Level</a></li>
+        <li><a href="#gameobject">GameObject</a></li>
+        <li><a href="#size">Size</a></li>
+        <li><a href="#position">Position</a></li>
+      </ul>
+    </li>
+    <li><a href="#serialisierung-mit-gson">Serialisierung mit Gson</a>
+      <ul>
+        <li><a href="#problem-1-serialisierung-abgeleiteter-klassen">Problem 1: Serialisierung Abgeleiteter Klassen</a></li>
+        <li><a href="#problem-2-zirkuläre-referenzen">Problem 2: Zirkuläre Referenzen</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+<div class="gdoc-page__anchorwrap">
     <h1 id="projekt">
         Projekt
         <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/#projekt" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Projekt" aria-label="Anchor to: Projekt" href="#projekt">
@@ -1153,6 +1248,7 @@ Name: jadventure Location: Ein Ort, an dem ein neues Verzeichnis jadventure ange
 </div>
 <p>Die ganzen Entity Klassen legen wir in den Namespace org.jadv.model. Um den Code klein zu halten, nutzen wir <a href="https://projectlombok.org/" target="_blank"> Lombok (extern)</a> <img src="/files/images/Flagge-England-klein.png" width="30"></img>
 .</p>
+<p>Im Folgenden gibt es nur eine kurze Zusammenfassung - auf der jeweiligen Unterseite finden sich mehr Details.</p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="level">
         Level
@@ -1214,6 +1310,29 @@ für die Koordinate sowie einen Link auf den parent:</li>
         </a>
     </h1>
 </div>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="problem-1-serialisierung-abgeleiteter-klassen">
+        Problem 1: Serialisierung Abgeleiteter Klassen
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/#problem-1-serialisierung-abgeleiteter-klassen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Problem 1: Serialisierung Abgeleiteter Klassen" aria-label="Anchor to: Problem 1: Serialisierung Abgeleiteter Klassen" href="#problem-1-serialisierung-abgeleiteter-klassen">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Wir müssen bei der Serialisierung und Deserialisierung immer genau wissen, was für eine Klasse wir gerade serialisieren bzw. deserialisieren.</p>
+<p>Damit wir bei der Deserialisierung wissen, was für eine Klasse da heraus kommen soll, schreiben wir den Klassennamen mit in das Objekt.</p>
+<p>Dazu führen wir eine Klasse SavedObject ein, die ein Feld type hat, das auf den Namen der Klasse gesetzt ist.</p>
+<p>Die Serialisierung und Deserialisierung läuft dann über einen Adapter, der sicher stellt, dass ein Objekt korrekt verarbeitet wird.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="problem-2-zirkuläre-referenzen">
+        Problem 2: Zirkuläre Referenzen
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/#problem-2-zirkuläre-referenzen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Problem 2: Zirkuläre Referenzen" aria-label="Anchor to: Problem 2: Zirkuläre Referenzen" href="#problem-2-zirkul%c3%a4re-referenzen">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Die Level verweisen auf die Objekte im Level. Die Objekte im Level verweisen über die Position auf das Level.
+Eine solche zirkuläre Abhängigkeit kann so nicht gespeichert werden. Wir haben hier den einfachen Weg gewählt, dass die Position die Parent Referenz als transient markiert, das heisst, dass dieses Feld weder mit geschrieben noch mit gelesen wird.</p>
+<p>Damit wir ein Level richtig laden können, müssen wir nach dem Laden durch alle Child Elemente gehen und in diesen den Parent richtig setzen.</p>
 
   </article>
 

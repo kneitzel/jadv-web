@@ -12,11 +12,11 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
-  <meta name="description" content="JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z." />
+  <meta name="description" content="LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll
+String name int width int height List&lt;GameObject&gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:
+/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level." />
 
-    <title>1.1. Vision | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>1.4.2 Entities | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -37,27 +37,23 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
     
   <meta
     property="og:title"
-    content="1.1. Vision"
+    content="1.4.2 Entities"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content="JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z." />
+  <meta property="og:description" content="LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll
+String name int width int height List&lt;GameObject&gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:
+/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jadventure.de/Lektion1/1.Vision/" />
+<meta property="og:url" content="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/" />
 
 <meta property="article:section" content="Lektion1" />
-    <meta
-      property="article:modified_time"
-      content="2023-01-22T13:59:26+01:00"
-    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="1.1. Vision" />
-  <meta name="twitter:description" content="JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z." />
+<meta name="twitter:title" content="1.4.2 Entities" />
+  <meta name="twitter:description" content="LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll
+String name int width int height List&lt;GameObject&gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:
+/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level." />
 
 
   <script type="application/ld+json">
@@ -65,23 +61,23 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Lektion1",
-      "name": "1.1. Vision",
-      "url" : "https://jadventure.de/Lektion1/1.Vision/",
-      "headline": "1.1. Vision",
-      "description": "JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.\nEs sind Interaktionen möglich:\nSpieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.",
-      "wordCount" : "236",
+      "name": "1.4.2 Entities",
+      "url" : "https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/",
+      "headline": "1.4.2 Entities",
+      "description": "LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll\nString name int width int height List\u003cGameObject\u003e childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:\n\/** * JAdventure Level *\/ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { \/** * Name of the Level. *\/ private String name; \/** * Width of the level. *\/ private int width; \/** * Height of the level.",
+      "wordCount" : "291",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://jadventure.de/Lektion1/1.Vision/"
+          "@id": "https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/"
       },
       "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-01-22T13:59:26.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -159,7 +155,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/Lektion1/1.Vision/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -367,7 +363,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
                 <span class="flex">
                   <a
                     href="/Lektion1/1.Vision/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     1.1. Vision
                   </a>
@@ -466,7 +462,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-46723527"
-                
+                checked
               
             />
             <label
@@ -568,7 +564,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
                 <span class="flex">
                   <a
                     href="/Lektion1/4.-Implementation/1.4.2-Entities/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     1.4.2 Entities
                   </a>
@@ -1188,75 +1184,175 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>1.1. Vision</h1>
-    <div class="gdoc-toc gdoc-toc__level--3">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#jadventure-vision">JAdventure Vision</a></li>
-  </ul>
-</nav>
-      <hr />
-    </div>
-<iframe id="video1" width="800" height="460"></iframe>
-<script>
-  var iframe = document.getElementById("video1");
-  var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-  iframeDoc.body.innerHTML = "<img src=\"\/files\/video-images\/1.1-vision.png\" width=\"100%\">";
-  function peertube() {
-    iframe.src="https:\/\/cliptube.org\/a\/konradn";
-  }
-  function youtube() {
-    iframe.src="";
-    console.log("");
-  }
-</script>
-<div class="table-wrap"> <table> 
-  <tr>
-    <td>
-      <a href="javascript:peertube()">PeerTube (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-    </td>
-    <td>
-      <a href="javascript:youtube()">YouTube (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-    </td>
-    
-      <td span=2><a href="/files/pp/JAdventure_1.1-Vision.pptx"> PowerPoint Präsentation <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a></td>
-    
-  </tr> 
-</table> </div>
-
-<div class="gdoc-page__anchorwrap">
-    <h1 id="jadventure-vision">
-        JAdventure Vision
-        <a data-clipboard-text="https://jadventure.de/Lektion1/1.Vision/#jadventure-vision" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JAdventure Vision" aria-label="Anchor to: JAdventure Vision" href="#jadventure-vision">
+    <h1>1.4.2 Entities</h1>
+    <div class="gdoc-page__anchorwrap">
+    <h1 id="level">
+        LEVEL
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/#level" class="gdoc-page__anchor clip flex align-center" title="Anchor to: LEVEL" aria-label="Anchor to: LEVEL" href="#level">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
 </div>
-<p>JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game.
-Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird.
-In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert.
-Es gibt im Spiel Gegenstände.</p>
-<p>Es sind Interaktionen möglich:</p>
+<p>Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll</p>
 <ul>
-<li>Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen)</li>
-<li>Spieler können Gegenstände nutzen (z.B. Anziehen von Rüstungen, nutzen von Waffen, &hellip;)</li>
-<li>Spieler können NPCs bekämpfen (so diese Bekämpfbar sind)</li>
-<li>Spieler können untereinander Handel treiben oder mit NPCs handeln.</li>
-<li>Spieler sollen NPCs steuern können (z.B. ein dressierter Hund)</li>
+<li>String name</li>
+<li>int width</li>
+<li>int height</li>
+<li>List&lt;GameObject&gt; childs</li>
 </ul>
-<p>Bei der Benutzeroberfläche soll der Spieler in die Anzeige hinein und hinaus zoomen können.
-Der Spieler soll seine Figur steuern können per Mausclick auf die Karte oder per Tastenbefehle.</p>
-<p>Es soll Aktionen über Zeit geben:</p>
+<p>Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * JAdventure Level
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Name of the Level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Width of the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">width</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Height of the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Game objects inside the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="n">objects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">GameObject</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">objects</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">GameObject</span> <span class="n">obj</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">objects</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">obj</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(</span><span class="k">new</span> <span class="n">Position</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">,</span> <span class="k">this</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="gameobject">
+        GameObject
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/#gameobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: GameObject" aria-label="Anchor to: GameObject" href="#gameobject">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Die Klasse GameObject bekommt die Attribute</p>
 <ul>
-<li>z.B. eine Wiederherstellung von Lebenspunkten außerhalb des Kampfes</li>
-<li>Rückgängig-Machen von Veränderungen nach gewisser Zeit (z.B. verschwinden Tote Figuren nach gewisser Zeit. Ein NPC erscheint nach gewisser Zeit erneut, nach dem er erschlagen wurde.)</li>
-<li>Es gibt automatische Aktionen von NPCs (z.B. Bewegung nach vorgegebenem Script oder zufällig)</li>
+<li>String name</li>
+<li>Size size</li>
+<li>Position position</li>
 </ul>
-<p>Diese Ideen lassen sich weiter fortsetzen. Zu so eine Vision könnten prinzipiell auch schon Visualisierungen gehören, also z.B. eine Skizze, wie so ein Frontend aussehen könnte. Erste Grafiken könnten gezeigt werden. Halt Dinge, die den Beteiligten helfen, eine bessere Vorstellung von der Vision zu bekommen.</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * An Object inside the JAdventure game.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Setter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Builder</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GameObject</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Name of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Size of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Size</span> <span class="n">size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Position of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Position</span> <span class="n">position</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="size">
+        Size
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/#size" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Size" aria-label="Anchor to: Size" href="#size">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Dir Größe eines Objekts soll entweder über eine rechteckige Größe oder eine runde Größe definiert werden. Damit erhalten wir die folgenden Klassen.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="size-1">
+        Size
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/#size-1" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Size" aria-label="Anchor to: Size" href="#size-1">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Size of an GameObject
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Size</span> <span class="o">{</span> <span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="circlesize">
+        CircleSize
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/#circlesize" class="gdoc-page__anchor clip flex align-center" title="Anchor to: CircleSize" aria-label="Anchor to: CircleSize" href="#circlesize">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Size of a circular object.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CircleSize</span> <span class="kd">extends</span> <span class="n">Size</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Radius of the circle around the object location.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">radius</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="rectanglesize">
+        RectangleSize
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/#rectanglesize" class="gdoc-page__anchor clip flex align-center" title="Anchor to: RectangleSize" aria-label="Anchor to: RectangleSize" href="#rectanglesize">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Rectangle Size
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">RectangleSize</span> <span class="kd">extends</span> <span class="n">Size</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Width of the object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">width</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Height of the object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
   </article>
 
 

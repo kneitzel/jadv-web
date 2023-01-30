@@ -57,9 +57,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/C1-gson/</guid>
-      <description>Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
-Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.
-Gson in ein Maven Projekt einbinden Um Gson zu nutzen zu können, binden wir einfach in Maven folgende Abhängigkeit ein:</description>
+      <description>Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
+Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.</description>
     </item>
     
     <item>

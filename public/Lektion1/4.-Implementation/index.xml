@@ -18,13 +18,33 @@ Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starte
     </item>
     
     <item>
-      <title>1.4.x Entity Klassendiagramm</title>
-      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</link>
+      <title>1.4.2 Entities</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.x-Klassendiagramm/</guid>
-      <description>Das folgende Klassendiagram zeigt in erster Linie die Vererbung. Assoziationen / Kompositionen und Aggregationen sind nicht eingezeichnet um das Diagramm einfach zu halten.
-classDiagram class SavedObject { - String type } class Container { &amp;#43; getChilds() List~GameObject~ } &amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Container Container &amp;lt;|-- Level SavedObject &amp;lt;|-- Level class Level { - String name - int width - int height - List~GameObject~ objects &amp;#43; getName() String &amp;#43; getWidth() int &amp;#43; getHeight() int &amp;#43; getChilds() List~GameObject~ } SavedObject &amp;lt;|-- GameObject class GameObject { - String Name - Size size - Position position &amp;#43; getName() String &amp;#43; setName(newName) &amp;#43; getSize() Size &amp;#43; setSize(newSize) &amp;#43; getPosition() Position &amp;#43; setPosition(newPosition) } SavedObject &amp;lt;|-- Size class Size { } Size &amp;lt;|-- RectangleSize class RectangleSize { - int width - int height } Size &amp;lt;|-- CircleSize class CircleSize { - int radius } class Position { - int x - int y - Container parent } </description>
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</guid>
+      <description>LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll
+String name int width int height List&amp;lt;GameObject&amp;gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:
+/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level.</description>
+    </item>
+    
+    <item>
+      <title>1.4.3 Serialisierung</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/</guid>
+      <description>Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
+Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson.</description>
+    </item>
+    
+    <item>
+      <title>1.4.4 Entities und Klassendiagramm</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</guid>
+      <description>Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org.</description>
     </item>
     
   </channel>

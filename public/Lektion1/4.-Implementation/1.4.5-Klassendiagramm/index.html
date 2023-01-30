@@ -12,10 +12,9 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
-  <meta name="description" content="Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
-Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen." />
+  <meta name="description" content="Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org." />
 
-    <title>C1 - Gson | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>1.4.4 Entities und Klassendiagramm | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -36,49 +35,43 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
     
   <meta
     property="og:title"
-    content="C1 - Gson"
+    content="1.4.4 Entities und Klassendiagramm"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content="Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
-Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen." />
+  <meta property="og:description" content="Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jadventure.de/Anhang/C1-gson/" />
+<meta property="og:url" content="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/" />
 
-<meta property="article:section" content="Anhang" />
-    <meta
-      property="article:modified_time"
-      content="2023-01-22T13:59:26+01:00"
-    />
+<meta property="article:section" content="Lektion1" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="C1 - Gson" />
-  <meta name="twitter:description" content="Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
-Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen." />
+<meta name="twitter:title" content="1.4.4 Entities und Klassendiagramm" />
+  <meta name="twitter:description" content="Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Anhang",
-      "name": "C1 - Gson",
-      "url" : "https://jadventure.de/Anhang/C1-gson/",
-      "headline": "C1 - Gson",
-      "description": "Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).\nFür die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.",
-      "wordCount" : "1176",
+      "articleSection": "Lektion1",
+      "name": "1.4.4 Entities und Klassendiagramm",
+      "url" : "https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/",
+      "headline": "1.4.4 Entities und Klassendiagramm",
+      "description": "Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; \/** * An instance that can be saved through an Adapter and contains the name of the class as field. *\/ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { \/** * Class name of the instance. *\/ @Getter private final String type = getClass().getName(); } Container package org.",
+      "wordCount" : "1238",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://jadventure.de/Anhang/C1-gson/"
+          "@id": "https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/"
       },
       "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-01-22T13:59:26.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -156,7 +149,7 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/Anhang/C1-gson/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -298,7 +291,7 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-383dbd0a"
-                
+                checked
               
             />
             <label
@@ -463,7 +456,7 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-46723527"
-                
+                checked
               
             />
             <label
@@ -637,7 +630,7 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
                 <span class="flex">
                   <a
                     href="/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     1.4.4 Entities und Klassendiagramm
                   </a>
@@ -678,7 +671,7 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-4ff10e6e"
-                checked
+                
               
             />
             <label
@@ -924,7 +917,7 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
                 <span class="flex">
                   <a
                     href="/Anhang/C1-gson/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     C1 - Gson
                   </a>
@@ -1185,80 +1178,41 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>C1 - Gson</h1>
-    <div class="table-wrap"> <table>
-<thead>
-<tr>
-<th><strong>Wichtig</strong></th>
-<th>Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab!</th>
-</tr>
-</thead>
-</table> </div>
-<p>Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation -
-<a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank">JSON auf Wikipedia (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-).</p>
-<p>Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.</p>
+    <h1>1.4.4 Entities und Klassendiagramm</h1>
+    <div class="gdoc-toc gdoc-toc__level--3">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#die-klassen">Die Klassen</a>
+      <ul>
+        <li><a href="#savedobject">SavedObject</a></li>
+        <li><a href="#container">Container</a></li>
+        <li><a href="#level">Level</a></li>
+        <li><a href="#gameobject">GameObject</a></li>
+        <li><a href="#size">Size</a></li>
+        <li><a href="#circlesize">CircleSize</a></li>
+        <li><a href="#rectanglesize">RectangleSize</a></li>
+        <li><a href="#position">Position</a></li>
+        <li><a href="#savedobjectadapter">SavedObjectAdapter</a></li>
+        <li><a href="#listofsavedobjectadapter">ListOfSavedObjectAdapter</a></li>
+      </ul>
+    </li>
+    <li><a href="#klassendiagramm">Klassendiagramm</a></li>
+  </ul>
+</nav>
+      <hr />
+    </div>
 <div class="gdoc-page__anchorwrap">
-    <h1 id="gson-in-ein-maven-projekt-einbinden">
-        Gson in ein Maven Projekt einbinden
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#gson-in-ein-maven-projekt-einbinden" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Gson in ein Maven Projekt einbinden" aria-label="Anchor to: Gson in ein Maven Projekt einbinden" href="#gson-in-ein-maven-projekt-einbinden">
+    <h1 id="die-klassen">
+        Die Klassen
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#die-klassen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Die Klassen" aria-label="Anchor to: Die Klassen" href="#die-klassen">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
 </div>
-<p>Um Gson zu nutzen zu können, binden wir einfach in Maven folgende Abhängigkeit ein:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="line"><span class="cl"><span class="c">&lt;!-- https://mvnrepository.com/artifact/com.google.code.gson/gson --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>com.google.code.gson<span class="nt">&lt;/groupId&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>gson<span class="nt">&lt;/artifactId&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>2.10.1<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
-</span></span></code></pre></div><p>(Die Version war zum Zeitpunkt des Verfassens die aktuelle Version. Bei der angegebenen URL kann man jederzeit sehen, ob eine neue Version verfügbar ist!)</p>
 <div class="gdoc-page__anchorwrap">
-    <h1 id="object---json">
-        Object -&gt; JSON
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#object---json" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Object -&gt; JSON" aria-label="Anchor to: Object -&gt; JSON" href="#object---json">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Um ein Objekt in JSON Text zu serialisieren, reicht es aus, sich eine Instanz von Gson zu erstellen. Darauf ist die Methode toJson aufrufbar.</p>
-<p>Beispiel:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">String</span> <span class="n">jsonText</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">someInstance</span><span class="o">,</span> <span class="n">SomeType</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h1 id="json---object">
-        JSON -&gt; Object
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#json---object" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JSON -&gt; Object" aria-label="Anchor to: JSON -&gt; Object" href="#json---object">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Um einn JSON Text in eine Instanz umzuwandeln ist der Ablauf fast gleich - es wird lediglich fromJson aufgerufen.
-Beispiel:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">SomeType</span> <span class="n">someInstance</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">jsonText</span><span class="o">,</span> <span class="n">SomeType</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h1 id="abgeleitete-klassen">
-        Abgeleitete Klassen
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#abgeleitete-klassen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Abgeleitete Klassen" aria-label="Anchor to: Abgeleitete Klassen" href="#abgeleitete-klassen">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Ein Problem tritt auf, wenn wir nicht wissen, von welchem Typ ein JSON Objekt ist. Wenn ich z.B. in einer Klassenhirarchie ein Interface oder eine Basis Klasse habe und dann eine List von diesem Interface oder der Basisklasse zurücklesen will in eine Instanz. Gson kann nicht wissen, von welchem Typ die Daten sind, so dass wir hier ein Problem haben.</p>
-<p>Eine mögliche Lösung für dieses Problem kann sein:</p>
-<ul>
-<li>Eine Basisklasse haben, in der auch der Typ der Klasse in einer Instanzvariable gesichert wird.</li>
-<li>Dann mit einem Adapter arbeiten, so daß bem Serialisieren dieser Klasse immer die volle Klasse Serialisiert wird. Dies würde es erlauben. Die Klasse über diese Basisklasse zu serialisieren.</li>
-<li>Beim Deserialisieren dieser Basisklasse wird erst der typ gelesen und dann dieser Typ zur Deserialisierung verwendet.</li>
-</ul>
-<p>Da dies auch bei einer Liste von Elementen notwendig ist, wird dafür auch ein Adapter erzeugt. Dann kann bei einer List über eine Annotation sichergestellt werden, dass die Serialisierung / Deserialisierung korrekt erfolgen.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="basisklasse">
-        Basisklasse
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#basisklasse" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Basisklasse" aria-label="Anchor to: Basisklasse" href="#basisklasse">
+    <h2 id="savedobject">
+        SavedObject
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#savedobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: SavedObject" aria-label="Anchor to: SavedObject" href="#savedobject">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
@@ -1266,79 +1220,278 @@ Beispiel:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.annotations.JsonAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.EqualsAndHashCode</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.Getter</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.serialization.SavedObjectAdapter</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * An instance that can be saved through an Adapter and contains the name of the class as field.
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span>
 </span></span><span class="line"><span class="cl"><span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">SavedObject</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Class name of the
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Class name of the instance.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
 </span></span><span class="line"><span class="cl">    <span class="nd">@Getter</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">type</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h2 id="jsonserializerltsavedobjectgt">
-        JsonSerializer&lt;SavedObject&gt;
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#jsonserializerltsavedobjectgt" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JsonSerializer&lt;SavedObject&gt;" aria-label="Anchor to: JsonSerializer&lt;SavedObject&gt;" href="#jsonserializerltsavedobjectgt">
+    <h2 id="container">
+        Container
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#container" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Container" aria-label="Anchor to: Container" href="#container">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>JsonSerializer&lt;SavedObject&gt; kann für alle Klassen, die von SavedObject erben, verwendet werden, um die Serialisierung durchzuführen.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes an SavedObject to JSON. Makes sure that the serialization is using the correct class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object Object to serialize.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized object.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.objects.GameObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * A Container has a list of GameObject as children.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Container</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the List of GameObject children.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return List of GameObjects.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="n">SavedObject</span> <span class="n">object</span><span class="o">,</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">object</span><span class="o">,</span> <span class="n">object</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="nf">getChildren</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h2 id="jsondeserializerltsavedobjectgt">
-        JsonDeserializer&lt;SavedObject&gt;
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#jsondeserializerltsavedobjectgt" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JsonDeserializer&lt;SavedObject&gt;" aria-label="Anchor to: JsonDeserializer&lt;SavedObject&gt;" href="#jsondeserializerltsavedobjectgt">
+    <h2 id="level">
+        Level
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#level" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Level" aria-label="Anchor to: Level" href="#level">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>JsonDeserializer&lt;SavedObject&gt; kann für jede Unterklasse von SavedObject erwendet werden. Es wird erst der Klassenname gelesen um dann die Serialisierung für diese Klasse durchzuführen.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.level</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.annotations.JsonAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.*</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.Container</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.Position</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.SavedObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.objects.GameObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.serialization.ListOfSavedObjectAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * JAdventure Level
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="kd">extends</span> <span class="n">SavedObject</span> <span class="kd">implements</span> <span class="n">Container</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Name of the Level.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">get</span><span class="o">(</span><span class="n">wrapper</span><span class="o">,</span> <span class="s">&#34;type&#34;</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Width of the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">width</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Height of the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Game objects inside the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">ListOfSavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="n">objects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">GameObject</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">objects</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">GameObject</span> <span class="n">obj</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">objects</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">obj</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(</span><span class="k">new</span> <span class="n">Position</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">,</span> <span class="k">this</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="nf">getChildren</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">objects</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h2 id="nutzung-der-klasse">
-        Nutzung der Klasse
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#nutzung-der-klasse" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Nutzung der Klasse" aria-label="Anchor to: Nutzung der Klasse" href="#nutzung-der-klasse">
+    <h2 id="gameobject">
+        GameObject
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#gameobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: GameObject" aria-label="Anchor to: GameObject" href="#gameobject">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Um eine Klasse mit dem Adapter zu deserialisieren muss nur beim Deserialisieren als Zielklasse SavedObject.class angegeben werden. Der Adapter wird dann automatisch verwendet.</p>
-<p>Zur Serialisierung muss sonst nichts weiter gemacht werden. Hier kann die korrekte Klasse angegeben werden oder auch SavedObject.class. Der Adapter sorgt dann automatisch für die korrekte Serialisierung.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="fertige-klasse-mit-hilfsmethoden">
-        Fertige Klasse mit Hilfsmethoden
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#fertige-klasse-mit-hilfsmethoden" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Fertige Klasse mit Hilfsmethoden" aria-label="Anchor to: Fertige Klasse mit Hilfsmethoden" href="#fertige-klasse-mit-hilfsmethoden">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.objects</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.annotations.JsonAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.*</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.Position</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.SavedObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.size.Size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.serialization.SavedObjectAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * An Object inside the JAdventure game.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Setter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Builder</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GameObject</span> <span class="kd">extends</span> <span class="n">SavedObject</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Name of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Size of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Size</span> <span class="n">size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Position of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Position</span> <span class="n">position</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="size">
+        Size
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#size" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Size" aria-label="Anchor to: Size" href="#size">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.annotations.JsonAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.SavedObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.serialization.SavedObjectAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Size of an GameObject
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Size</span> <span class="kd">extends</span> <span class="n">SavedObject</span> <span class="o">{</span> <span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="circlesize">
+        CircleSize
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#circlesize" class="gdoc-page__anchor clip flex align-center" title="Anchor to: CircleSize" aria-label="Anchor to: CircleSize" href="#circlesize">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.*</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Size of a circular object.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CircleSize</span> <span class="kd">extends</span> <span class="n">Size</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Radius of the circle around the object location.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">radius</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="rectanglesize">
+        RectangleSize
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#rectanglesize" class="gdoc-page__anchor clip flex align-center" title="Anchor to: RectangleSize" aria-label="Anchor to: RectangleSize" href="#rectanglesize">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.*</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Rectangle Size
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">RectangleSize</span> <span class="kd">extends</span> <span class="n">Size</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Width of the object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">width</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Height of the object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="position">
+        Position
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#position" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Position" aria-label="Anchor to: Position" href="#position">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.AllArgsConstructor</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.Getter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Position stores the position of an GameObject inside the game.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Position</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * X Coordiante.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">x</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Y Coordinate
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">y</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Parent of this Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">transient</span> <span class="n">Container</span> <span class="n">parent</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setParent</span><span class="o">(</span><span class="kd">final</span> <span class="n">Container</span> <span class="n">parent</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">parent</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalStateException</span><span class="o">(</span><span class="s">&#34;Parent already set!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="savedobjectadapter">
+        SavedObjectAdapter
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#savedobjectadapter" class="gdoc-page__anchor clip flex align-center" title="Anchor to: SavedObjectAdapter" aria-label="Anchor to: SavedObjectAdapter" href="#savedobjectadapter">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
@@ -1346,14 +1499,24 @@ Beispiel:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.serialization</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.*</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.Container</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.SavedObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.objects.GameObject</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.lang.reflect.Type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.Objects</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Gson Adapter to (de-)serialize derived types.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Just serialize / deserialize with type SavedObject to use this adapter.
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Name of the element that describes the type.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">TYPE_ELEMENT_NAME</span> <span class="o">=</span> <span class="s">&#34;type&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes an SavedObject to JSON. Makes sure that the serialization is using the correct class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object Object to serialize.
@@ -1362,7 +1525,8 @@ Beispiel:</p>
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized object.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="n">SavedObject</span> <span class="n">object</span><span class="o">,</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">object</span><span class="o">,</span> <span class="n">object</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
@@ -1376,11 +1540,28 @@ Beispiel:</p>
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">get</span><span class="o">(</span><span class="n">wrapper</span><span class="o">,</span> <span class="s">&#34;type&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">setParentReferencesIfRequired</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * The parent reference inside the Position of a GameObject is transient and is not saved.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * So when deserializing a container, we have to set the parent again.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object SavedObject to check and set Parent if required.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setParentReferencesIfRequired</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="k">instanceof</span> <span class="n">Container</span> <span class="n">container</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">container</span><span class="o">.</span><span class="na">getChildren</span><span class="o">().</span><span class="na">stream</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">GameObject</span><span class="o">::</span><span class="n">getPosition</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">Objects</span><span class="o">::</span><span class="n">nonNull</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">p</span> <span class="o">-&gt;</span> <span class="n">p</span><span class="o">.</span><span class="na">setParent</span><span class="o">(</span><span class="n">container</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="cm">/**
@@ -1398,27 +1579,25 @@ Beispiel:</p>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets an child element of an JsonObject,
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets a child element of an JsonObject,
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param wrapper Wrapper JsonObject to get the element from.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param memberName Name of the element to get.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested JsonElement.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the requested element is not available.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">JsonElement</span> <span class="nf">get</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span><span class="o">,</span> <span class="n">String</span> <span class="n">memberName</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span> <span class="o">=</span> <span class="n">wrapper</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">memberName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">elem</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="s">&#34;no &#39;&#34;</span> <span class="o">+</span> <span class="n">memberName</span> <span class="o">+</span> <span class="s">&#34;&#39; member found in what was expected to be an interface wrapper&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">JsonElement</span> <span class="nf">getType</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span> <span class="o">=</span> <span class="n">wrapper</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">TYPE_ELEMENT_NAME</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">elem</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="s">&#34;no &#39;&#34;</span> <span class="o">+</span> <span class="n">TYPE_ELEMENT_NAME</span> <span class="o">+</span> <span class="s">&#34;&#39; member found in what was expected to be an interface wrapper&#34;</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">elem</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h2 id="serialisierung-von-listen-mit-subklassen">
-        Serialisierung von Listen mit Subklassen
-        <a data-clipboard-text="https://jadventure.de/Anhang/C1-gson/#serialisierung-von-listen-mit-subklassen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisierung von Listen mit Subklassen" aria-label="Anchor to: Serialisierung von Listen mit Subklassen" href="#serialisierung-von-listen-mit-subklassen">
+    <h2 id="listofsavedobjectadapter">
+        ListOfSavedObjectAdapter
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#listofsavedobjectadapter" class="gdoc-page__anchor clip flex align-center" title="Anchor to: ListOfSavedObjectAdapter" aria-label="Anchor to: ListOfSavedObjectAdapter" href="#listofsavedobjectadapter">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Bei der Serialisierung von einer Liste sollte jedes Element mit seiner eigenen Klasse serialisiert und auch wieder entsprechend deserialisiert werden. Dazu kann dann ein eigenes Adapter geschrieben werden:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.serialization</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.*</span><span class="o">;</span>
@@ -1429,9 +1608,10 @@ Beispiel:</p>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * Gson Adapter to (de-)serialize derived types.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Gson Adapter to (de-)serialize a List of SavedObjects
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Prefix the List with @JsonAdapter(ListOfSavedObjectAdapter.class) to use this Adapter
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListOfSavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListOfSavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes a list of SavedInstance to JSON.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param list Object to serialize.
@@ -1439,7 +1619,8 @@ Beispiel:</p>
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized list.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">list</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JsonArray</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">SavedObject</span> <span class="n">obj</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
@@ -1456,7 +1637,8 @@ Beispiel:</p>
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored list with elements with correct class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="nf">deserialize</span><span class="o">(</span><span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                         <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonArray</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">JsonElement</span> <span class="n">element</span> <span class="o">:</span> <span class="n">array</span><span class="o">.</span><span class="na">asList</span><span class="o">())</span> <span class="o">{</span>
@@ -1465,7 +1647,80 @@ Beispiel:</p>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="klassendiagramm">
+        Klassendiagramm
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/#klassendiagramm" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Klassendiagramm" aria-label="Anchor to: Klassendiagramm" href="#klassendiagramm">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Das folgende Klassendiagram zeigt in erster Linie die Vererbung. Assoziationen / Kompositionen und Aggregationen sind nicht eingezeichnet um das Diagramm einfach zu halten.</p>
+
+
+  
+  <script defer src="/js/mermaid-5b93fce4.bundle.min.js"></script>
+  
+
+
+
+<pre class="gdoc-mermaid mermaid text-center">classDiagram
+
+class SavedObject {
+  - String type
+}
+
+class Container {
+  &#43; getChilds() List~GameObject~
+}
+&lt;&lt;interface&gt;&gt; Container
+
+Container &lt;|--  Level
+SavedObject &lt;|-- Level
+class Level {
+  - String name
+  - int width
+  - int height
+  - List~GameObject~ objects
+  &#43; getName() String
+  &#43; getWidth() int
+  &#43; getHeight() int
+  &#43; getChilds() List~GameObject~
+}
+
+SavedObject &lt;|-- GameObject
+class GameObject {
+  - String Name
+  - Size size
+  - Position position
+  &#43; getName() String
+  &#43; setName(newName)
+  &#43; getSize() Size
+  &#43; setSize(newSize)
+  &#43; getPosition() Position
+  &#43; setPosition(newPosition)
+}
+
+SavedObject &lt;|-- Size
+class Size { }
+
+Size &lt;|-- RectangleSize
+class RectangleSize {
+  - int width
+  - int height
+}
+
+Size &lt;|-- CircleSize
+class CircleSize {
+  - int radius
+}
+
+class Position {
+  - int x
+  - int y
+  - Container parent
+}</pre>
+
   </article>
 
 

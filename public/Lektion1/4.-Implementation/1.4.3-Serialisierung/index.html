@@ -12,11 +12,10 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
-  <meta name="description" content="JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z." />
+  <meta name="description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
+Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson." />
 
-    <title>1.1. Vision | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>1.4.3 Serialisierung | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -37,27 +36,21 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
     
   <meta
     property="og:title"
-    content="1.1. Vision"
+    content="1.4.3 Serialisierung"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content="JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z." />
+  <meta property="og:description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
+Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jadventure.de/Lektion1/1.Vision/" />
+<meta property="og:url" content="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/" />
 
 <meta property="article:section" content="Lektion1" />
-    <meta
-      property="article:modified_time"
-      content="2023-01-22T13:59:26+01:00"
-    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="1.1. Vision" />
-  <meta name="twitter:description" content="JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z." />
+<meta name="twitter:title" content="1.4.3 Serialisierung" />
+  <meta name="twitter:description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
+Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson." />
 
 
   <script type="application/ld+json">
@@ -65,23 +58,23 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Lektion1",
-      "name": "1.1. Vision",
-      "url" : "https://jadventure.de/Lektion1/1.Vision/",
-      "headline": "1.1. Vision",
-      "description": "JAdventure Vision PeerTube (extern) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.\nEs sind Interaktionen möglich:\nSpieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.",
-      "wordCount" : "236",
+      "name": "1.4.3 Serialisierung",
+      "url" : "https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/",
+      "headline": "1.4.3 Serialisierung",
+      "description": "Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:\nGson gson = new Gson(); Level level = ....; \/\/ Beliebige Initialisierung String json = gson.",
+      "wordCount" : "1276",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://jadventure.de/Lektion1/1.Vision/"
+          "@id": "https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/"
       },
       "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-01-22T13:59:26.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -159,7 +152,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/Lektion1/1.Vision/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -367,7 +360,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
                 <span class="flex">
                   <a
                     href="/Lektion1/1.Vision/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     1.1. Vision
                   </a>
@@ -466,7 +459,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-46723527"
-                
+                checked
               
             />
             <label
@@ -604,7 +597,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
                 <span class="flex">
                   <a
                     href="/Lektion1/4.-Implementation/1.4.3-Serialisierung/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     1.4.3 Serialisierung
                   </a>
@@ -1188,75 +1181,298 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>1.1. Vision</h1>
+    <h1>1.4.3 Serialisierung</h1>
     <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#jadventure-vision">JAdventure Vision</a></li>
+    <li><a href="#einfache-serialisierung-mit-gson">Einfache Serialisierung mit Gson</a></li>
+    <li><a href="#serialisierung-von-abgeleiteten-klassen">Serialisierung von abgeleiteten Klassen</a>
+      <ul>
+        <li><a href="#speichern-des-namens-der-klasse">Speichern des Namens der Klasse</a></li>
+        <li><a href="#adapter-für-savedobject">Adapter für SavedObject</a>
+          <ul>
+            <li><a href="#serialisieren-einer-savedobject-instanz">Serialisieren einer SavedObject instanz</a></li>
+            <li><a href="#deserialisieren">Deserialisieren</a></li>
+          </ul>
+        </li>
+        <li><a href="#veränderungen-an-den-entities">Veränderungen an den Entities</a></li>
+      </ul>
+    </li>
+    <li><a href="#zweites-problem-zirkuläre-referenz">Zweites Problem: Zirkuläre Referenz</a>
+      <ul>
+        <li><a href="#interface-container">Interface Container</a></li>
+      </ul>
+    </li>
+    <li><a href="#serialisierung-von-listen-mit-gameobjects">Serialisierung von Listen mit GameObjects</a></li>
   </ul>
 </nav>
       <hr />
     </div>
-<iframe id="video1" width="800" height="460"></iframe>
-<script>
-  var iframe = document.getElementById("video1");
-  var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-  iframeDoc.body.innerHTML = "<img src=\"\/files\/video-images\/1.1-vision.png\" width=\"100%\">";
-  function peertube() {
-    iframe.src="https:\/\/cliptube.org\/a\/konradn";
-  }
-  function youtube() {
-    iframe.src="";
-    console.log("");
-  }
-</script>
-<div class="table-wrap"> <table> 
-  <tr>
-    <td>
-      <a href="javascript:peertube()">PeerTube (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-    </td>
-    <td>
-      <a href="javascript:youtube()">YouTube (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-    </td>
-    
-      <td span=2><a href="/files/pp/JAdventure_1.1-Vision.pptx"> PowerPoint Präsentation <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a></td>
-    
-  </tr> 
-</table> </div>
-
 <div class="gdoc-page__anchorwrap">
-    <h1 id="jadventure-vision">
-        JAdventure Vision
-        <a data-clipboard-text="https://jadventure.de/Lektion1/1.Vision/#jadventure-vision" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JAdventure Vision" aria-label="Anchor to: JAdventure Vision" href="#jadventure-vision">
+    <h1 id="einfache-serialisierung-mit-gson">
+        Einfache Serialisierung mit Gson
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#einfache-serialisierung-mit-gson" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Einfache Serialisierung mit Gson" aria-label="Anchor to: Einfache Serialisierung mit Gson" href="#einfache-serialisierung-mit-gson">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
 </div>
-<p>JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game.
-Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird.
-In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert.
-Es gibt im Spiel Gegenstände.</p>
-<p>Es sind Interaktionen möglich:</p>
+<p>Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="o">....;</span> <span class="c1">// Beliebige Initialisierung
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">String</span> <span class="n">json</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">level</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// Serialisierung
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">json</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// Deserialisierung
+</span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="serialisierung-von-abgeleiteten-klassen">
+        Serialisierung von abgeleiteten Klassen
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#serialisierung-von-abgeleiteten-klassen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisierung von abgeleiteten Klassen" aria-label="Anchor to: Serialisierung von abgeleiteten Klassen" href="#serialisierung-von-abgeleiteten-klassen">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Problematisch wird dies aber, wenn ich nicht weiss, von welcher Klasse genau das JSON stammt. Wenn es also eine von Level abgeleitete Klasse geben sollte, dann würde man bei der Serialisierung nur Elemente von Level serialisieren und beim Deserialisieren würde man eine Instanz von Level bekommen.</p>
+<p>Um dieses Problem zu lösen gibt es mehrere Ansätze. Da wir aber vermeiden sollen, dass sich jede Klasse bei Gson registrieren muss, wollen wir einen mehr generischen Ansatz:</p>
+<p>Bei jeder Serialisierung wird der Name der Klasse mit serialisiert.
+Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json zum deserialisieren dieser Klasse verwendet.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="speichern-des-namens-der-klasse">
+        Speichern des Namens der Klasse
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#speichern-des-namens-der-klasse" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Speichern des Namens der Klasse" aria-label="Anchor to: Speichern des Namens der Klasse" href="#speichern-des-namens-der-klasse">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Jeder Klasse, die gepeichert werden soll, soll auch den Namen der Klasse enthalten. Eine Möglichkeit ist dabei einfach ein Feld, das den Namen der Klasse enthält. Dies hätte auch den Vorteil, dass wir bei der Serialisierung keinen Adapter benötigen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * An instance that can be saved through an Adapter and contains the name of the class as field.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">SavedObject</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Class name of the instance.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">type</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Hinweise:</p>
 <ul>
-<li>Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen)</li>
-<li>Spieler können Gegenstände nutzen (z.B. Anziehen von Rüstungen, nutzen von Waffen, &hellip;)</li>
-<li>Spieler können NPCs bekämpfen (so diese Bekämpfbar sind)</li>
-<li>Spieler können untereinander Handel treiben oder mit NPCs handeln.</li>
-<li>Spieler sollen NPCs steuern können (z.B. ein dressierter Hund)</li>
+<li>Hier wurde schon der Adapter mit angegeben, den wir im Anschluss noch erstellen.</li>
+<li>Streng genommen könnte man auf die Instanzvariable type verzichten und dieses Element im Adapter ins Json schreiben.</li>
 </ul>
-<p>Bei der Benutzeroberfläche soll der Spieler in die Anzeige hinein und hinaus zoomen können.
-Der Spieler soll seine Figur steuern können per Mausclick auf die Karte oder per Tastenbefehle.</p>
-<p>Es soll Aktionen über Zeit geben:</p>
-<ul>
-<li>z.B. eine Wiederherstellung von Lebenspunkten außerhalb des Kampfes</li>
-<li>Rückgängig-Machen von Veränderungen nach gewisser Zeit (z.B. verschwinden Tote Figuren nach gewisser Zeit. Ein NPC erscheint nach gewisser Zeit erneut, nach dem er erschlagen wurde.)</li>
-<li>Es gibt automatische Aktionen von NPCs (z.B. Bewegung nach vorgegebenem Script oder zufällig)</li>
-</ul>
-<p>Diese Ideen lassen sich weiter fortsetzen. Zu so eine Vision könnten prinzipiell auch schon Visualisierungen gehören, also z.B. eine Skizze, wie so ein Frontend aussehen könnte. Erste Grafiken könnten gezeigt werden. Halt Dinge, die den Beteiligten helfen, eine bessere Vorstellung von der Vision zu bekommen.</p>
-
+<div class="gdoc-page__anchorwrap">
+    <h2 id="adapter-für-savedobject">
+        Adapter für SavedObject
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#adapter-für-savedobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Adapter für SavedObject" aria-label="Anchor to: Adapter für SavedObject" href="#adapter-f%c3%bcr-savedobject">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Um einen Adapter zu implementieren schreiben wir eine Klasse, die JsonSerializer und JsonDeserializer implementiert:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span></code></pre></div><p>Zur Implementation gehören dann die Methoden zum serialisieren und deserialisieren.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="serialisieren-einer-savedobject-instanz">
+        Serialisieren einer SavedObject instanz
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#serialisieren-einer-savedobject-instanz" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisieren einer SavedObject instanz" aria-label="Anchor to: Serialisieren einer SavedObject instanz" href="#serialisieren-einer-savedobject-instanz">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Bei der genannten Veriante haben wir bereits gesagt: Die Instanz muss einfach als genau ihre Klasse serialisiert werden.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes an SavedObject to JSON. Makes sure that the serialization is using the correct class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object Object to serialize.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">object</span><span class="o">,</span> <span class="n">object</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="deserialisieren">
+        Deserialisieren
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#deserialisieren" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Deserialisieren" aria-label="Anchor to: Deserialisieren" href="#deserialisieren">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Beim Deserialisieren müssen dann erst auslesen, welche Klasse genau serialisiert wurde um dann diese Klasse zu lesen.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Es wird erst der Typ ausgelesen. Dazu wurde eine Hilfsmethode getType geschrieben:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the type for a given name.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param typeElem JsonElement with classname inside.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the class is not available / known.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Type</span> <span class="nf">typeForName</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeElem</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">typeElem</span><span class="o">.</span><span class="na">getAsString</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Im Anschluss wird vom Element mit dem Type eine Klasse geholt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the type for a given name.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param typeElem JsonElement with classname inside.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the class is not available / known.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Type</span> <span class="nf">typeForName</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeElem</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">typeElem</span><span class="o">.</span><span class="na">getAsString</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Damit können wir nun beliebige Elemente Serialisieren, die von SavedObject erben.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="veränderungen-an-den-entities">
+        Veränderungen an den Entities
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#veränderungen-an-den-entities" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Veränderungen an den Entities" aria-label="Anchor to: Veränderungen an den Entities" href="#ver%c3%a4nderungen-an-den-entities">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Nun können wir GameObject und Level von SavedObject ableiten.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="zweites-problem-zirkuläre-referenz">
+        Zweites Problem: Zirkuläre Referenz
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#zweites-problem-zirkuläre-referenz" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Zweites Problem: Zirkuläre Referenz" aria-label="Anchor to: Zweites Problem: Zirkuläre Referenz" href="#zweites-problem-zirkul%c3%a4re-referenz">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Ein weiteres Problem ist die zirkuläre Referenz: Level hat eine Liste von GameObjects, die im Level sind. Jedes GameObject hat in position aber auch eine Referenz zu dem Objekt, in dem es ist.</p>
+<p>Damit die Serialisierung klappt, haben wir die parent Referent transient gemacht: Dadurch wird diese Referenz nicht mit serialisiert.</p>
+<p>Dieses Problem müssen wir nun auch noch lösen. Eine Möglichkeit ist, dass wir Klassen, welche solche Child Objekte haben, erkennen können. Dann könnten wir bei der Deserialisierung darauf prüfen und ggf. die Children durch gehen.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="interface-container">
+        Interface Container
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#interface-container" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Interface Container" aria-label="Anchor to: Interface Container" href="#interface-container">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Zur Erkennung solcher Klassen führen wir einfach ein Interface Container ein:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * A Container has a list of GameObject as children.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Container</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the List of GameObject children.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return List of GameObjects.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="nf">getChildren</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Dieses Interface implementiert dann Level.</p>
+<p>In der Deserialisierung von SavedObjects können wir dies nun noch abprüfen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">setParentReferencesIfRequired</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * The parent reference inside the Position of a GameObject is transient and is not saved.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * So when deserializing a container, we have to set the parent again.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object SavedObject to check and set Parent if required.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setParentReferencesIfRequired</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="k">instanceof</span> <span class="n">Container</span> <span class="n">container</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">container</span><span class="o">.</span><span class="na">getChildren</span><span class="o">().</span><span class="na">stream</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">GameObject</span><span class="o">::</span><span class="n">getPosition</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">Objects</span><span class="o">::</span><span class="n">nonNull</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">p</span> <span class="o">-&gt;</span> <span class="n">p</span><span class="o">.</span><span class="na">setParent</span><span class="o">(</span><span class="n">container</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Bei der Deserialisierung wird eine Methode aufgerufen, die bei einem Container alle Elemente durchgeht und wenn diese eine Position haben, dann wird in der Position die Parent Instanz gesetzt.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="serialisierung-von-listen-mit-gameobjects">
+        Serialisierung von Listen mit GameObjects
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#serialisierung-von-listen-mit-gameobjects" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisierung von Listen mit GameObjects" aria-label="Anchor to: Serialisierung von Listen mit GameObjects" href="#serialisierung-von-listen-mit-gameobjects">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Nun müssen wir natürlich noch sicher gehen, dass bei der Serialisierung von einer Liste mit SaveObjects diese auch korrekt gespeichert bzw. geladen wird. Dazu schreiben wir auch einen kleinen Adapter, der bei der Serialisierung jedes Element mit der eigentliche Klasse serialisiert und bei der Deserialisierung dann dei Klasse verwendet, die es ist.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Gson Adapter to (de-)serialize a List of SavedObjects
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Prefix the List with @JsonAdapter(ListOfSavedObjectAdapter.class) to use this Adapter
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListOfSavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes a list of SavedInstance to JSON.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param list Object to serialize.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized list.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">list</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JsonArray</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">SavedObject</span> <span class="n">obj</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">array</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">array</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the list of SavedInstance from a json.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored list with elements with correct class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                                         <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonArray</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">JsonElement</span> <span class="n">element</span> <span class="o">:</span> <span class="n">array</span><span class="o">.</span><span class="na">asList</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">element</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
   </article>
 
 

@@ -2,6 +2,9 @@
 title: C1 - Gson
 ---
 
+| **Wichtig** | Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! |
+|-|-|
+
 Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - 
 <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank">JSON auf Wikipedia (extern) {{< de >}}</a>
 ).
