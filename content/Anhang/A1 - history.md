@@ -3,7 +3,7 @@ title: A1 - Versionierung des Kurses
 ---
 | Version | Datum | Veränderung |
 |-|-|-|
-| 0.0.6 | 31.01.2023 | Übungen am Ende eingefügt. <br> Dokumentation Unit Tests. |
+| 0.0.6 | 31.01.2023 | Übungen am Ende eingefügt. <br> Dokumentation Unit Tests. <br> Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten.|
 | 0.0.5 | 30.01.2023 | Überarbeitung PowerPoint Folien, Dokumentation Implementation |
 | 0.0.4 | 14.01.2023 | Vorbereitung weitere Anhänge (Maven / Clean Code) |
 | 0.0.3 | 13.01.2023 | Shortcodes / Partials für Flaggen und Einbindung Videos. |
