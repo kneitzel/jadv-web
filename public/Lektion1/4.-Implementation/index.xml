@@ -39,12 +39,34 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
     </item>
     
     <item>
-      <title>1.4.4 Entities und Klassendiagramm</title>
+      <title>1.4.4 Unit Test</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</guid>
+      <description>Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
+Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
+Dies bringt aber einige Nachteile mit sich:</description>
+    </item>
+    
+    <item>
+      <title>1.4.5 Entities und Klassendiagramm</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</guid>
       <description>Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org.</description>
+    </item>
+    
+    <item>
+      <title>1.4.6 Übungen</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-U%CC%88bungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-U%CC%88bungen/</guid>
+      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
+Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.
+Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein neues Projekt starten und die Klassen einmal selbt schreiben.</description>
     </item>
     
   </channel>

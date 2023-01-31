@@ -12,10 +12,11 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
-  <meta name="description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
-Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson." />
+  <meta name="description" content="Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
+Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
+Dies bringt aber einige Nachteile mit sich:" />
 
-    <title>1.4.3 Serialisierung | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>1.4.4 Unit Test | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -36,25 +37,23 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
     
   <meta
     property="og:title"
-    content="1.4.3 Serialisierung"
+    content="1.4.4 Unit Test"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
-Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson." />
+  <meta property="og:description" content="Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
+Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
+Dies bringt aber einige Nachteile mit sich:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/" />
+<meta property="og:url" content="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/" />
 
 <meta property="article:section" content="Lektion1" />
-    <meta
-      property="article:modified_time"
-      content="2023-01-30T18:08:52+01:00"
-    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="1.4.3 Serialisierung" />
-  <meta name="twitter:description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
-Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson." />
+<meta name="twitter:title" content="1.4.4 Unit Test" />
+  <meta name="twitter:description" content="Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
+Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
+Dies bringt aber einige Nachteile mit sich:" />
 
 
   <script type="application/ld+json">
@@ -62,23 +61,23 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Lektion1",
-      "name": "1.4.3 Serialisierung",
-      "url" : "https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/",
-      "headline": "1.4.3 Serialisierung",
-      "description": "Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:\nGson gson = new Gson(); Level level = ....; \/\/ Beliebige Initialisierung String json = gson.",
-      "wordCount" : "1276",
+      "name": "1.4.4 Unit Test",
+      "url" : "https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/",
+      "headline": "1.4.4 Unit Test",
+      "description": "Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:\nManuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.\nDies bringt aber einige Nachteile mit sich:",
+      "wordCount" : "1362",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/"
+          "@id": "https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/"
       },
       "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-01-30T18:08:52.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -156,7 +155,7 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -601,7 +600,7 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
                 <span class="flex">
                   <a
                     href="/Lektion1/4.-Implementation/1.4.3-Serialisierung/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     1.4.3 Serialisierung
                   </a>
@@ -637,7 +636,7 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
                 <span class="flex">
                   <a
                     href="/Lektion1/4.-Implementation/1.4.4-UnitTests/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     1.4.4 Unit Test
                   </a>
@@ -1257,298 +1256,338 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>1.4.3 Serialisierung</h1>
+    <h1>1.4.4 Unit Test</h1>
     <div class="gdoc-toc gdoc-toc__level--3">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#einfache-serialisierung-mit-gson">Einfache Serialisierung mit Gson</a></li>
-    <li><a href="#serialisierung-von-abgeleiteten-klassen">Serialisierung von abgeleiteten Klassen</a>
+    <li><a href="#testumfang">Testumfang</a></li>
+    <li><a href="#level">Level</a></li>
+    <li><a href="#savedobjectadapter">SavedObjectAdapter</a>
       <ul>
-        <li><a href="#speichern-des-namens-der-klasse">Speichern des Namens der Klasse</a></li>
-        <li><a href="#adapter-für-savedobject">Adapter für SavedObject</a>
-          <ul>
-            <li><a href="#serialisieren-einer-savedobject-instanz">Serialisieren einer SavedObject instanz</a></li>
-            <li><a href="#deserialisieren">Deserialisieren</a></li>
-          </ul>
-        </li>
-        <li><a href="#veränderungen-an-den-entities">Veränderungen an den Entities</a></li>
+        <li><a href="#test-der-serialisierung">Test der Serialisierung</a></li>
+        <li><a href="#test-der-serialisierung-mit-savedobject">Test der Serialisierung mit SavedObject</a></li>
+        <li><a href="#test-der-deserialisierung">Test der Deserialisierung</a></li>
+        <li><a href="#test-des-fehlers-klasse-nicht-vorhanden">Test des Fehlers: Klasse nicht vorhanden</a></li>
       </ul>
     </li>
-    <li><a href="#zweites-problem-zirkuläre-referenz">Zweites Problem: Zirkuläre Referenz</a>
+    <li><a href="#listofsavedobjectadapter">ListOfSavedObjectAdapter</a>
       <ul>
-        <li><a href="#interface-container">Interface Container</a></li>
+        <li><a href="#serialisierung">Serialisierung</a></li>
+        <li><a href="#deserialisierung">Deserialisierung</a></li>
       </ul>
     </li>
-    <li><a href="#serialisierung-von-listen-mit-gameobjects">Serialisierung von Listen mit GameObjects</a></li>
+    <li><a href="#test-objekte">Test Objekte</a></li>
   </ul>
 </nav>
       <hr />
     </div>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="einfache-serialisierung-mit-gson">
-        Einfache Serialisierung mit Gson
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#einfache-serialisierung-mit-gson" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Einfache Serialisierung mit Gson" aria-label="Anchor to: Einfache Serialisierung mit Gson" href="#einfache-serialisierung-mit-gson">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="o">....;</span> <span class="c1">// Beliebige Initialisierung
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">String</span> <span class="n">json</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">level</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// Serialisierung
-</span></span></span><span class="line"><span class="cl"><span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">json</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// Deserialisierung
-</span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h1 id="serialisierung-von-abgeleiteten-klassen">
-        Serialisierung von abgeleiteten Klassen
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#serialisierung-von-abgeleiteten-klassen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisierung von abgeleiteten Klassen" aria-label="Anchor to: Serialisierung von abgeleiteten Klassen" href="#serialisierung-von-abgeleiteten-klassen">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Problematisch wird dies aber, wenn ich nicht weiss, von welcher Klasse genau das JSON stammt. Wenn es also eine von Level abgeleitete Klasse geben sollte, dann würde man bei der Serialisierung nur Elemente von Level serialisieren und beim Deserialisieren würde man eine Instanz von Level bekommen.</p>
-<p>Um dieses Problem zu lösen gibt es mehrere Ansätze. Da wir aber vermeiden sollen, dass sich jede Klasse bei Gson registrieren muss, wollen wir einen mehr generischen Ansatz:</p>
-<p>Bei jeder Serialisierung wird der Name der Klasse mit serialisiert.
-Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json zum deserialisieren dieser Klasse verwendet.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="speichern-des-namens-der-klasse">
-        Speichern des Namens der Klasse
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#speichern-des-namens-der-klasse" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Speichern des Namens der Klasse" aria-label="Anchor to: Speichern des Namens der Klasse" href="#speichern-des-namens-der-klasse">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>Jeder Klasse, die gepeichert werden soll, soll auch den Namen der Klasse enthalten. Eine Möglichkeit ist dabei einfach ein Feld, das den Namen der Klasse enthält. Dies hätte auch den Vorteil, dass wir bei der Serialisierung keinen Adapter benötigen:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * An instance that can be saved through an Adapter and contains the name of the class as field.
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span>
-</span></span><span class="line"><span class="cl"><span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">SavedObject</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Class name of the instance.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Getter</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">type</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Hinweise:</p>
+<p>Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:</p>
+<p><strong>Manuelle Tests</strong>
+Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.</p>
+<p>Dies bringt aber einige Nachteile mit sich:</p>
 <ul>
-<li>Hier wurde schon der Adapter mit angegeben, den wir im Anschluss noch erstellen.</li>
-<li>Streng genommen könnte man auf die Instanzvariable type verzichten und dieses Element im Adapter ins Json schreiben.</li>
+<li>Es ist nur möglich, wenn ich etwas starten kann zum testen.</li>
+<li>Es ist sehr zeitaufwendig, manuell alles zu testen. Und es ist auch sehr schwer, alle Möglichkeiten durchzutesten.</li>
 </ul>
+<p><strong>Unit Tests</strong>
+Unit Tests sind die einfachste Art von automatisierten Tests. Hier werden die kleinsten Einheiten (Units) getestet. Dabei wird darauf geachtet, dass alle Möglichkeiten, wie z.B. eine Methode durchlaufen werden kann, auch wirklich durchlaufen werden. So kann sicher gestellt werden, dass es keinen ungetesteten Code gibt.</p>
+<p>Im Folgenden werden wir die Unit Tests betrachten, die im Rahmen des bisherigen Codes geschrieben wurden.</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="adapter-für-savedobject">
-        Adapter für SavedObject
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#adapter-für-savedobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Adapter für SavedObject" aria-label="Anchor to: Adapter für SavedObject" href="#adapter-f%c3%bcr-savedobject">
+    <h1 id="testumfang">
+        Testumfang
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#testumfang" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Testumfang" aria-label="Anchor to: Testumfang" href="#testumfang">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Generell sollten wir jeden Code, den wir schreiben, auch mit Unit Tests testen. In der Praxis wird aber oft auch Code generiert. Dies ist z.B. bei unseren Entities der Fall.</p>
+<p>Wenn wir uns z.B. die folgende KLasse ansehen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Rectangle Size
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">RectangleSize</span> <span class="kd">extends</span> <span class="n">Size</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Width of the object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">width</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Height of the object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>dann sehen wir nur zwei Instanzvariablen. Durch Lombok wird aber einiges an Code generiert:</p>
+<ul>
+<li>Konstruktoren</li>
+<li>Getter</li>
+<li>Setter</li>
+<li>toString</li>
+<li>hashCode und equals</li>
+</ul>
+<p>Somit ist in der Klasse auch einiges an Code. Ich vertrete die Auffassung, dass generierter Code nicht explizit getestet werden muss. Es wird sich darauf verlassen, dass der Code korrekt funktioniert. Bei der Beispielklasse macht es keinen Sinn zu Prüfen, ob getWidth() wirklich den Inhalt der Variable width zurück gibt und dass man diesen Wert mit setWidth neu setzen kann.
+Kritischer kann es sein, dass man die Funktionalität von equals auch testet. Hier wäre ggf. durch falsche oder fehlende Implementationen ein falsches Verhalten bekommt. Hier vertrete ich die Meinung: Sobald ich ein Verhalten benötige, das von dem üblichen Verhalten abweicht, dann schreibe ich den Code selbst und teste diesen auch.</p>
+<p>Damit haben wir aber die Erklärung, wieso die meisten Entity Klassen keinen Unit-Test haben. Und wieso bei einem &ldquo;Run all Unit Tests with Coverage&rdquo; der Namespace mit den Entities eher schlecht aussieht:
+<img src="../1.4.4Coverage.png"></img></p>
+<p>Die 68% der Methoden und nur 74% der Zeilen in den Entities in ord.jadv.model sind getestet worden. Das ist eine Quote unterhalb der oft anvisierten 80% - aber in diesem Bereich akzeptabel.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="level">
+        Level
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#level" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Level" aria-label="Anchor to: Level" href="#level">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>In der Klasse Level haben wir Methoden, die wir testen können:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * JAdventure Level
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="kd">extends</span> <span class="n">SavedObject</span> <span class="kd">implements</span> <span class="n">Container</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">...</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">removeObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">GameObject</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">objects</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">GameObject</span> <span class="n">obj</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">objects</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">obj</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(</span><span class="k">new</span> <span class="n">Position</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">,</span> <span class="k">this</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="nf">getChildren</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">objects</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Wir haben hier also ein klares Verhalten, welches getestet werden muss:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Tests the logic of the Level class.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LevelTest</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Tests the adding of an object to the level
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * &lt;remark&gt;
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *     After adding an object to the level at a specified point, the position of the object must be correct.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * &lt;/remark&gt;
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testAddObject</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject&#34;</span><span class="o">).</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assertAll</span><span class="o">(</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="n">level</span><span class="o">,</span> <span class="n">level</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getParent</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">level</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getX</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">level</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getY</span><span class="o">()));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Tests that objects can be removed from a level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testRemoveObject</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj1</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject&#34;</span><span class="o">).</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj1</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj2</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject2&#34;</span><span class="o">).</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">removeObject</span><span class="o">(</span><span class="n">obj2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">level</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">size</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Wir testen also die beiden Methoden addObject und RemoveObject.</p>
+<p>Was fehlt ist ein Unit Test für die Methode getChildren. Diesen Test könntest Du im Rahmen einer Übung schreiben. Ab Lektion 2 wird sich ein Unit Tests für diese Methode auch im Source finden.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="savedobjectadapter">
+        SavedObjectAdapter
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#savedobjectadapter" class="gdoc-page__anchor clip flex align-center" title="Anchor to: SavedObjectAdapter" aria-label="Anchor to: SavedObjectAdapter" href="#savedobjectadapter">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Wir haben einen SavedObjectAdapter und wir müssen nun noch testen, dass dieser wirklich das macht, was wir erwarten.</p>
+<p>Dazu brauchen wir mehrere Tests:</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="test-der-serialisierung">
+        Test der Serialisierung
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#test-der-serialisierung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Test der Serialisierung" aria-label="Anchor to: Test der Serialisierung" href="#test-der-serialisierung">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Um einen Adapter zu implementieren schreiben wir eine Klasse, die JsonSerializer und JsonDeserializer implementiert:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="o">{</span>
-</span></span></code></pre></div><p>Zur Implementation gehören dann die Methoden zum serialisieren und deserialisieren.</p>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="serialisieren-einer-savedobject-instanz">
-        Serialisieren einer SavedObject instanz
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#serialisieren-einer-savedobject-instanz" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisieren einer SavedObject instanz" aria-label="Anchor to: Serialisieren einer SavedObject instanz" href="#serialisieren-einer-savedobject-instanz">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div>
-<p>Bei der genannten Veriante haben wir bereits gesagt: Die Instanz muss einfach als genau ihre Klasse serialisiert werden.</p>
+<p>Wir sollen sicher stellen, dass sich ein Objekt ganz normal mit seiner Klasse serialisieren lässt. Wir erstellen also einfach eine Instanz einer Klasse, die von SavedObject erbt und serialisieren diese.</p>
+<p>Eine einfache kleine Klasse wäre z.B. RectangleSize.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes an SavedObject to JSON. Makes sure that the serialization is using the correct class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object Object to serialize.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Test serialization of a SavedObject instance.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">object</span><span class="o">,</span> <span class="n">object</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testSerialization</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">jsonRSize</span> <span class="o">=</span> <span class="s">&#34;{\&#34;width\&#34;:123,\&#34;height\&#34;:50,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;}&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">RectangleSize</span> <span class="n">rSize</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">123</span><span class="o">,</span> <span class="mi">50</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assertEquals</span><span class="o">(</span><span class="n">jsonRSize</span><span class="o">,</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">rSize</span><span class="o">,</span> <span class="n">RectangleSize</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h3 id="deserialisieren">
-        Deserialisieren
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#deserialisieren" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Deserialisieren" aria-label="Anchor to: Deserialisieren" href="#deserialisieren">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div>
-<p>Beim Deserialisieren müssen dann erst auslesen, welche Klasse genau serialisiert wurde um dann diese Klasse zu lesen.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Es wird erst der Typ ausgelesen. Dazu wurde eine Hilfsmethode getType geschrieben:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the type for a given name.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param typeElem JsonElement with classname inside.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the class is not available / known.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Type</span> <span class="nf">typeForName</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeElem</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">typeElem</span><span class="o">.</span><span class="na">getAsString</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Im Anschluss wird vom Element mit dem Type eine Klasse geholt:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the type for a given name.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param typeElem JsonElement with classname inside.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the class is not available / known.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Type</span> <span class="nf">typeForName</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeElem</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">typeElem</span><span class="o">.</span><span class="na">getAsString</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Damit können wir nun beliebige Elemente Serialisieren, die von SavedObject erben.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="veränderungen-an-den-entities">
-        Veränderungen an den Entities
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#veränderungen-an-den-entities" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Veränderungen an den Entities" aria-label="Anchor to: Veränderungen an den Entities" href="#ver%c3%a4nderungen-an-den-entities">
+    <h2 id="test-der-serialisierung-mit-savedobject">
+        Test der Serialisierung mit SavedObject
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#test-der-serialisierung-mit-savedobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Test der Serialisierung mit SavedObject" aria-label="Anchor to: Test der Serialisierung mit SavedObject" href="#test-der-serialisierung-mit-savedobject">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Nun können wir GameObject und Level von SavedObject ableiten.</p>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="zweites-problem-zirkuläre-referenz">
-        Zweites Problem: Zirkuläre Referenz
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#zweites-problem-zirkuläre-referenz" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Zweites Problem: Zirkuläre Referenz" aria-label="Anchor to: Zweites Problem: Zirkuläre Referenz" href="#zweites-problem-zirkul%c3%a4re-referenz">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Ein weiteres Problem ist die zirkuläre Referenz: Level hat eine Liste von GameObjects, die im Level sind. Jedes GameObject hat in position aber auch eine Referenz zu dem Objekt, in dem es ist.</p>
-<p>Damit die Serialisierung klappt, haben wir die parent Referent transient gemacht: Dadurch wird diese Referenz nicht mit serialisiert.</p>
-<p>Dieses Problem müssen wir nun auch noch lösen. Eine Möglichkeit ist, dass wir Klassen, welche solche Child Objekte haben, erkennen können. Dann könnten wir bei der Deserialisierung darauf prüfen und ggf. die Children durch gehen.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="interface-container">
-        Interface Container
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#interface-container" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Interface Container" aria-label="Anchor to: Interface Container" href="#interface-container">
+<p>Statt der konkreten Klasse können wir auch immer sagen, dass ein SavedObject serialisiert wird. Und die Erwartung ist, dass dann die Klasse korrekt serialisiert wird. Dazu schreiben wir einen weiteren Unit Test.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Test serialization of a SavedObject instance using SavedObject.class.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testSerializationWithSavedObject</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">jsonRSize</span> <span class="o">=</span> <span class="s">&#34;{\&#34;width\&#34;:123,\&#34;height\&#34;:50,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;}&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">RectangleSize</span> <span class="n">rSize</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">123</span><span class="o">,</span> <span class="mi">50</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assertEquals</span><span class="o">(</span><span class="n">jsonRSize</span><span class="o">,</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">rSize</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="test-der-deserialisierung">
+        Test der Deserialisierung
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#test-der-deserialisierung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Test der Deserialisierung" aria-label="Anchor to: Test der Deserialisierung" href="#test-der-deserialisierung">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Zur Erkennung solcher Klassen führen wir einfach ein Interface Container ein:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * A Container has a list of GameObject as children.
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Container</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the List of GameObject children.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return List of GameObjects.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="nf">getChildren</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Dieses Interface implementiert dann Level.</p>
-<p>In der Deserialisierung von SavedObjects können wir dies nun noch abprüfen:</p>
+<p>Nun gehen wir noch den umgekehrten Weg. Wir haben ein Json String und wissen nur, dass es ein SavedObject ist. Und bei der Deserialisierung erwarten wir, dass wir eine Instanz von RectangleSize zurück bekommen mit den richtigen Werten.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Test deserialization of a SavedObject instance.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">setParentReferencesIfRequired</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDeserialization</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">jsonRSize</span> <span class="o">=</span> <span class="s">&#34;{\&#34;width\&#34;:123,\&#34;height\&#34;:50,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;}&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">RectangleSize</span> <span class="n">rSize</span> <span class="o">=</span> <span class="o">(</span><span class="n">RectangleSize</span><span class="o">)</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">jsonRSize</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assertAll</span><span class="o">(</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">123</span><span class="o">,</span> <span class="n">rSize</span><span class="o">.</span><span class="na">getWidth</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">50</span><span class="o">,</span> <span class="n">rSize</span><span class="o">.</span><span class="na">getHeight</span><span class="o">())</span>
+</span></span><span class="line"><span class="cl">        <span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * The parent reference inside the Position of a GameObject is transient and is not saved.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * So when deserializing a container, we have to set the parent again.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object SavedObject to check and set Parent if required.
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="test-des-fehlers-klasse-nicht-vorhanden">
+        Test des Fehlers: Klasse nicht vorhanden
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#test-des-fehlers-klasse-nicht-vorhanden" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Test des Fehlers: Klasse nicht vorhanden" aria-label="Anchor to: Test des Fehlers: Klasse nicht vorhanden" href="#test-des-fehlers-klasse-nicht-vorhanden">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Wenn die Klasse über den Namen nicht gefunden werden kann, dann werfen wir eine JsonParseException. Dass dies funktioniert müssen wir nun auch noch testen. Dazu können wir uns ein json Strign bauen mit einem type Wert, den es als Klasse nicht gibt.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Test thrown exception if given type is unknown.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setParentReferencesIfRequired</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="k">instanceof</span> <span class="n">Container</span> <span class="n">container</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">container</span><span class="o">.</span><span class="na">getChildren</span><span class="o">().</span><span class="na">stream</span><span class="o">()</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">GameObject</span><span class="o">::</span><span class="n">getPosition</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">Objects</span><span class="o">::</span><span class="n">nonNull</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">p</span> <span class="o">-&gt;</span> <span class="n">p</span><span class="o">.</span><span class="na">setParent</span><span class="o">(</span><span class="n">container</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testExceptionWhenClassUnknown</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">json</span> <span class="o">=</span> <span class="s">&#34;{\&#34;type\&#34;:\&#34;does.not.exist.NonExistingClass\&#34;}&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assertThrows</span><span class="o">(</span><span class="n">JsonParseException</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">json</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Bei der Deserialisierung wird eine Methode aufgerufen, die bei einem Container alle Elemente durchgeht und wenn diese eine Position haben, dann wird in der Position die Parent Instanz gesetzt.</p>
+</span></span></code></pre></div><p>Damit hätten wir Unit Tests geschrieben. Und wenn wir uns die Coverage ansehen (Run all Tests with Coverage und dann im Coverage Toolfenster), dann sehen wir: 100% Coverage bei SavedObjectAdapter.</p>
 <div class="gdoc-page__anchorwrap">
-    <h1 id="serialisierung-von-listen-mit-gameobjects">
-        Serialisierung von Listen mit GameObjects
-        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#serialisierung-von-listen-mit-gameobjects" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisierung von Listen mit GameObjects" aria-label="Anchor to: Serialisierung von Listen mit GameObjects" href="#serialisierung-von-listen-mit-gameobjects">
+    <h1 id="listofsavedobjectadapter">
+        ListOfSavedObjectAdapter
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#listofsavedobjectadapter" class="gdoc-page__anchor clip flex align-center" title="Anchor to: ListOfSavedObjectAdapter" aria-label="Anchor to: ListOfSavedObjectAdapter" href="#listofsavedobjectadapter">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
 </div>
-<p>Nun müssen wir natürlich noch sicher gehen, dass bei der Serialisierung von einer Liste mit SaveObjects diese auch korrekt gespeichert bzw. geladen wird. Dazu schreiben wir auch einen kleinen Adapter, der bei der Serialisierung jedes Element mit der eigentliche Klasse serialisiert und bei der Deserialisierung dann dei Klasse verwendet, die es ist.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * Gson Adapter to (de-)serialize a List of SavedObjects
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * Prefix the List with @JsonAdapter(ListOfSavedObjectAdapter.class) to use this Adapter
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListOfSavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes a list of SavedInstance to JSON.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param list Object to serialize.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized list.
+<p>Unser Adapter für eine List%lt;SavedObject&gt; muss nun auch noch getestet werden.</p>
+<p>Dazu nehmen wir eine Klasse, die so eine List enthält und serialisieren/deserialisieren diese.</p>
+<p>An Klassen haben wir bisher nur Level, daher nutzen wir diese Klasse.</p>
+<p>Der eigentliche Aufbau ist ansonsten ähnlich wie die bisherigen Tests. Daher dürften tiefere Erklärungen unnötig sein.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="serialisierung">
+        Serialisierung
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#serialisierung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Serialisierung" aria-label="Anchor to: Serialisierung" href="#serialisierung">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Tests the serialization of an Object (using class Level) that has a list of SavedObject.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">list</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JsonArray</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">SavedObject</span> <span class="n">obj</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">array</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">array</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testSerialization</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">jsonLevel</span> <span class="o">=</span> <span class="s">&#34;{\&#34;name\&#34;:\&#34;TestLevel\&#34;,\&#34;width\&#34;:1000,\&#34;height\&#34;:1000,\&#34;objects\&#34;:[{\&#34;name\&#34;:\&#34;TestObject\&#34;,\&#34;size\&#34;:{\&#34;width\&#34;:10,\&#34;height\&#34;:10,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;},\&#34;position\&#34;:{\&#34;x\&#34;:1,\&#34;y\&#34;:2},\&#34;type\&#34;:\&#34;org.jadv.model.objects.GameObject\&#34;},{\&#34;name\&#34;:\&#34;TestObject2\&#34;,\&#34;size\&#34;:{\&#34;width\&#34;:10,\&#34;height\&#34;:10,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;},\&#34;position\&#34;:{\&#34;x\&#34;:2,\&#34;y\&#34;:3},\&#34;type\&#34;:\&#34;org.jadv.model.objects.GameObject\&#34;}],\&#34;type\&#34;:\&#34;org.jadv.model.level.Level\&#34;}&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span><span class="mi">10</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">obj</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject2&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span><span class="mi">10</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl">                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the list of SavedInstance from a json.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored list with elements with correct class.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                         <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonArray</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">JsonElement</span> <span class="n">element</span> <span class="o">:</span> <span class="n">array</span><span class="o">.</span><span class="na">asList</span><span class="o">())</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">result</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">element</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">json</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">level</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">assertEquals</span><span class="o">(</span><span class="n">jsonLevel</span><span class="o">,</span> <span class="n">json</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="deserialisierung">
+        Deserialisierung
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#deserialisierung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Deserialisierung" aria-label="Anchor to: Deserialisierung" href="#deserialisierung">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Tests the deserialization of an Object (using class Level) that has a list of SavedObject.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDeserialization</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">jsonLevel</span> <span class="o">=</span> <span class="s">&#34;{\&#34;name\&#34;:\&#34;TestLevel\&#34;,\&#34;width\&#34;:1000,\&#34;height\&#34;:1000,\&#34;objects\&#34;:[{\&#34;name\&#34;:\&#34;TestObject\&#34;,\&#34;size\&#34;:{\&#34;width\&#34;:10,\&#34;height\&#34;:10,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;},\&#34;position\&#34;:{\&#34;x\&#34;:1,\&#34;y\&#34;:2},\&#34;type\&#34;:\&#34;org.jadv.model.objects.GameObject\&#34;},{\&#34;name\&#34;:\&#34;TestObject2\&#34;,\&#34;size\&#34;:{\&#34;width\&#34;:10,\&#34;height\&#34;:10,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;},\&#34;position\&#34;:{\&#34;x\&#34;:2,\&#34;y\&#34;:3},\&#34;type\&#34;:\&#34;org.jadv.model.objects.GameObject\&#34;}],\&#34;type\&#34;:\&#34;org.jadv.model.level.Level\&#34;}&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Level</span> <span class="n">level2</span> <span class="o">=</span> <span class="o">(</span><span class="n">Level</span><span class="o">)</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">jsonLevel</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">assertAll</span><span class="o">(</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getName</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">size</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="s">&#34;TestObject&#34;</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getName</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getX</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getY</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="n">level2</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getParent</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="s">&#34;TestObject2&#34;</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">).</span><span class="na">getName</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getX</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getY</span><span class="o">()),</span>
+</span></span><span class="line"><span class="cl">                <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertEquals</span><span class="o">(</span><span class="n">level2</span><span class="o">,</span> <span class="n">level2</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="mi">1</span><span class="o">).</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getParent</span><span class="o">())</span>
+</span></span><span class="line"><span class="cl">        <span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Und auch hier erhalten wir dann eine Coverage von 100% und können damit an dieser Stelle erst einmal zufrieden sein.</p>
+<p>Diese Unit Tests werden uns in zukünftigen Lektionen aber auch noch weiter beschäftigen.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="test-objekte">
+        Test Objekte
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/#test-objekte" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Test Objekte" aria-label="Anchor to: Test Objekte" href="#test-objekte">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Ein erster Punkt war, dass erste Objekte erzeugt werden. Wir haben im Rahmen der Unit Tests nun auch Level mit ersten GameObject erstellt. Das sind natürlich noch kein wirklich sinnvollen oder brauchbaren Elemente.</p>
+<p>Dies ist natürlich klar, da wir ja noch nicht wirklich viel implementiert haben. Daher haben wir die Test Objekte bisher auch rein als String Literale in den Tests. Die Json Strings werden aber zukünftig in Ressourcen wandern und somit tatsächlich als Dateien auch zur Verfügung stehen.</p>
+
   </article>
 
 

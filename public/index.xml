@@ -102,7 +102,18 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
     </item>
     
     <item>
-      <title>1.4.4 Entities und Klassendiagramm</title>
+      <title>1.4.4 Unit Test</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</guid>
+      <description>Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
+Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
+Dies bringt aber einige Nachteile mit sich:</description>
+    </item>
+    
+    <item>
+      <title>1.4.5 Entities und Klassendiagramm</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -111,12 +122,23 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
     </item>
     
     <item>
+      <title>1.4.6 Übungen</title>
+      <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-U%CC%88bungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-U%CC%88bungen/</guid>
+      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
+Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.
+Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein neues Projekt starten und die Klassen einmal selbt schreiben.</description>
+    </item>
+    
+    <item>
       <title>A1 - Versionierung des Kurses</title>
       <link>https://jadventure.de/Anhang/A1-history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/A1-history/</guid>
-      <description> Version Datum Veränderung 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos. 0.0.2 12.01.2023 Erste Vision vom JAdventure Projekt Anhang: Abkürzungen Flaggen bei externen Links zur Anzeige der Sprache Überarbeitung Lektion 1 Übersicht 0.0.1 11.01.2023 Erstellung des Hugo Rahmens Planung der Struktur Gitea Repository für Hugo Sourcen und Website konfiguriert </description>
+      <description> Version Datum Veränderung 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos. 0.0.2 12.01.2023 Erste Vision vom JAdventure Projekt Anhang: Abkürzungen Flaggen bei externen Links zur Anzeige der Sprache Überarbeitung Lektion 1 Übersicht 0.0.1 11.01.2023 Erstellung des Hugo Rahmens Planung der Struktur Gitea Repository für Hugo Sourcen und Website konfiguriert </description>
     </item>
     
     <item>
