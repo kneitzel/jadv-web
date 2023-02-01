@@ -1,5 +1,5 @@
 ---
-title: J1 - Java Grundlagen
+title: "J1 - Java Grundlagen"
 ---
 
 In diesem Anhang werden einzelne Java Grundlagen kurz erläutert. Dies dient nicht als Kurs sondern stellt nur ein reines Nachschlagewerk da.

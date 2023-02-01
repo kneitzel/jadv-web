@@ -1,5 +1,5 @@
 ---
-title: "1. Übersicht Projekt"
+title: "1. Erste Planungen / Implementationen"
 ---
 
 {{< toc >}}
