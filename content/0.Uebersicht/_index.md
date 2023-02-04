@@ -4,6 +4,8 @@ title: "0. Übersicht Inhalte"
 
 {{< toc >}}
 
+Hier findet sich eine kleine Übersicht über die Fertigstellung der einzelnen Lektionen sowie eine Liste der offenen Punkte bei bereits angefangenen Abschnitten.
+
 # Übersicht Lektionen
 
 | Lektionen | Inhalt |
