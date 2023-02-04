@@ -29,4 +29,4 @@ Legende: Fertig: {{< green >}}, In Arbeit: {{< yellow >}}, In Planung: {{< red >
 - J1 - Erste Java Grundlagen dokumentieren
 - J2 - Erste Java Klassen dokumentieren
 - P1 - Agiles Arbeiten im Detail dokumentieren (incl. PowerPoint und Video)
-- P2 - Clean Code übersicht (incl. PowerPoint und Video)
+- P2 - Clean Code Übersicht (incl. PowerPoint und Video)
