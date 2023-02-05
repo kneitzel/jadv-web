@@ -20,8 +20,8 @@ Bis die Arbeiten abgeschlossen sind, werden die PeerTube und YouTube Links nur a
 {{< video
 	id="video1" width="800" height="460" 
 	img="/files/video-images/0-der_kurs.png"
-	youtube=""
-	peertube="https://cliptube.org/a/konradn"
+	youtube="https://www.youtube.com/watch?v=Og0RKFXbfV4"
+	peertube="https://cliptube.org/w/mA3SXEMdstM4b6s1mxfyoi"
 	pp="/files/pp/JAdventure.pptx"
 >}}
 
