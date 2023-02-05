@@ -8,7 +8,7 @@ title: "1. Erste Planungen / Implementationen"
 {{< video 
 	id="video1" width="800" height="460" 
 	img="/files/video-images/1-übersicht.png"
-	youtube="https://youtu.be/embed/DtWiY4Jidmw"
+	youtube="https://youtu.be/DtWiY4Jidmw"
 	peertube="https://cliptube.org/w/2FdxtQd5BTc2g4pLBuEWNm"
 	pp="/files/pp/JAdventure_1-Übersicht.pptx"
 >}}
