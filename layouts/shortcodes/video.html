@@ -17,7 +17,7 @@
       <a href="javascript:peertube()">PeerTube (extern) {{ partial "de.html" . }}</a>
     </td>
     <td>
-      <a href="javascript:youtube()">YouTube (extern) {{ partial "de.html" . }}</a>
+      <a href="{{ .Get "youtube" }}" target="_blank">YouTube (extern) {{ partial "de.html" . }}</a>
     </td>
     {{ with .Get "pp" }}
       <td span=2><a href="{{ . }}"> PowerPoint Präsentation {{ partial "de.html" . }}</a></td>
