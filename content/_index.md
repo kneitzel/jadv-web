@@ -4,7 +4,7 @@ title: "JAdventure - Kurs zur Softwareentwicklung in Java"
 
 {{< toc >}}
 
-<img src="logo.png" width=50%></img>
+<img src="logo.png" width=25%></img>
 
 (Logo erzeugt von DALL-E)
 
