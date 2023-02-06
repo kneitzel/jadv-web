@@ -12,8 +12,10 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
+  <meta name="description" content="Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.
+Nutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten." />
 
-    <title>Tags | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>2.4. Clean Code: Kein doppelter Code! | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -34,19 +36,62 @@
     
   <meta
     property="og:title"
-    content="Tags"
+    content="2.4. Clean Code: Kein doppelter Code!"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jadventure.de/tags/" />
+  <meta property="og:description" content="Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.
+Nutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/" />
 
-
+<meta property="article:section" content="Lektion2" />
+    <meta
+      property="article:modified_time"
+      content="2023-02-06T19:49:00+01:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tags" />
+<meta name="twitter:title" content="2.4. Clean Code: Kein doppelter Code!" />
+  <meta name="twitter:description" content="Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.
+Nutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Lektion2",
+      "name": "2.4. Clean Code: Kein doppelter Code!",
+      "url" : "https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/",
+      "headline": "2.4. Clean Code: Kein doppelter Code!",
+      "description": "Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.\nNutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten.",
+      "wordCount" : "772",
+      "license": "CC BY-SA 4.0",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/"
+      },
+      "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2023-02-06T19:49:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "JAdventure - Kurs zur Softwareentwicklung",
+          "url": "https://jadventure.de/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://jadventure.de/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
@@ -111,7 +156,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/tags/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -741,7 +786,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-83951aca"
-                
+                checked
               
             />
             <label
@@ -915,7 +960,7 @@
                 <span class="flex">
                   <a
                     href="/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     2.4. Clean Code: Kein doppelter Code!
                   </a>
@@ -1599,14 +1644,6 @@
   </section>
 
   
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-      </ul>
-    </section>
-  
 
 
   <section class="gdoc-nav--more">
@@ -1773,19 +1810,234 @@
         <div class="gdoc-page">
           
   
+
+
   
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
-    
-  </div>
-  <div class="gdoc-paging__state">1/0</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
 
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-end
+  
+  hidden-mobile
+  hidden"
+  itemprop="breadcrumb"
+>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>2.4. Clean Code: Kein doppelter Code!</h1>
+    <div class="gdoc-toc gdoc-toc__level--3">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#nutzung-eines-generics-für-unterschiedliche-rückgabetypen">Nutzung eines Generics für unterschiedliche Rückgabetypen.</a></li>
+    <li><a href="#nutzung-von-parametern-im-konstruktor-für-unterschiedliche-werte">Nutzung von Parametern im Konstruktor für unterschiedliche Werte.</a></li>
+    <li><a href="#universelle-methode">Universelle Methode</a></li>
+    <li><a href="#nutzung-von-resourceservice">Nutzung von ResourceService</a></li>
+  </ul>
+</nav>
+      <hr />
+    </div>
+<p>Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="nutzung-eines-generics-für-unterschiedliche-rückgabetypen">
+        Nutzung eines Generics für unterschiedliche Rückgabetypen.
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/#nutzung-eines-generics-für-unterschiedliche-rückgabetypen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Nutzung eines Generics für unterschiedliche Rückgabetypen." aria-label="Anchor to: Nutzung eines Generics für unterschiedliche Rückgabetypen." href="#nutzung-eines-generics-f%c3%bcr-unterschiedliche-r%c3%bcckgabetypen">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten. Da dabei unterschiedliche Typen behandelt werden müssen, ist die Nutzung von Generics notwendig.</p>
+<p>So haben wir eine Methode, die in einer Klasse ein Image zurück gibt und in der anderen ein Level. Dies könnte der Generic R sein (R wie &ldquo;Rückgabe&rdquo;).</p>
+<p>Damit erhalten wir eine ersten Rahmen, der so aussehen könnte:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.services</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ResourceService</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">protected</span> <span class="n">R</span> <span class="nf">loadResource</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Damit hätte man schon eine Anpassung der bestehenden Klasse, die wie folgt aussehen könnte:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LevelService</span> <span class="kd">extends</span> <span class="n">ResourceService</span><span class="o">&lt;</span><span class="n">Level</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Level</span> <span class="nf">loadLevel</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="n">loadResource</span><span class="o">(</span><span class="n">resourceName</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="nutzung-von-parametern-im-konstruktor-für-unterschiedliche-werte">
+        Nutzung von Parametern im Konstruktor für unterschiedliche Werte.
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/#nutzung-von-parametern-im-konstruktor-für-unterschiedliche-werte" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Nutzung von Parametern im Konstruktor für unterschiedliche Werte." aria-label="Anchor to: Nutzung von Parametern im Konstruktor für unterschiedliche Werte." href="#nutzung-von-parametern-im-konstruktor-f%c3%bcr-unterschiedliche-werte">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Bei den Klassen war ein weiterer Unterschied, dass die verwendeten Konstanten nicht gleich waren. Die notwendigen Variablen können wir nun aber in Instanzvariablen ablegen welche über den Konstruktor gesetzt werden.</p>
+<p>Somit ergänzen wir die Klasse um zwei Instanzvariablen incl. Konstruktor.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.services</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ResourceService</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">prefix</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">ResourceService</span><span class="o">(</span><span class="n">String</span> <span class="n">prefix</span><span class="o">,</span> <span class="n">String</span> <span class="n">type</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">prefix</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">R</span> <span class="nf">loadResource</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Bei der Nutzung würde nun ein Konstruktor angegeben, der den Konstruktor der Oberklasse mit den beiden Konstanten aufruft.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="universelle-methode">
+        Universelle Methode
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/#universelle-methode" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Universelle Methode" aria-label="Anchor to: Universelle Methode" href="#universelle-methode">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Bleibt zuletzt nur noch die Methode, die gefüllt werden muss. Der grobe Rahmen ist erst einmal gleich, lediglich bei dem Lesen des InputStreams haben wir nun ein kleines Problem, da wir einmal Code brauchen, der ein Level zurück gibt und bei der anderen Klasse Code, der ein Image zurück gibt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">R</span> <span class="nf">loadResource</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">resourcePath</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="n">resourceName</span> <span class="o">+</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">(</span><span class="n">InputStream</span> <span class="n">inputStream</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">resourcePath</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">inputStream</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">// TODO: Was kann man hier machen?
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">exception</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Unable to load level resource: &#34;</span> <span class="o">+</span> <span class="n">resourcePath</span> <span class="o">+</span> <span class="s">&#34; (&#34;</span> <span class="o">+</span> <span class="n">exception</span><span class="o">.</span><span class="na">getMessage</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;)&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">exception</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>    
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Bei der Zeile TODO müssen wir etwas verändern, denn wir brauchen da irgend eine Funktion, die ein InputStream nimmt und dann ein &ldquo;R&rdquo; zurück gibt.</p>
+<p>Und damit haben wir schon die Lösung gefunden - wir können der Methode so eine Funktion übergeben: <a
+  class="gdoc-markdown__link"
+  href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html"
+>java.util.function.Function&lt;T,R&gt;</a> ist genau das, was wie benötigen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">R</span> <span class="nf">loadResource</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">,</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">InputStream</span><span class="o">,</span> <span class="n">R</span><span class="o">&gt;</span> <span class="n">function</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">resourcePath</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="n">resourceName</span> <span class="o">+</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">(</span><span class="n">InputStream</span> <span class="n">inputStream</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">resourcePath</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">inputStream</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">function</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">inputStream</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">exception</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Unable to load level resource: &#34;</span> <span class="o">+</span> <span class="n">resourcePath</span> <span class="o">+</span> <span class="s">&#34; (&#34;</span> <span class="o">+</span> <span class="n">exception</span><span class="o">.</span><span class="na">getMessage</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;)&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">exception</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></div><p>Damit erhalten wir nun eine fertige Klasse ResourceService</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.services</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.InputStream</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.function.Function</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ResourceService</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">prefix</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">ResourceService</span><span class="o">(</span><span class="n">String</span> <span class="n">prefix</span><span class="o">,</span> <span class="n">String</span> <span class="n">type</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">prefix</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">R</span> <span class="nf">loadResource</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">,</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">InputStream</span><span class="o">,</span> <span class="n">R</span><span class="o">&gt;</span> <span class="n">function</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">resourcePath</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="n">resourceName</span> <span class="o">+</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">(</span><span class="n">InputStream</span> <span class="n">inputStream</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">resourcePath</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">inputStream</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">function</span><span class="o">.</span><span class="na">apply</span><span class="o">(</span><span class="n">inputStream</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">exception</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Unable to load level resource: &#34;</span> <span class="o">+</span> <span class="n">resourcePath</span> <span class="o">+</span> <span class="s">&#34; (&#34;</span> <span class="o">+</span> <span class="n">exception</span><span class="o">.</span><span class="na">getMessage</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;)&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">exception</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="nutzung-von-resourceservice">
+        Nutzung von ResourceService
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/#nutzung-von-resourceservice" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Nutzung von ResourceService" aria-label="Anchor to: Nutzung von ResourceService" href="#nutzung-von-resourceservice">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Damit haben wir nun eine Basisklasse, die wir in unserebn bisherigen Services nutzen können:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.services</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.Gson</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.SavedObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.level.Level</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.InputStream</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Service to load SavedObject of a resource.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SavedObjectService</span> <span class="kd">extends</span> <span class="n">ResourceService</span><span class="o">&lt;</span><span class="n">Level</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * type of level resources.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">LEVEL_RESOURCE_TYPE</span> <span class="o">=</span> <span class="s">&#34;.json&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Resource path of level files.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">LEVEL_RESOURCE_PATH</span> <span class="o">=</span> <span class="s">&#34;/level/&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Creates a new instance of SavedObjectService.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">SavedObjectService</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">super</span><span class="o">(</span><span class="n">LEVEL_RESOURCE_PATH</span><span class="o">,</span> <span class="n">LEVEL_RESOURCE_TYPE</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Loads a Level of an InputStream
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param inputStream InputStream to load Level from.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return Loaded level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">protected</span> <span class="n">Level</span> <span class="nf">loadLevel</span><span class="o">(</span><span class="n">InputStream</span> <span class="n">inputStream</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">(</span><span class="n">Level</span><span class="o">)</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="k">new</span> <span class="n">InputStreamReader</span><span class="o">(</span><span class="n">inputStream</span><span class="o">),</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Loads a Level of a given resource name.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     *
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @param resourceName Name of the resource.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The level if resource was found, else null.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Level</span> <span class="nf">loadLevel</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">loadResource</span><span class="o">(</span><span class="n">resourceName</span><span class="o">,</span> <span class="k">this</span><span class="o">::</span><span class="n">loadLevel</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Die ImageService Klasse ist ebenso umzustellen. Dies bitte einfach als Übung selbst durchführen!</p>
+
+  </article>
 
 
 

@@ -127,9 +127,9 @@ Dies bringt aber einige Nachteile mit sich:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-Uebungen/</guid>
-      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
+      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
 Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.
-Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein neues Projekt starten und die Klassen einmal selbt schreiben.</description>
+Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein neues Projekt und schreibe die genannten Klassen ohne bei der fertigen Implementation zu &amp;ldquo;spicken&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -138,7 +138,51 @@ Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</guid>
-      <description> TODO TODO </description>
+      <description>Unit-Test für Level.getChildren() Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.
+Unit-Test für Level.getChildren() Bei der Methode getChildren() können wir so vorgehen:
+Wir legen einen Level mit einem GameObject an. Danach prüfen wir, dass GetChildren die Liste mit den GameObjects zurück liefert. /** * Tests the getObjects method.</description>
+    </item>
+    
+    <item>
+      <title>2.2. Erweiterung des Modells</title>
+      <link>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</guid>
+      <description>Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &amp;ldquo;graphicResource&amp;rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.
+Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic.</description>
+    </item>
+    
+    <item>
+      <title>2.3. Laden von Ressourcen</title>
+      <link>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</guid>
+      <description>Bereitstellung von Ressourcen Bilder Level Laden der Bilder Laden der Level Bereitstellung von Ressourcen Bilder Wir brauchen ein paar Bilder für unser Spiel, die wir als Ressourcen in unser Projekt unter src/main/resources einfügen:
+Eine Grafik für einen Level Hintergrung Mehrere Grafiken für Spielobjekte. Ich nutze dazu einfach die Grafiken, die ich bereits habe:
+Das Testlevel wurde mit von DALL-E generiert DALL-E hat mir einen Drachen generiert, bei dem ich den Hintergrund nur noch transparent machen muss (Ich habe das nur grob auf die Schnelle gemacht und die Qualität ist dementsprechendschlecht in dieser ersten Version.</description>
+    </item>
+    
+    <item>
+      <title>2.4. Clean Code: Kein doppelter Code!</title>
+      <link>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</guid>
+      <description>Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.
+Nutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten.</description>
+    </item>
+    
+    <item>
+      <title>2.5. Clean Code: JavaDoc</title>
+      <link>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</guid>
+      <description>Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.
+Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.
+In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten.</description>
     </item>
     
     <item>
@@ -147,7 +191,7 @@ Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/A1-history/</guid>
-      <description>Version Datum Veränderung 0.1.1 05.02.2023 Start der Inhalte für Lektion 2 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos.</description>
+      <description>Version Datum Veränderung 0.1.2 06.02.2023 Wechsel von Gitea zu GitHub 0.1.1 05.02.2023 Start der Inhalte für Lektion 2 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.</description>
     </item>
     
     <item>
@@ -166,6 +210,17 @@ Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein 
       
       <guid>https://jadventure.de/Anhang/A3-technology/</guid>
       <description> Website Hugo (extern) Ein Generator für statische Webseiten. Geekdocs (extern) Ein Hugo Template unter MIT Lizenz. Gitea (extern) Ein selbst gehosteter Git Service. Erstellung von Medien-Inhalten OBS Studio (extern) für Videoaufnahmen. iMovie von Apple zum Video-Schnitt und der Audio Nachbearbeitung Abricotine (extern) - ein Open Source Markdown Editor Apple MacBook Pro M1 UR 22 mk II von Steinberg zur Steuerung meine Microfons Entwicklung IntelliJ (extern) als Entwicklungsumgebung Maven (extern) als Build-Werkzeug </description>
+    </item>
+    
+    <item>
+      <title>DRY - Don&#39;t Repeat Yourself</title>
+      <link>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</guid>
+      <description>Doppelten Code erkennen Doppelten Code eliminieren Eine Fehlerquelle kann doppelter Code sein. Wenn etwas mehrfach im Code umgesetzt wurde, dann besteht die Gefahr, dass bei der Notwendigkeit einer Änderung nicht alle Stellen geändert werden.
+Desweiteren wird der Code dadurch unnötig aufgebläht und damit unübersichtlicher.
+Doppelten Code erkennen Im einfachsten Fall weist einen die Entwicklungsumgebung auf doppelten Code hin. IntelliJ markiert dann den Anfang eines Blockes und zeigt die Warnung an, dass die nächsten x Zeilen an anderer Stelle noch einmal vorkommen.</description>
     </item>
     
     <item>

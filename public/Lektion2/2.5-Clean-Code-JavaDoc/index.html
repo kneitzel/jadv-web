@@ -12,8 +12,11 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
+  <meta name="description" content="Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.
+Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.
+In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten." />
 
-    <title>Tags | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>2.5. Clean Code: JavaDoc | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -34,19 +37,64 @@
     
   <meta
     property="og:title"
-    content="Tags"
+    content="2.5. Clean Code: JavaDoc"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jadventure.de/tags/" />
+  <meta property="og:description" content="Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.
+Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.
+In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/" />
 
-
+<meta property="article:section" content="Lektion2" />
+    <meta
+      property="article:modified_time"
+      content="2023-02-06T19:49:00+01:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tags" />
+<meta name="twitter:title" content="2.5. Clean Code: JavaDoc" />
+  <meta name="twitter:description" content="Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.
+Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.
+In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Lektion2",
+      "name": "2.5. Clean Code: JavaDoc",
+      "url" : "https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/",
+      "headline": "2.5. Clean Code: JavaDoc",
+      "description": "Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.\nWir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.\nIn dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit \/** zu starten, um dann einen Rahmen für JavaDoc zu erhalten.",
+      "wordCount" : "122",
+      "license": "CC BY-SA 4.0",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/"
+      },
+      "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2023-02-06T19:49:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "JAdventure - Kurs zur Softwareentwicklung",
+          "url": "https://jadventure.de/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://jadventure.de/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
@@ -111,7 +159,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/tags/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -741,7 +789,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-83951aca"
-                
+                checked
               
             />
             <label
@@ -951,7 +999,7 @@
                 <span class="flex">
                   <a
                     href="/Lektion2/2.5-Clean-Code-JavaDoc/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     2.5. Clean Code: JavaDoc
                   </a>
@@ -1599,14 +1647,6 @@
   </section>
 
   
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-      </ul>
-    </section>
-  
 
 
   <section class="gdoc-nav--more">
@@ -1773,19 +1813,44 @@
         <div class="gdoc-page">
           
   
+
+
   
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
-    
-  </div>
-  <div class="gdoc-paging__state">1/0</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
 
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-end
+  
+  hidden-mobile
+  hidden"
+  itemprop="breadcrumb"
+>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>2.5. Clean Code: JavaDoc</h1>
+    <div class="gdoc-toc gdoc-toc__level--3">
+      <nav id="TableOfContents"></nav>
+      <hr />
+    </div>
+<p>Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.</p>
+<p>Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.</p>
+<p>In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten.</p>
+<p><strong>Übung</strong>: Kommentieren Sie die Klasse ResourceService mit JavaDoc Kommentaren. Kopieren Sie dazu zur Not den Code aus dem Abschnitt 2.3 um den Code zu kommentieren. Auf GitHub ist die Klasse bereits komplett Dokumentiert eingecheckt worden.5</p>
+
+  </article>
 
 
 

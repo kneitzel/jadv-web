@@ -12,8 +12,10 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
+  <meta name="description" content="Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &ldquo;graphicResource&rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.
+Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic." />
 
-    <title>Tags | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>2.2. Erweiterung des Modells | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -34,19 +36,62 @@
     
   <meta
     property="og:title"
-    content="Tags"
+    content="2.2. Erweiterung des Modells"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jadventure.de/tags/" />
+  <meta property="og:description" content="Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld “graphicResource”. Da dies einfach ein Name ist, ist dies einfach ein String.
+Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/" />
 
-
+<meta property="article:section" content="Lektion2" />
+    <meta
+      property="article:modified_time"
+      content="2023-02-06T19:49:00+01:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tags" />
+<meta name="twitter:title" content="2.2. Erweiterung des Modells" />
+  <meta name="twitter:description" content="Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld “graphicResource”. Da dies einfach ein Name ist, ist dies einfach ein String.
+Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Lektion2",
+      "name": "2.2. Erweiterung des Modells",
+      "url" : "https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/",
+      "headline": "2.2. Erweiterung des Modells",
+      "description": "Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld “graphicResource”. Da dies einfach ein Name ist, ist dies einfach ein String.\nLevel package org.jadv.model.level; \/\/ ... \/** * JAdventure Level *\/ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { \/\/ ... \/** * Height of the level. *\/ private int height; \/** * Resource name of a graphic.",
+      "wordCount" : "278",
+      "license": "CC BY-SA 4.0",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/"
+      },
+      "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2023-02-06T19:49:00.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "JAdventure - Kurs zur Softwareentwicklung",
+          "url": "https://jadventure.de/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://jadventure.de/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
@@ -111,7 +156,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/tags/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -741,7 +786,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-83951aca"
-                
+                checked
               
             />
             <label
@@ -843,7 +888,7 @@
                 <span class="flex">
                   <a
                     href="/Lektion2/2.2-Erweiterung-des-Models/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     2.2. Erweiterung des Modells
                   </a>
@@ -1599,14 +1644,6 @@
   </section>
 
   
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-      </ul>
-    </section>
-  
 
 
   <section class="gdoc-nav--more">
@@ -1773,19 +1810,171 @@
         <div class="gdoc-page">
           
   
+
+
   
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
-    
-  </div>
-  <div class="gdoc-paging__state">1/0</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
 
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-end
+  
+  hidden-mobile
+  hidden"
+  itemprop="breadcrumb"
+>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>2.2. Erweiterung des Modells</h1>
+    <div class="gdoc-toc gdoc-toc__level--3">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#level">Level</a></li>
+    <li><a href="#gameobject">GameObject</a></li>
+    <li><a href="#unit-tests">Unit Tests</a>
+      <ul>
+        <li><a href="#konstruktor-von-level-nimmt-nun-einen-parameter-mehr">Konstruktor von Level nimmt nun einen Parameter mehr</a></li>
+        <li><a href="#das-json-des-serialisierten-level-ändert-sich">Das JSON des serialisierten Level ändert sich</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+<p>Level und GameObject erhalten ein zusätzliches Feld &ldquo;graphicResource&rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="level">
+        Level
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/#level" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Level" aria-label="Anchor to: Level" href="#level">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.level</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * JAdventure Level
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="kd">extends</span> <span class="n">SavedObject</span> <span class="kd">implements</span> <span class="n">Container</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Height of the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">height</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Resource name of a graphic.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">graphicResource</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Game objects inside the level.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">ListOfSavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="n">objects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>(gekürzt auf die Änderungen)</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="gameobject">
+        GameObject
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/#gameobject" class="gdoc-page__anchor clip flex align-center" title="Anchor to: GameObject" aria-label="Anchor to: GameObject" href="#gameobject">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.model.objects</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">com.google.gson.annotations.JsonAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.*</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.Position</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.SavedObject</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.model.size.Size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.serialization.SavedObjectAdapter</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * An Object inside the JAdventure game.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Getter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Setter</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@ToString</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Builder</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span><span class="o">(</span><span class="n">callSuper</span><span class="o">=</span><span class="kc">true</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GameObject</span> <span class="kd">extends</span> <span class="n">SavedObject</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Name of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Size of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Size</span> <span class="n">size</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Position of the Object.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Position</span> <span class="n">position</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * Resource name of a graphic.
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">graphicResource</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="unit-tests">
+        Unit Tests
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/#unit-tests" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Unit Tests" aria-label="Anchor to: Unit Tests" href="#unit-tests">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Durch die Änderungen sind nun auch die Unit Tests anzupassen:</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="konstruktor-von-level-nimmt-nun-einen-parameter-mehr">
+        Konstruktor von Level nimmt nun einen Parameter mehr
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/#konstruktor-von-level-nimmt-nun-einen-parameter-mehr" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Konstruktor von Level nimmt nun einen Parameter mehr" aria-label="Anchor to: Konstruktor von Level nimmt nun einen Parameter mehr" href="#konstruktor-von-level-nimmt-nun-einen-parameter-mehr">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Beim Konstruktor der Klasse Level muss nun ein Parameter mehr angegeben werden. Daher fügen wir bei den Aufrufen als letzten Parameter noch &ldquo;testlevel&rdquo; hinzu.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="s">&#34;testlevel&#34;</span><span class="o">);</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="das-json-des-serialisierten-level-ändert-sich">
+        Das JSON des serialisierten Level ändert sich
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/#das-json-des-serialisierten-level-ändert-sich" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Das JSON des serialisierten Level ändert sich" aria-label="Anchor to: Das JSON des serialisierten Level ändert sich" href="#das-json-des-serialisierten-level-%c3%a4ndert-sich">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Das Feld graphicResource wird nun natürlich auch mit serialisiert und muss daher entsprechend mit aufgeführt werden. Dadurch ändert sich der JSON String in den Unit Tests von ListOfSavedObjectAdapterTest:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">String</span> <span class="n">jsonLevel</span> <span class="o">=</span> <span class="s">&#34;{\&#34;name\&#34;:\&#34;TestLevel\&#34;,\&#34;width\&#34;:1000,\&#34;height\&#34;:1000,\&#34;graphicResource\&#34;:\&#34;testlevel\&#34;,\&#34;objects\&#34;:[{\&#34;name\&#34;:\&#34;TestObject\&#34;,\&#34;size\&#34;:{\&#34;width\&#34;:10,\&#34;height\&#34;:10,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;},\&#34;position\&#34;:{\&#34;x\&#34;:1,\&#34;y\&#34;:2},\&#34;type\&#34;:\&#34;org.jadv.model.objects.GameObject\&#34;},{\&#34;name\&#34;:\&#34;TestObject2\&#34;,\&#34;size\&#34;:{\&#34;width\&#34;:10,\&#34;height\&#34;:10,\&#34;type\&#34;:\&#34;org.jadv.model.size.RectangleSize\&#34;},\&#34;position\&#34;:{\&#34;x\&#34;:2,\&#34;y\&#34;:3},\&#34;type\&#34;:\&#34;org.jadv.model.objects.GameObject\&#34;}],\&#34;type\&#34;:\&#34;org.jadv.model.level.Level\&#34;}&#34;</span><span class="o">;</span>
+</span></span></code></pre></div>
+  </article>
 
 
 

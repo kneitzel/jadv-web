@@ -12,7 +12,51 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</guid>
-      <description> TODO TODO </description>
+      <description>Unit-Test für Level.getChildren() Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.
+Unit-Test für Level.getChildren() Bei der Methode getChildren() können wir so vorgehen:
+Wir legen einen Level mit einem GameObject an. Danach prüfen wir, dass GetChildren die Liste mit den GameObjects zurück liefert. /** * Tests the getObjects method.</description>
+    </item>
+    
+    <item>
+      <title>2.2. Erweiterung des Modells</title>
+      <link>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</guid>
+      <description>Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &amp;ldquo;graphicResource&amp;rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.
+Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic.</description>
+    </item>
+    
+    <item>
+      <title>2.3. Laden von Ressourcen</title>
+      <link>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</guid>
+      <description>Bereitstellung von Ressourcen Bilder Level Laden der Bilder Laden der Level Bereitstellung von Ressourcen Bilder Wir brauchen ein paar Bilder für unser Spiel, die wir als Ressourcen in unser Projekt unter src/main/resources einfügen:
+Eine Grafik für einen Level Hintergrung Mehrere Grafiken für Spielobjekte. Ich nutze dazu einfach die Grafiken, die ich bereits habe:
+Das Testlevel wurde mit von DALL-E generiert DALL-E hat mir einen Drachen generiert, bei dem ich den Hintergrund nur noch transparent machen muss (Ich habe das nur grob auf die Schnelle gemacht und die Qualität ist dementsprechendschlecht in dieser ersten Version.</description>
+    </item>
+    
+    <item>
+      <title>2.4. Clean Code: Kein doppelter Code!</title>
+      <link>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</guid>
+      <description>Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.
+Nutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten.</description>
+    </item>
+    
+    <item>
+      <title>2.5. Clean Code: JavaDoc</title>
+      <link>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</guid>
+      <description>Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java Framework kennt.
+Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.
+In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten.</description>
     </item>
     
   </channel>
