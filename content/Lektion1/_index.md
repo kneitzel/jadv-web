@@ -19,7 +19,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
 
 In dieser ersten Lektion wird es nun weniger um Java sondern mehr um das Projekt gehen.
 
-Dabei sind mehrere Schritte sinnvoll und bilden eine Art Grundgerüst für ein agiles Vorgehen (Die konkreten agilen Verfahren habenn dies detailierter spezifiziert, aber der grobe Rahmen ist immer gleich). Diese Schritte werden in Zyklen immer wieder von Anfang an durchlaufen.
+Dabei sind mehrere Schritte sinnvoll und bilden eine Art Grundgerüst für ein agiles Vorgehen (die konkreten agilen Verfahren haben dies detaillierter spezifiziert, aber der grobe Rahmen ist immer gleich). Diese Schritte werden in Zyklen immer wieder von Anfang an durchlaufen.
 
 # 1. Vision
 Bei der Vision überlegen wir uns, was wir denn am Ende haben wollen. Wo wollen wir hin? Was sind unsere Träume? Hier ruhig alle Ideen aufsammeln. Ob, wie und in welchem Zeitrahmen diese umgesetzt werden können, ist dabei nebensächlich.
@@ -53,13 +53,13 @@ Dieses Backlog bildet sozusagen unseren Arbeitsvorrat und enthält die Dinge, di
 
 Wichtig ist, dass wir hier noch nicht sofort für alle Elemente in irgendwelche Details gehen. Dies kommt erst, sobald eine Story in Frage kommt für eine Implementierung.
 
-Sobald so ein Backlog Item in Frage kommt, muss überlegt werden, ob es bereits konkret genug formuliert wurde. Ist etwas zu allgemein oder zu umfangreich, dann muss dies in mehrere Features aufgeteilt werden. Ein Beispiel ist schnell konstuiert:
+Sobald so ein Backlog Item in Frage kommt, muss überlegt werden, ob es bereits konkret genug formuliert wurde. Ist etwas zu allgemein oder zu umfangreich, dann muss dies in mehrere Features aufgeteilt werden. Ein Beispiel ist schnell konstruiert:
 
 **Als Geschäftsführer möchte ich ein MMORPG haben, damit ich es verkaufen und damit viel Geld verdienen kann.**
 
 Hier ist sofort klar: Das ist nichts, das man behandeln kann.
 
-Um hier eien Aussage zu treffen werden die Backlog Items gewichtet: Jeder Eintrag bekommt eine Wertung. Hier sollte ein erste Aufwandsabschätzung erfolgen und dazu können alle Entwickler abstimmen. Dabei kann z.B mit Werten 1, 2, 4, 8 und unendlich gearbeitet werden. Hier geht es nicht um konkrete Aufwände sondern eine grobe Abschätzung untereinander - Eine Wertung 4 sollte ca. so lange dauern wie zwei Wertung 2 Einträge. Unendlich besagt, dass es auf jeden Fall weiter unterteilt werden muss.
+Um hier eine Aussage zu treffen werden die Backlog Items gewichtet: Jeder Eintrag bekommt eine Wertung. Hier sollte eine erste Aufwandsabschätzung erfolgen und dazu können alle Entwickler abstimmen. Dabei kann z.B mit Werten 1, 2, 4, 8 und unendlich gearbeitet werden. Hier geht es nicht um konkrete Aufwände, sondern eine grobe Abschätzung untereinander - Eine Wertung 4 sollte ca. so lange dauern wie zwei Wertung-2-Einträge. Unendlich besagt, dass es auf jeden Fall weiter unterteilt werden muss.
 
 ## Abhängigkeiten
 
@@ -67,7 +67,7 @@ Die einzelnen Backlog Items können Abhängigkeiten haben. So ist klar, dass ich
 
 ## Gewichtung
 
-Der Produkt Verantwortliche bewertet die einzelnen Einträge. Was ist ihm am wichtigsten? Was ist am unwichtigsten? In diese Bewertung können auch Kriterien einfließen wie der Aufwand, denn zwei 1er Einträge können natürlich mehr Wert haben als ein 2er Eintrag.
+Der Produktverantwortliche bewertet die einzelnen Einträge. Was ist ihm am wichtigsten? Was ist am unwichtigsten? In diese Bewertung können auch Kriterien einfließen wie der Aufwand, denn zwei 1er Einträge können natürlich mehr Wert haben als ein 2er Eintrag.
 
 Durch die Gewichtung und die Abhängigkeiten können die Backlog Items in eine klare Reihenfolge gebracht werden. Diese Reihenfolge dient der Priorisierung der Entwicklung.
 
@@ -77,9 +77,9 @@ Mit der Priorisierung der Backlock Entries kann nun die konkrete Entwicklung gep
 
 Diese top Elemente werden dann für die weitere Planung genommen und betrachtet.
 
-Für jeden Eintrag werden nun noch die Abnahmekriterien geprüft und vervollständigt. Es wird also klar gesagt, was erfüllt sein muss. Beim bewegen des Spielers über die Karte wäre das z.B., dass der Spieler keine Felder betreten kann, die blockiert sind.
+Für jeden Eintrag werden nun noch die Abnahmekriterien geprüft und vervollständigt. Es wird also klar gesagt, was erfüllt sein muss. Beim Bewegen des Spielers über die Karte wäre das z.B., dass der Spieler keine Felder betreten kann, die blockiert sind.
 
-Sobald dies mit dem Productowner erfolgt ist, können die Entwickler für sich jeden Eintrag in einzelne Tasks zerlegen: Was muss konkret getan werden, damit man diesen Backlog Entry erfüllt?
+Sobald dies mit dem Product Owner erfolgt ist, können die Entwickler für sich jeden Eintrag in einzelne Tasks zerlegen: Was muss konkret getan werden, damit man diesen Backlog Entry erfüllt?
 
 Jeder Task wird auch bezüglich des Zeitbedarfs bewertet. Ein Task sollte in der Regel in einem Tag oder weniger zu erfüllen sein. In Ausnahmefällen mag es auch etwas mehr sein, aber nie mehr wie zwei Tage!
 
@@ -90,13 +90,13 @@ Ergebnis dieser Phase ist dann eine Liste von Tasks, die abzuarbeiten sind.
 Der nächste Schritt ist die Umsetzung der geplanten Tasks. Diese - und wenn möglich wirklich nur diese - werden umgesetzt.
 
 Dabei ist eine Sache zu beachten:
-Ein Task umfasst neben der Implementation selbst immer auch die Dokumentation und den Test eben dieser Tasks. Nur mit Test und Dokumentation kann ein Task als abgeschlossen angesehen werden.
+Ein Task umfasst neben der Implementation selbst immer auch die Dokumentation und den Test eben dieses Tasks. Nur mit Test und Dokumentation kann ein Task als abgeschlossen angesehen werden.
 
 
 # 5. Präsentation und Review
 
-Ein ganz wichtiger Punkt ist immer die Presentation der Ergebnisse und ein Review des Prozesses.
+Ein ganz wichtiger Punkt ist immer die Präsentation der Ergebnisse und ein Review des Prozesses.
 
 Die fertig gestellten Tasks sollten, wenn möglich, ein (teilweise) einsetzbares Produkt ergeben. Dieses kann präsentiert und vorgeführt werden und wird dann im idealen Fall auch eingesetzt.
 
-Es ist aber auch immer wichtig, sich zusammen zu setzen und zu überlegen: Was ist gut gelaufen? Was ist schlecht gelaufen? Kann (oder muss) der Prozess geändert werden? Stimmt soweit alles? Hier ist die klare Festlegung, wie weiter verfahren wird. 
+Es ist aber auch immer wichtig, sich zusammenzusetzen und zu überlegen: Was ist gut gelaufen? Was ist schlecht gelaufen? Kann (oder muss) der Prozess geändert werden? Stimmt soweit alles? Hier ist die klare Festlegung, wie weiter verfahren wird. 

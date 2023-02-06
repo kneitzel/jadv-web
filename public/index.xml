@@ -44,7 +44,7 @@ Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seite
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion1/1.Vision/</guid>
-      <description>JAdventure Vision PeerTube (extern) (embed) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
+      <description>JAdventure Vision PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
 Es sind Interaktionen möglich:
 Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.</description>
     </item>
@@ -55,7 +55,7 @@ Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler kö
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion1/2.Schritte/</guid>
-      <description>PeerTube (extern) (embed) YouTube (extern) PowerPoint Präsentation Den Umfang dieses Abschnitts halten wir kurz und notieren hier nur die Schritte, die wir wirklich als Erstes angehen werden.
+      <description>PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Den Umfang dieses Abschnitts halten wir kurz und notieren hier nur die Schritte, die wir wirklich als Erstes angehen werden.
 In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
     </item>
     
@@ -133,12 +133,21 @@ Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein 
     </item>
     
     <item>
+      <title>2.1. Fehlende Unit Tests</title>
+      <link>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</guid>
+      <description> TODO TODO </description>
+    </item>
+    
+    <item>
       <title>A1 - Versionierung des Kurses</title>
       <link>https://jadventure.de/Anhang/A1-history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/A1-history/</guid>
-      <description>Version Datum Veränderung 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos. 0.</description>
+      <description>Version Datum Veränderung 0.1.1 05.02.2023 Start der Inhalte für Lektion 2 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos.</description>
     </item>
     
     <item>
@@ -190,21 +199,25 @@ Paypal konrad@kneitzel.de </description>
     </item>
     
     <item>
-      <title>P1 - Agiles Arbeiten</title>
-      <link>https://jadventure.de/Anhang/P1-AgilesArbeiten/</link>
+      <title>Model-View-Controller (MVC)</title>
+      <link>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Anhang/P1-AgilesArbeiten/</guid>
-      <description>TODO</description>
+      <guid>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</guid>
+      <description>Model View Controller Model TODO
+View TODO
+Controller TODO</description>
     </item>
     
     <item>
-      <title>P2 - Clean Code (Übersicht)</title>
-      <link>https://jadventure.de/Anhang/P2-clean-code/</link>
+      <title>SCRUM</title>
+      <link>https://jadventure.de/Anhang/P1-AgilesArbeiten/SCRUM/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jadventure.de/Anhang/P2-clean-code/</guid>
-      <description> TODO </description>
+      <guid>https://jadventure.de/Anhang/P1-AgilesArbeiten/SCRUM/</guid>
+      <description>TODO: Noch nicht abgeschlossene Beschreibung!
+Ein Verfahren, dass sehr oft angewendet wird, ist SCRUM.
+SCRUM Pillars Transparency Inspection Adaptation SCRUM Values Commitment Openness Courage Respect Focus SCRUM Artifacts Product Backlog Spring Backlog SCRUM Rollen Produktowner SCRUM Master Development Team Aktivitäten Sprint Planing Meeting Team Breakout Sprint (mit Daily SCRUM Meetings) Sprint Review Sprint Retrospective </description>
     </item>
     
   </channel>

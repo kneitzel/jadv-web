@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/A1-history/</guid>
-      <description>Version Datum Veränderung 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos. 0.</description>
+      <description>Version Datum Veränderung 0.1.1 05.02.2023 Start der Inhalte für Lektion 2 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten. 0.0.5 30.01.2023 Überarbeitung PowerPoint Folien, Dokumentation Implementation 0.0.4 14.01.2023 Vorbereitung weitere Anhänge (Maven / Clean Code) 0.0.3 13.01.2023 Shortcodes / Partials für Flaggen und Einbindung Videos.</description>
     </item>
     
     <item>
@@ -49,24 +49,6 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/E2-maven/</guid>
-      <description> TODO </description>
-    </item>
-    
-    <item>
-      <title>P1 - Agiles Arbeiten</title>
-      <link>https://jadventure.de/Anhang/P1-AgilesArbeiten/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jadventure.de/Anhang/P1-AgilesArbeiten/</guid>
-      <description>TODO</description>
-    </item>
-    
-    <item>
-      <title>P2 - Clean Code (Übersicht)</title>
-      <link>https://jadventure.de/Anhang/P2-clean-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jadventure.de/Anhang/P2-clean-code/</guid>
       <description> TODO </description>
     </item>
     
