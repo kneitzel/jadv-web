@@ -38,6 +38,6 @@ Legende: Fertig: {{< green >}}, In Arbeit: {{< yellow >}}, In Planung: {{< red >
 
 # Danksagung
 
-Ich bedanke mich recht herzlich bei Allen, die mich mit Ihren Rückmeldungen unterstützt haben. Nur so war es möglich, die Inhalte in der Qualität zu erzeugen, wie ich diese aktuell vorfindet.
+Ich bedanke mich recht herzlich bei allen, die mich mit ihren Rückmeldungen unterstützt haben. Nur so war es möglich, die Inhalte in der Qualität zu erzeugen, wie Ihr diese aktuell vorfindet.
 
 Mein besonderer Dank gilt mihe7 aus dem Java-Forum: Ohne ihn würden die Texte deutlich mehr Fehler enthalten.
