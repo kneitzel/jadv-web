@@ -3,6 +3,7 @@ title: A1 - Versionierung des Kurses
 ---
 | Version | Datum | Veränderung |
 |-|-|-|
+| 0.1.2 | 06.02.2023 | Wechsel von Gitea zu GitHub |
 | 0.1.1 | 05.02.2023 | Start der Inhalte für Lektion 2 |
 | 0.1.0 | 05.02.2023 | Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern |
 | 0.0.6 | 31.01.2023 | Übungen am Ende eingefügt. <br> Dokumentation Unit Tests. <br> Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten.|
