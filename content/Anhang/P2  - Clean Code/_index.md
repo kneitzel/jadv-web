@@ -33,5 +33,3 @@ Grady Booch
 # Weiterführende Quellen
 
 
-
-
