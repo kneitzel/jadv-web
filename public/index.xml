@@ -185,6 +185,17 @@ In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit 
     </item>
     
     <item>
+      <title>2.6. Client Implementation</title>
+      <link>https://jadventure.de/Lektion2/2.6-Client-Implementation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.6-Client-Implementation/</guid>
+      <description>Nun ist es endlich an der Zeit, den eigentlichen Client zu schreiben. Bei GUI Anwendungen ist es üblich, die Funktionalität nach einem Entwurfsmusster aufzuteilen. In unserem Programm wollen wir das MVC (Model-View-Controller) Entwurfsmuster umsetzen.
+MVC (Model-View-Controller) Bei dem Model-View-Controller Entwurfsmuster haben wir eine Aufteilung der Funktionalität in drei Bereiche:
+Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.</description>
+    </item>
+    
+    <item>
       <title>A1 - Aktualisierungen / Versionen des Kurses</title>
       <link>https://jadventure.de/Anhang/A1-Aktualisierungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -269,8 +280,7 @@ Paypal konrad@kneitzel.de </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</guid>
-      <description>Model View Controller Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.
-View Die View ist zuständig für das Anzeigen der Daten und die Entgegennahme von Anwender Aktionen. Um die Daten anzeigen zu können, kennt die View das Model. Auf die Aktionen des Anwenders reagiert die View selbst nicht.</description>
+      <description>Model View Controller Framework für MVC Model Class View Class Controller Class Das MVC Entwurfsmuster unterteilt die eine Software in drei Komponenten. Zum einen das Datenmodell (Model), die Präsentation (View) und die Programmsteuerung (Controller). Ziel ist, ein möglichst flexiblen Aufbau zu bekommen, der Änderungen und Anpassungen in Zukunft erleichtern und wie Wiederverwendbarkeit erhöhen soll. So ist es denkbar, die Präsentationsebene anzupassen oder auszutauschen ohne irgend welche Anpassungen im Model oder Controller vorzunehmen.</description>
     </item>
     
     <item>
