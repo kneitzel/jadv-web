@@ -1,5 +1,7 @@
 ---
 more:
+  - name: Neuigkeiten
+    ref: "/"
   - name: Datenschutz
     ref: "/datenschutz"
   - name: Impressum

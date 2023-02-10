@@ -1,8 +1,9 @@
 ---
-title: A1 - Versionierung des Kurses
+title: A1 - Aktualisierungen / Versionen des Kurses
 ---
 | Version | Datum | Veränderung |
 |-|-|-|
+| 0.1.2 | 09.02.2023 | Beschreibung MVC |
 | 0.1.2 | 06.02.2023 | Wechsel von Gitea zu GitHub |
 | 0.1.1 | 05.02.2023 | Start der Inhalte für Lektion 2 |
 | 0.1.0 | 05.02.2023 | Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern |

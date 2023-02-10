@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</guid>
-      <description>Unit-Test für Level.getChildren() Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.
+      <description>Unit-Test für Level.getChildren() Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.
 Unit-Test für Level.getChildren() Bei der Methode getChildren() können wir so vorgehen:
-Wir legen einen Level mit einem GameObject an. Danach prüfen wir, dass GetChildren die Liste mit den GameObjects zurück liefert. /** * Tests the getObjects method.</description>
+Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren() die Liste mit den GameObjects zurückliefert. /** * Tests the getObjects method. */ @Test public void testGetChildren() { Level level = new Level(&amp;#34;TestLevel&amp;#34;, 1000, 1000); GameObject obj = GameObject.</description>
     </item>
     
     <item>
@@ -34,8 +34,8 @@ Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @No
       
       <guid>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</guid>
       <description>Bereitstellung von Ressourcen Bilder Level Laden der Bilder Laden der Level Bereitstellung von Ressourcen Bilder Wir brauchen ein paar Bilder für unser Spiel, die wir als Ressourcen in unser Projekt unter src/main/resources einfügen:
-Eine Grafik für einen Level Hintergrung Mehrere Grafiken für Spielobjekte. Ich nutze dazu einfach die Grafiken, die ich bereits habe:
-Das Testlevel wurde mit von DALL-E generiert DALL-E hat mir einen Drachen generiert, bei dem ich den Hintergrund nur noch transparent machen muss (Ich habe das nur grob auf die Schnelle gemacht und die Qualität ist dementsprechendschlecht in dieser ersten Version.</description>
+Eine Grafik für einen Level-Hintergrund Mehrere Grafiken für Spielobjekte. Ich nutze dazu einfach die Grafiken, die ich bereits habe:
+Das Testlevel wurde mir von DALL-E generiert DALL-E hat mir einen Drachen generiert, bei dem ich den Hintergrund nur noch transparent machen muss (Ich habe das nur grob auf die Schnelle gemacht und die Qualität ist dementsprechend schlecht in dieser ersten Version.</description>
     </item>
     
     <item>
@@ -44,8 +44,7 @@ Das Testlevel wurde mit von DALL-E generiert DALL-E hat mir einen Drachen generi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</guid>
-      <description>Nutzung eines Generics für unterschiedliche Rückgabetypen. Nutzung von Parametern im Konstruktor für unterschiedliche Werte. Universelle Methode Nutzung von ResourceService Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies ist relativ einfach, wenn Funktionalität innerhalb einer Klasse doppelt vor kommt und dann in eine eigenständige Methode verschoben werden kann. Etwas komplizierter wird es bei doppeltem Code in getrennten Klassen.
-Nutzung eines Generics für unterschiedliche Rückgabetypen. Hier haben wir zwei Klassen, die sehr ähnlichen Code enthalten.</description>
+      <description>Nutzung eines Generics für unterschiedliche Rückgabetypen Nutzung von Parametern im Konstruktor für unterschiedliche Werte Universelle Methode Nutzung von ResourceService Alternative Lösung Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies wird um so einfacher, je mehr sich die Codestellen gleichen und je weniger Elemente von Außen genutzt werdem. Im einfachsten Fall kann man eine neue Methode erstellen, in die der doppelte Code kopiert wird. Die Elemte außerhalb des Codes werden zu Parametern und ein Ergebnis wird von der Methode zurück gegeben.</description>
     </item>
     
     <item>
