@@ -69,7 +69,7 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
       "url" : "https://jadventure.de/Lektion2/2.6-Client-Implementation/",
       "headline": "2.6. Client Implementation",
       "description": "Nun ist es endlich an der Zeit, den eigentlichen Client zu schreiben. Bei GUI Anwendungen ist es üblich, die Funktionalität nach einem Entwurfsmusster aufzuteilen. In unserem Programm wollen wir das MVC (Model-View-Controller) Entwurfsmuster umsetzen.\nMVC (Model-View-Controller) Bei dem Model-View-Controller Entwurfsmuster haben wir eine Aufteilung der Funktionalität in drei Bereiche:\nModel Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.",
-      "wordCount" : "2256",
+      "wordCount" : "2324",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -1120,6 +1120,42 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
           </li>
         
       
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/Lektion2/2.9-%C3%9Cbungen/"
+                    class="gdoc-nav__entry"
+                  >
+                    2.9. Übungen
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
     
   </ul>
 
@@ -2091,7 +2127,224 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
 <li>Da wir in die Anzeige hinein und heraus zoomen wollen, brauchen wir noch einen Faktor zu Skallierung</li>
 <li>Und die Anzeige soll verschoben werden können, daher brauchen wir eine Information, welcher Punkt oben links angezeigt werden soll.</li>
 </ul>
-<p>Damit erhalten wir direkt die ApplicationModel Klasse</p>
+<p>Eine kleine Grafik zur Veranschaulichung:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<p><svg
+width="800"
+height="600"
+viewBox="0 0 800 600"
+version="1.1"
+id="svg5"
+inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+sodipodi:docname="LayerView.svg"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+&lt;sodipodi:namedview
+id=&ldquo;namedview7&rdquo;
+pagecolor=&quot;#ffffff&quot;
+bordercolor=&quot;#000000&quot;
+borderopacity=&ldquo;0.25&rdquo;
+inkscape:showpageshadow=&ldquo;2&rdquo;
+inkscape:pageopacity=&ldquo;0.0&rdquo;
+inkscape:pagecheckerboard=&ldquo;0&rdquo;
+inkscape:deskcolor=&quot;#d1d1d1&quot;
+inkscape:document-units=&ldquo;px&rdquo;
+showgrid=&ldquo;false&rdquo;
+showguides=&ldquo;true&rdquo;
+inkscape:zoom=&ldquo;1.3083366&rdquo;
+inkscape:cx=&ldquo;400.12638&rdquo;
+inkscape:cy=&ldquo;299.99924&rdquo;
+inkscape:window-width=&ldquo;1920&rdquo;
+inkscape:window-height=&ldquo;1001&rdquo;
+inkscape:window-x=&quot;-9&quot;
+inkscape:window-y=&quot;-9&quot;
+inkscape:window-maximized=&ldquo;1&rdquo;
+inkscape:current-layer=&ldquo;layer1&rdquo; /&gt;
+<defs
+id="defs2">
+<marker
+style="overflow:visible"
+id="Arrow1"
+refX="0"
+refY="0"
+orient="auto-start-reverse"
+inkscape:stockid="Arrow1"
+markerWidth="8.5860481"
+markerHeight="14.181817"
+viewBox="0 0 4.0606602 6.7071068"
+inkscape:isstock="true"
+inkscape:collect="always"
+preserveAspectRatio="xMidYMid">
+<path
+style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+d="M 3,-3 0,0 3,3"
+id="path5057"
+transform="rotate(180,0.125,0)"
+sodipodi:nodetypes="ccc" />
+</marker>
+&lt;inkscape:perspective
+sodipodi:type=&ldquo;inkscape:persp3d&rdquo;
+inkscape:vp_x=&ldquo;0 : 216 : 1&rdquo;
+inkscape:vp_y=&ldquo;0 : 1000 : 0&rdquo;
+inkscape:vp_z=&ldquo;1366 : 216 : 1&rdquo;
+inkscape:persp3d-origin=&ldquo;683 : 88 : 1&rdquo;
+id=&ldquo;perspective900&rdquo; /&gt;
+</defs>
+<g
+inkscape:label="Ebene 1"
+inkscape:groupmode="layer"
+id="layer1">
+<g
+id="g5639"
+transform="matrix(0.99924716,0,0,0.99907537,-249.21018,-49.401186)"
+style="stroke-width:1.00084">
+<path
+sodipodi:type="star"
+style="fill:#ffff00;stroke:#000000;stroke-width:2.30193"
+id="path840"
+inkscape:flatsided="false"
+sodipodi:sides="6"
+sodipodi:cx="207.86957"
+sodipodi:cy="143.52899"
+sodipodi:r1="59.597168"
+sodipodi:r2="29.798584"
+sodipodi:arg1="0.84415399"
+sodipodi:arg2="1.3677528"
+inkscape:rounded="0"
+inkscape:randomized="0"
+d="m 247.46377,188.07247 -33.58528,-15.35704 -24.7876,27.37489 -3.49306,-36.76423 -36.10115,-7.77925 30.09223,-21.40719 -11.31355,-35.154137 33.58529,15.357037 24.7876,-27.374883 3.49306,36.764223 36.10114,7.77926 -30.09222,21.40718 z"
+inkscape:transform-center-x="1.8078679"
+inkscape:transform-center-y="-3.9441515"
+transform="translate(258.85217,70.328987)" />
+<ellipse
+style="fill:#00ff00;stroke:#000000;stroke-width:2.30193"
+id="path982"
+cx="641.40289"
+cy="274.6123"
+rx="45.533333"
+ry="36.129711" />
+<path
+sodipodi:type="spiral"
+style="fill:none;fill-rule:evenodd;stroke:#df799e;stroke-width:2.80235;stroke-dasharray:none;stroke-opacity:1"
+id="path1193"
+sodipodi:cx="526.60291"
+sodipodi:cy="158.37682"
+sodipodi:expansion="1"
+sodipodi:revolution="3"
+sodipodi:radius="83.200836"
+sodipodi:argument="-18.241755"
+sodipodi:t0="0"
+d="m 526.60291,158.37682 c 3.42445,2.38222 -1.52169,5.7914 -3.95942,5.69166 -6.6061,-0.27027 -9.08791,-8.22426 -7.42392,-13.6105 2.97648,-9.63472 14.62966,-12.79244 23.26159,-9.15617 12.6677,5.33637 16.587,21.11481 10.88842,32.91267 -7.59531,15.72469 -27.62734,20.41876 -42.56376,12.62068 -18.79596,-9.81308 -24.26949,-34.15269 -14.35293,-52.21484 12.01028,-21.8757 40.68521,-28.13118 61.86593,-16.08519 24.96075,14.19579 31.99973,47.2222 17.81744,71.51702 -16.37402,28.04933 -53.76217,35.87287 -81.16811,19.54969 -31.14036,-18.54744 -39.74921,-60.30423 -21.28193,-90.81919 20.71749,-34.233175 66.84782,-43.627893 100.47027,-23.014193 37.32729,22.885113 47.50831,73.392573 24.74644,110.121363"
+transform="translate(289.01447,77.136233)" />
+<ellipse
+style="fill:#00ff00;stroke:#000000;stroke-width:2.30193"
+id="ellipse2543"
+cx="509.7319"
+cy="568.59924"
+rx="45.533333"
+ry="36.129711" />
+<rect
+style="fill:#00ffff;stroke:#000000;stroke-width:2.80234;stroke-dasharray:none;stroke-opacity:1"
+id="rect2545"
+width="30.685501"
+height="132.64058"
+x="910.62323"
+y="404.77823" />
+<rect
+style="fill:#800080;stroke:#000000;stroke-width:2.80235;stroke-dasharray:none;stroke-opacity:1"
+id="rect1461"
+width="133.63043"
+height="95.026085"
+x="365.23334"
+y="326.57971" />
+<rect
+style="fill:#c83737;stroke:#000000;stroke-width:2.80234;stroke-dasharray:none;stroke-opacity:1"
+id="rect2547"
+width="30.685501"
+height="132.64058"
+x="-836.77539"
+y="278.66528"
+transform="rotate(-123.70737)" />
+<path
+id="rect1567"
+style="fill:#ececec;fill-opacity:0.648387;stroke:#888888;stroke-width:2.80235;stroke-dasharray:none;stroke-opacity:1"
+d="M 251.40039,51.400391 V 648.59961 H 1048.5996 V 51.400391 Z m 80,69.999999 h 400 v 225 h -400 z" />
+<path
+style="fill:#ececec;fill-opacity:0.648387;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1);marker-end:url(#Arrow1)"
+d="M 528.5913,121.75217 V 51.472464"
+id="path1870" />
+<text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:0;stroke-opacity:1"
+x="539.41882"
+y="87.188408"
+id="text1926"><tspan
+sodipodi:role="line"
+id="tspan1924"
+x="539.41882"
+y="87.188408"
+style="stroke-width:1.00084">y</tspan></text>
+<path
+style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:5.00419;stroke-opacity:1;marker-start:url(#Arrow1);marker-end:url(#Arrow1)"
+d="m 330.61159,212.76232 h -79.1884"
+id="path1982" />
+<text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:5.00419;stroke-opacity:1"
+x="283.17972"
+y="198.9855"
+id="text2038"><tspan
+sodipodi:role="line"
+id="tspan2036"
+x="283.17972"
+y="198.9855"
+style="stroke-width:1.00084">x</tspan></text>
+<circle
+style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:5.00419;stroke-opacity:1"
+id="path2487"
+cx="333.08624"
+cy="123.23695"
+r="7.423913" />
+<text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:5.00419;stroke-opacity:1"
+x="306.81448"
+y="100.05652"
+id="text2491"><tspan
+sodipodi:role="line"
+id="tspan2489"
+x="306.81448"
+y="100.05652"
+style="stroke-width:1.00084">(x|y)</tspan></text>
+<text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:5.00419;stroke-opacity:1"
+x="494.54541"
+y="146.18758"
+id="text4870"><tspan
+sodipodi:role="line"
+id="tspan4868"
+x="494.54541"
+y="146.18758"
+style="stroke-width:1.00084">sichtbarer Ausschnitt</tspan></text>
+<text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.00084;stroke-dasharray:8.00671, 12.0101;stroke-dashoffset:5.00419;stroke-opacity:1"
+x="982.54541"
+y="72.187576"
+id="text4874"><tspan
+sodipodi:role="line"
+id="tspan4872"
+x="982.54541"
+y="72.187576"
+style="stroke-width:1.00084">Level</tspan></text>
+</g>
+</g>
+</svg></p>
+<p>Damit erhalten wir direkt die ApplicationModel Klasse:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.client</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">lombok.Getter</span><span class="o">;</span>
@@ -2134,7 +2387,7 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
 </span></span><span class="line"><span class="cl">    <span class="nd">@Setter</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">ImageStore</span> <span class="n">imageStore</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Die Klasse ImageStore fehlt nun noch. Diese soll für die Ressource-Namen, die die Grafiken enthalten. Somit reicht hier im ersten Schritt die reine Verwaltung:</p>
+</span></span></code></pre></div><p>Die Klasse ImageStore fehlt nun noch. Diese speichert die zu Ressource-Namen die Grafiken. Dies kann in einer einfachen Map gespeichert werden, so dass die Verwaltung im ersten Schritt so aussehen kann:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageStore</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Image</span><span class="o">&gt;</span> <span class="n">images</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>

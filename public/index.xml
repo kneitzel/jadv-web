@@ -216,6 +216,17 @@ Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das
     </item>
     
     <item>
+      <title>2.9. Übungen</title>
+      <link>https://jadventure.de/Lektion2/2.9-%C3%9Cbungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.9-%C3%9Cbungen/</guid>
+      <description>Nach Abschluss des Levels können sie folgende Schritte machen:
+Prüfen sie die Unit Tests. Lassen sie diese mit Coverage laufen und schauen sie, was noch fehlt. Schreiben sie noch fehlende Unit Tests.
+Lassen sie die statische Codeanalyse aus Abschnitt 2.8 laufen und beheben sie die Fehler soweit möglich (und nicht in Kapitel 2.8 ausgeschlossen).</description>
+    </item>
+    
+    <item>
       <title>A1 - Aktualisierungen / Versionen des Kurses</title>
       <link>https://jadventure.de/Anhang/A1-Aktualisierungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
