@@ -64,9 +64,9 @@ Dies bringt aber einige Nachteile mit sich:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-Uebungen/</guid>
-      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
+      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
 Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.
-Das Projekt bis hier her noch einmal selbst nachbauen Einfach einmal selbst ein neues Projekt starten und die Klassen einmal selbt schreiben.</description>
+Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein neues Projekt und schreibe die genannten Klassen ohne bei der fertigen Implementation zu &amp;ldquo;spicken&amp;rdquo;.</description>
     </item>
     
   </channel>
