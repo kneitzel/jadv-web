@@ -63,7 +63,7 @@
       "url" : "https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/",
       "headline": "2.4. Clean Code: Kein doppelter Code!",
       "description": "Nutzung eines Generics für unterschiedliche Rückgabetypen Nutzung von Parametern im Konstruktor für unterschiedliche Werte Universelle Methode Nutzung von ResourceService Alternative Lösung Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies wird um so einfacher, je mehr sich die Codestellen gleichen und je weniger Elemente von außen genutzt werdem. Im einfachsten Fall kann man eine neue Methode erstellen, in die der doppelte Code kopiert wird. Die Elemente außerhalb des Codes werden zu Parametern und ein Ergebnis wird von der Methode zurückgegeben.",
-      "wordCount" : "1363",
+      "wordCount" : "1432",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -2190,6 +2190,27 @@ Wir können der Methode so eine Funktion übergeben, z.B. per: <a
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Da bei dem vorhandenen Interface Function&lt;T,R&gt; bei der Methode keine Exception geworfen werden kann, macht es bei so einer Lösung Sinn, ein eigenes Interface zu erzeugen. Im Code könnte dies so aussehen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">ResourceService</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">ResourceCreator</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">R</span> <span class="nf">create</span><span class="o">(</span><span class="n">InputStream</span> <span class="n">inputStream</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">R</span> <span class="nf">loadResource</span><span class="o">(</span><span class="n">String</span> <span class="n">resourceName</span><span class="o">,</span> <span class="n">ResourceCreator</span><span class="o">&lt;</span><span class="n">R</span><span class="o">&gt;</span> <span class="n">creator</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">resourcePath</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="n">resourceName</span> <span class="o">+</span> <span class="n">type</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">(</span><span class="n">InputStream</span> <span class="n">inputStream</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">resourcePath</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">inputStream</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">creator</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">inputStream</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">exception</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Unable to load level resource: &#34;</span> <span class="o">+</span> <span class="n">resourcePath</span> <span class="o">+</span> <span class="s">&#34; (&#34;</span> <span class="o">+</span> <span class="n">exception</span><span class="o">.</span><span class="na">getMessage</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34;)&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">exception</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span></code></pre></div><div class="gdoc-page__anchorwrap">
     <h1 id="nutzung-von-resourceservice">
         Nutzung von ResourceService
@@ -2288,7 +2309,7 @@ Wir können der Methode so eine Funktion übergeben, z.B. per: <a
 </span></span></code></pre></div><p>Welche Lösung bevorzugt wird, darf jeder für sich entscheiden. Ich sehe für beide Varianten Vor- und Nachteile:</p>
 <ul>
 <li>
-<p>Bei der Version mit der Function als zusätzlicher Parameter hat man den Vorteil, dass der Name der Methode bei der Implementation frei wählbar ist. Der Name kann also genau aussagen, was dort in der Methode gemacht wird. Dadurch sind die ablgeleiteten Klassen einfacher zu lesen. Der Nachteil ist aber dann im ResourceService: hier wird dann nur noch function.apply aufgerufen, was nicht ganz so viel aussagt. Und in der Function, die übergeben wird, muss eine Exception behandelt werden.</p>
+<p>Bei der Version mit der Function als zusätzlicher Parameter hat man den Vorteil, dass der Name der Methode bei der Implementation frei wählbar ist. Der Name kann also genau aussagen, was dort in der Methode gemacht wird. Dadurch sind die ablgeleiteten Klassen einfacher zu lesen.</p>
 </li>
 <li>
 <p>Bei der zweiten Version mit der abstrakten Methode ist der Name der Methode vorgegeben: Die Methode muss createResource heissen. Damit kann man nicht mehr den Namen so wählen, wie er aus Sicht der abgeleiteten Klasse am besten wäre. Und da wir eine IOException erlauben können, muss hier keine zusätzliche Behandlung in der Methode selbst erfolgen.</p>
