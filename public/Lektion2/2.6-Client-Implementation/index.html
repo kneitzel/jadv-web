@@ -49,7 +49,7 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
 <meta property="article:section" content="Lektion2" />
     <meta
       property="article:modified_time"
-      content="2023-02-10T17:05:40+01:00"
+      content="2023-02-11T15:51:29+01:00"
     />
 
 
@@ -69,7 +69,7 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
       "url" : "https://jadventure.de/Lektion2/2.6-Client-Implementation/",
       "headline": "2.6. Client Implementation",
       "description": "Nun ist es endlich an der Zeit, den eigentlichen Client zu schreiben. Bei GUI Anwendungen ist es üblich, die Funktionalität nach einem Entwurfsmusster aufzuteilen. In unserem Programm wollen wir das MVC (Model-View-Controller) Entwurfsmuster umsetzen.\nMVC (Model-View-Controller) Bei dem Model-View-Controller Entwurfsmuster haben wir eine Aufteilung der Funktionalität in drei Bereiche:\nModel Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.",
-      "wordCount" : "2324",
+      "wordCount" : "2316",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -81,7 +81,7 @@ Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. di
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-02-10T17:05:40.00Z",
+      "dateModified": "2023-02-11T15:51:29.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -2396,24 +2396,28 @@ style="stroke-width:1.00084">Level</tspan></text>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">images</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">##</span> <span class="n">Pr</span><span class="err">ä</span><span class="n">sentation</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Die</span> <span class="n">Pr</span><span class="err">ä</span><span class="n">sentation</span> <span class="n">zeigt</span> <span class="n">in</span> <span class="n">erster</span> <span class="n">Linie</span> <span class="n">den</span> <span class="n">Level</span> <span class="n">an</span><span class="o">.</span> <span class="n">Dazu</span> <span class="n">wird</span> <span class="n">ein</span> <span class="n">LevelPanel</span> <span class="n">als</span> <span class="n">Content</span><span class="o">-</span><span class="n">Pane</span> <span class="n">gesetzt</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="n">F</span><span class="err">ü</span><span class="n">r</span> <span class="n">das</span> <span class="n">Verschieben</span> <span class="n">nutzen</span> <span class="n">wir</span> <span class="n">erst</span> <span class="n">einmal</span> <span class="n">nur</span> <span class="n">Tasten</span><span class="o">:</span> <span class="n">w</span><span class="o">,</span> <span class="n">s</span><span class="o">,</span> <span class="n">a</span><span class="o">,</span> <span class="n">d</span> <span class="n">und</span> <span class="n">f</span><span class="err">ü</span><span class="n">r</span> <span class="n">das</span> <span class="n">Zoomen</span> <span class="n">o</span><span class="o">,</span> <span class="n">p</span>
-</span></span><span class="line"><span class="cl"><span class="n">Diese</span> <span class="n">Aktionen</span> <span class="n">m</span><span class="err">ü</span><span class="n">ssen</span> <span class="n">wir</span> <span class="n">als</span> <span class="n">Actions</span> <span class="n">der</span> <span class="n">Programmsteuerung</span> <span class="err">ü</span><span class="n">bergeben</span> <span class="n">k</span><span class="err">ö</span><span class="n">nnen</span><span class="o">,</span> <span class="n">daher</span> <span class="n">erstellen</span> <span class="n">wir</span> <span class="n">und</span> <span class="n">eine</span> <span class="n">Enumeration</span> <span class="n">mit</span> <span class="n">den</span> <span class="n">Aktionen</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Damit</span> <span class="n">wird</span> <span class="n">die</span> <span class="n">Pr</span><span class="err">ä</span><span class="n">sentation</span> <span class="n">relativ</span> <span class="n">einfach</span> <span class="n">umsetzbar</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">wir</span> <span class="n">haben</span> <span class="n">Instanzvariablen</span> <span class="n">f</span><span class="err">ü</span><span class="n">r</span> <span class="n">das</span> <span class="nf">Fenster</span> <span class="o">(</span><span class="n">JFrame</span><span class="o">)</span> <span class="n">und</span> <span class="n">das</span> <span class="n">GamePanel</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">in</span> <span class="nf">init</span><span class="o">()</span> <span class="n">bauen</span> <span class="n">wir</span> <span class="n">die</span> <span class="n">Controls</span> <span class="n">auf</span> <span class="n">und</span> <span class="n">registrieren</span> <span class="n">und</span> <span class="n">als</span> <span class="n">KeyListener</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">show</span><span class="o">()</span> <span class="n">macht</span> <span class="n">das</span> <span class="n">Fenster</span> <span class="n">einfach</span> <span class="n">sichtbar</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">updateView</span> <span class="n">muss</span> <span class="n">daf</span><span class="err">ü</span><span class="n">r</span> <span class="n">sorgen</span><span class="o">,</span> <span class="n">dass</span> <span class="n">das</span> <span class="n">GamePanel</span> <span class="n">sich</span> <span class="n">neu</span> <span class="n">malt</span> <span class="o">-</span> <span class="n">daher</span> <span class="n">ruft</span> <span class="n">es</span> <span class="n">einfach</span> <span class="n">ein</span> <span class="n">repaint</span> <span class="n">auf</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">updateModel</span> <span class="n">hat</span> <span class="n">nichts</span> <span class="n">zu</span> <span class="n">machen</span><span class="o">,</span> <span class="n">da</span> <span class="n">wir</span> <span class="n">keine</span> <span class="n">direkte</span> <span class="n">Benutzereingabe</span> <span class="n">von</span> <span class="n">Datenmodell</span> <span class="n">Werten</span> <span class="n">haben</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">keyTyped</span> <span class="n">wertet</span> <span class="n">die</span> <span class="n">gedr</span><span class="err">ü</span><span class="n">ckte</span> <span class="n">Taste</span> <span class="n">aus</span> <span class="n">und</span> <span class="n">schickt</span> <span class="n">dann</span> <span class="n">die</span> <span class="n">entsprechende</span> <span class="n">Aktion</span> <span class="n">an</span> <span class="n">die</span> <span class="nf">Programmsteuerung</span> <span class="o">(</span><span class="err">ü</span><span class="n">ber</span> <span class="n">das</span> <span class="n">Beobachter</span><span class="o">-</span><span class="n">Entwurfsmuster</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Damit</span> <span class="n">erhalten</span> <span class="n">wir</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl"><span class="err">```</span><span class="n">java</span>
-</span></span><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.client</span><span class="o">;</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="präsentation">
+        Präsentation
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.6-Client-Implementation/#präsentation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Präsentation" aria-label="Anchor to: Präsentation" href="#pr%c3%a4sentation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Die Präsentation zeigt in erster Linie den Level an. Dazu wird ein LevelPanel als Content-Pane gesetzt.
+Für das Verschieben nutzen wir erst einmal nur Tasten: w, s, a, d und für das Zoomen o, p
+Diese Aktionen müssen wir als Actions der Programmsteuerung übergeben können, daher erstellen wir und eine Enumeration mit den Aktionen.</p>
+<p>Damit wird die Präsentation relativ einfach umsetzbar:</p>
+<ul>
+<li>wir haben Instanzvariablen für das Fenster (JFrame) und das GamePanel.</li>
+<li>in init() bauen wir die Controls auf und registrieren und als KeyListener.</li>
+<li>show() macht das Fenster einfach sichtbar</li>
+<li>updateView muss dafür sorgen, dass das GamePanel sich neu malt - daher ruft es einfach ein repaint auf.</li>
+<li>updateModel hat nichts zu machen, da wir keine direkte Benutzereingabe von Datenmodell Werten haben.</li>
+<li>keyTyped wertet die gedrückte Taste aus und schickt dann die entsprechende Aktion an die Programmsteuerung (über das Beobachter-Entwurfsmuster)</li>
+</ul>
+<p>Damit erhalten wir:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">org.jadv.client</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.jadv.framework.View</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
