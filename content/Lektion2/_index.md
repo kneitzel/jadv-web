@@ -46,3 +46,6 @@ Hier kann man aber direkt ein Refactoring machen, in dem wir die gemeinsame Funk
 
 Es ist wichtig, dass die API gut dokumentiert wird. Daher sollte man sich angewöhnen, immer JavaDoc Kommentare zu schreiben.
 
+## Code des Levels
+
+Wie der Code nach Abschluss der Lektion 2 aussieht, findet sich auf GitHub unter https://github.com/kneitzel/JAdventure/tree/Lektion-2.
