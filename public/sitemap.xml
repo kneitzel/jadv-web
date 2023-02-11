@@ -48,21 +48,27 @@
     <lastmod>2023-02-06T19:49:00+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</loc>
-    <lastmod>2023-02-08T04:06:18+01:00</lastmod>
+    <lastmod>2023-02-10T23:34:16+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</loc>
-    <lastmod>2023-02-06T19:53:21+01:00</lastmod>
+    <lastmod>2023-02-10T23:34:16+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</loc>
-    <lastmod>2023-02-08T10:53:39+01:00</lastmod>
+    <lastmod>2023-02-10T23:34:16+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</loc>
-    <lastmod>2023-02-08T10:53:39+01:00</lastmod>
+    <lastmod>2023-02-10T23:34:16+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</loc>
     <lastmod>2023-02-08T05:13:45+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.6-Client-Implementation/</loc>
+    <lastmod>2023-02-10T17:05:40+01:00</lastmod>
+  </url><url>
+    <loc>https://jadventure.de/Lektion2/2.7-Unit-Tests/</loc>
+    <lastmod>2023-02-10T23:34:16+01:00</lastmod>
+  </url><url>
+    <loc>https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/</loc>
   </url><url>
     <loc>https://jadventure.de/Anhang/A1-Aktualisierungen/</loc>
     <lastmod>2023-02-10T09:58:12+01:00</lastmod>
@@ -101,7 +107,7 @@
     <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</loc>
-    <lastmod>2023-02-10T09:58:12+01:00</lastmod>
+    <lastmod>2023-02-10T17:05:40+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P1-AgilesArbeiten/</loc>
     <lastmod>2023-02-05T21:39:20+01:00</lastmod>

@@ -12,9 +12,10 @@
 <meta name="generator" content="Hugo 0.110.0">
 
 
-  <meta name="description" content=" TODO " />
+  <meta name="description" content="Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht habenm die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinander gesetzt.
+Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don&rsquo;t Repeat Yourself) und auch in Bezug auf JavaDoc Kommentare." />
 
-    <title>E2 - Maven (Übersicht) | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>2.8. Statische Codeanalyse | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -35,47 +36,45 @@
     
   <meta
     property="og:title"
-    content="E2 - Maven (Übersicht)"
+    content="2.8. Statische Codeanalyse"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content=" TODO " />
+  <meta property="og:description" content="Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht habenm die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinander gesetzt.
+Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don’t Repeat Yourself) und auch in Bezug auf JavaDoc Kommentare." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jadventure.de/Anhang/E2-maven/" />
+<meta property="og:url" content="https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/" />
 
-<meta property="article:section" content="Anhang" />
-    <meta
-      property="article:modified_time"
-      content="2023-01-31T20:35:01+01:00"
-    />
+<meta property="article:section" content="Lektion2" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="E2 - Maven (Übersicht)" />
-  <meta name="twitter:description" content=" TODO " />
+<meta name="twitter:title" content="2.8. Statische Codeanalyse" />
+  <meta name="twitter:description" content="Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht habenm die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinander gesetzt.
+Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don’t Repeat Yourself) und auch in Bezug auf JavaDoc Kommentare." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Anhang",
-      "name": "E2 - Maven (Übersicht)",
-      "url" : "https://jadventure.de/Anhang/E2-maven/",
-      "headline": "E2 - Maven (Übersicht)",
-      "description": " TODO ",
-      "wordCount" : "1",
+      "articleSection": "Lektion2",
+      "name": "2.8. Statische Codeanalyse",
+      "url" : "https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/",
+      "headline": "2.8. Statische Codeanalyse",
+      "description": "Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht habenm die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinander gesetzt.\nBei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don’t Repeat Yourself) und auch in Bezug auf JavaDoc Kommentare.",
+      "wordCount" : "1257",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://jadventure.de/Anhang/E2-maven/"
+          "@id": "https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/"
       },
       "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-01-31T20:35:01.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -153,7 +152,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/Anhang/E2-maven/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -783,7 +782,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-83951aca"
-                
+                checked
               
             />
             <label
@@ -1101,7 +1100,7 @@
                 <span class="flex">
                   <a
                     href="/Lektion2/2.8-Statische-Codeanalyse/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     2.8. Statische Codeanalyse
                   </a>
@@ -1135,7 +1134,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-4ff10e6e"
-                checked
+                
               
             />
             <label
@@ -1345,7 +1344,7 @@
                 <span class="flex">
                   <a
                     href="/Anhang/E2-maven/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     E2 - Maven (Übersicht)
                   </a>
@@ -2023,15 +2022,169 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>E2 - Maven (Übersicht)</h1>
-    <div class="gdoc-page__anchorwrap">
-    <h1 id="todo">
-        TODO
-        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#todo" class="gdoc-page__anchor clip flex align-center" title="Anchor to: TODO" aria-label="Anchor to: TODO" href="#todo">
+    <h1>2.8. Statische Codeanalyse</h1>
+    <p>Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht habenm die unüblich sind?
+Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinander gesetzt.</p>
+<p>Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don&rsquo;t Repeat Yourself) und auch in Bezug auf JavaDoc Kommentare.</p>
+<p>Dies wollen wir nun etwas vertiefen. Jetzt kommt aber keine lange Auflistung an Regeln, die wir einhalten wollen sondern wir greifen jetzt erst einmal auf das Wissen vieler Entwickler zurück, die Ihr Wissen in ein Tool gepackt haben.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="pmd">
+        PMD
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/#pmd" class="gdoc-page__anchor clip flex align-center" title="Anchor to: PMD" aria-label="Anchor to: PMD" href="#pmd">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
 </div>
+<p>Das Tool PMD ist ein Code Analysetool. Es hat einen Katalog an Regeln und prüft den Sourcecode auf die Einhealtung dieser Regeln. Wir bauen das Tool jetzt einfach einmal bei uns in das Projekt ein um eine erste Auswertung zu erhalten. Dabei werde ich eine erste Konfiguration vorgeben, bei der ich ein paar Regeln deaktiviert habe. Die deaktivierten Regeln sind im Angang kurz beschrieben inklusive einer kurzen Begründung.</p>
+<p>Damit PMD beim Maven Build mit gestartet wird, müssen wir das PMD Plugin in unserem Projekt hinzufügen und das Plugin konfigurieren. Da das PMD Plugin und die PMD Software unabhängig voneinander entwickelt werden, geben wir im Plugin auch an, welche PMD Version geladen werden soll. Dies sorgt für einen sehr umfangreichen plugin-Eintrag, aber bitte davon nicht verschrecken lassen: Zum einen ist es nicht so komplex und zum anderen ist es auch ok, wenn man dies im Detail nicht ganz versteht. Bei Maven ist ein Kopieren von Einstellungen durchaus normal und gängige Praxis.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="festlegen-der-versionen-in-den-properties">
+        Festlegen der Versionen in den Properties
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/#festlegen-der-versionen-in-den-properties" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Festlegen der Versionen in den Properties" aria-label="Anchor to: Festlegen der Versionen in den Properties" href="#festlegen-der-versionen-in-den-properties">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>In der pom.xml haben wir ja schon für Ordnung gesorgt und Versionen in die Properties gezogen. Dort fügen wir dann noch die neuen Properties hinzu:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!-- Dependency versions --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;pmd.version&gt;</span>6.54.0<span class="nt">&lt;/pmd.version&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Plugin dependencies --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;maven.pmd.plugin&gt;</span>3.16.0<span class="nt">&lt;/maven.pmd.plugin&gt;</span>
+</span></span></code></pre></div><p>(Ich habe nur die neuen Einträge sowie die Abschnitte, in denen ich diese bei mir in der Regel habe, gepostet)</p>
+<p>Im Anschluss können wir das Plugin hinzu fügen. Bisher haben wir noch keinerlei Plugins, so dass wir die Grundstruktur erst erstellen müssen: Direkt unterhalb der dependencies können wir ein build Element einfügen. In dieses kommt ein plugins Element. Dort können dann alle Plugons in einem eigenen plugin Element konfiguriert werden. Der Eintrag für das PMD Plugin sieht wie folgt aus:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">    <span class="nt">&lt;/dependencies&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;plugins&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- PMD static code analysis --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;artifactId&gt;</span>maven-pmd-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;version&gt;</span>${maven.pmd.plugin}<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;dependencies&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;groupId&gt;</span>net.sourceforge.pmd<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;artifactId&gt;</span>pmd-core<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;version&gt;</span>${pmd.version}<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;groupId&gt;</span>net.sourceforge.pmd<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;artifactId&gt;</span>pmd-java<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;version&gt;</span>${pmd.version}<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;groupId&gt;</span>net.sourceforge.pmd<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;artifactId&gt;</span>pmd-javascript<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;version&gt;</span>${pmd.version}<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;groupId&gt;</span>net.sourceforge.pmd<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;artifactId&gt;</span>pmd-jsp<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;version&gt;</span>${pmd.version}<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;/dependencies&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;sourceEncoding&gt;</span>${project.build.sourceEncoding}<span class="nt">&lt;/sourceEncoding&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;minimumTokens&gt;</span>100<span class="nt">&lt;/minimumTokens&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;targetJdk&gt;</span>${java.version}<span class="nt">&lt;/targetJdk&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;rulesets&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;ruleset&gt;</span>pmd-ruleset.xml<span class="nt">&lt;/ruleset&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;/rulesets&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;linkXRef&gt;</span>false<span class="nt">&lt;/linkXRef&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;executions&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;execution&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;phase&gt;</span>prepare-package<span class="nt">&lt;/phase&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;goals&gt;</span>
+</span></span><span class="line"><span class="cl">                            <span class="c">&lt;!-- pmd does not stop build when violations are found --&gt;</span>
+</span></span><span class="line"><span class="cl">                            <span class="nt">&lt;goal&gt;</span>pmd<span class="nt">&lt;/goal&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                            <span class="c">&lt;!-- check stops the build when violations are found --&gt;</span>
+</span></span><span class="line"><span class="cl">                            <span class="c">&lt;!-- &lt;goal&gt;check&lt;/goal&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">                        <span class="nt">&lt;/goals&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;/execution&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;/executions&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/plugins&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/build&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/project&gt;</span>
+</span></span></code></pre></div><p>(Ich habe zum besseren Verständnis das schließende Element von dependencies und das schließende Element des alles umschließenden project Element mit eingefügt.)</p>
+<p>Zuletzt brauchen wir noch bei der pom.xml die in der Konfiguration angegebene pmd-ruleset.xml Datei:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;ruleset</span> <span class="na">name=</span><span class="s">&#34;Custom Java Ruleset&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">xmlns=</span><span class="s">&#34;http://pmd.sourceforge.net/ruleset/2.0.0&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">xmlns:xsi=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">xsi:schemaLocation=</span><span class="s">&#34;http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;description&gt;</span>
+</span></span><span class="line"><span class="cl">        Custom ruleset for Java
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/description&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/codestyle.xml&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- That is not my code style! --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&#34;AtLeastOneConstructor&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- long variables are acceptable --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&#34;LongVariable&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- Multiple return statements are ok --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&#34;OnlyOneReturn&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/rule&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/design.xml&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- Problems with builder and streams/lambdas --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&#34;LawOfDemeter&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/rule&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/documentation.xml&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- Long comments are not a problem! --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&#34;CommentSize&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/rule&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/errorprone.xml&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/multithreading.xml&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/performance.xml&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/security.xml&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&#34;category/java/design.xml/LoosePackageCoupling&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;properties&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;packages&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;value&gt;</span>org.jadv<span class="nt">&lt;/value&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/property&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/properties&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/rule&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/ruleset&gt;</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="erster-lauf-und-übung">
+        Erster Lauf und Übung!
+        <a data-clipboard-text="https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/#erster-lauf-und-übung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Erster Lauf und Übung!" aria-label="Anchor to: Erster Lauf und Übung!" href="#erster-lauf-und-%c3%bcbung">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Damit das PMD einmal durchlaufen kann, lassen wir nun das Maven Ziel package laufen.</p>
+<p>Nach dem Lauf finden wir im target Verzeichnis eine Datei pmd.xml, welche Hinweise zu Problemen in unserem Code aufwirft. Diese XML Datei können wir nun einmal anschauen und uns die einzelnen Auffälligkeiten ansehen (Hier greife ich jede Meldung nur einmal auf):</p>
+<ul>
+<li>Enum comments are required -&gt; Wir haben bei unserer Enumeration ApplicationCommands nicht vor jedem Eintrag einen JavaDoc. Den müssen wir noch hinzu fügen.</li>
+<li>Perhaps &lsquo;imageService&rsquo; could be replaced by a local variable. -&gt; da wir imageService nicht anderweitig benötigen, können wir die Instanzvariable durch eine lokale Variable ersetzen.</li>
+<li>Parameter &lsquo;imageService&rsquo; is not assigned and could be declared final -&gt; Diese Meldung sollten wir für alle unsere Parameter bekommen. Parameter sind Eingangswerte. Die zu überschreiben ist ein schlechter Stil. Daher sollte man generell alle Parameter bei Methoden und Konstruktoren final machen!</li>
+<li>Local variable &rsquo;level&rsquo; could be declared final -&gt; Bei lokalen Variablen ist es auch so, dass man diese - so man nicht plant diese später noch einmal zu verändern, final machen kann und auch sollte.</li>
+<li>This statement should have braces -&gt; Wenn z.B. nach einem if nur eine Anweisung kommt, dann erlaubt Java, dass man keine geschweiften Klammern nutzt. Dies hat in der Vergangenheit in Projekten aber auch schon durchaus zu Problemen geführt, wenn dann Code verändert wurde. Daher besagt eine Regel, dass immer mit geschweiften Klammern gearbeitet werden soll. Überall, wo wir also auf diese Verzichtet haben, müssen wir diese nun noch ergänzen.</li>
+<li>Avoid variables with short names like dx -&gt; Eine sehr wichtige Regel! Wir müssen vernünftige Bezeichner wählen! Es gibt aber teilweise kurze Bezeichner, die üblich sind und im fachlichem Umfeld immer verwendet werden. Beispiele sind hier id, x, y aber auch dx und dy (welches aus der Mathematik kommt und eine Ausdehnung in x bzw. y Richtung bezeichnet). Solche Variablen sind auch im Programmcode ok und wir können diesen Fehler erst einmal ignorieren. Am Anfang von Lektion 3 zeige ich, wie wir die konkrete Meldung entfernen können. Aber immer die Meldungen ansehen - evtl. finden sich ja kurze Parameter, die so nicht korrekt sind wie z.B. &ldquo;ds&rdquo;?</li>
+<li>Protected method constructor comments are required -&gt; Fehlende JavaDoc Elemente</li>
+<li>Avoid using Literals in Conditional Statements -&gt; Wir sollten &ldquo;magic numbers&rdquo; vermeiden. Statt dessen sollten wir immer Konstanten erstellen und diese nutzen. In ApplicationContext können wir z.B. die Konstante SCALING_MINIMUM mit Wert 25 erstellen und dann in der Methode scale nutzen.</li>
+<li>Number 10000 should separate every third digit with an underscore -&gt; Bei großen Zahlen ist es schwer, die Ziffern zu zählen? Ist ein Wert 1 Millionen oder 10 Millionen? Daher ist es üblich, bei großen Zahlen alle 3 Ziffern durch ein _ kenntlich zu machen. Eine 10000 wäre besser lesbar als 10_000.</li>
+<li>Avoid using redundant field initializer for &lsquo;x&rsquo; -&gt; Eine Instanzvariable wird immer automatisch initialisiert. Eine Initialisierung einer int Instanzvariable mit 0 ist somit überflüssig und kann entfernt werden.
+&hellip;</li>
+</ul>
+<p>Ich breche die Auflistung an dieser Stelle ab. Aus meiner Sicht ist eine statische Codeanalyse, so wie sie PMD macht, sehr wichtig in der Software-Entwicklung. Das hilft, viele Probleme zu beseitigen und sorgt für einen besser lesbaren Code. Aber es ist wichtig, dass die Regeln verstanden werden. Daher ist es wichtig, dass wir auch Erklärungen selbst finden können.</p>
+<p>Der erste Anhaltspunkt ist direkt in dem XML File zu finden. So finden wir dort eine externalInfoUrl - ein Link zu einer Webseite mit mehr Informationen zu der Regel.
+Wenn eine Regel zu unverständlich ist: Über eine Suchmaschine lassen sich dann in der Regel auch sehr viele Treffer finden - gerade die komplexeren Regeln werden in vielen Fragen und Antworten auf StackOverflow behandelt. Bei der Suche auch nicht nur die Fehlermeldung angeben sondern auch den Namen der Regel, der in rule=&quot;&hellip;&quot; zu finden ist.</p>
 
   </article>
 

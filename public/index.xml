@@ -133,7 +133,7 @@ Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein 
     </item>
     
     <item>
-      <title>2.1. Fehlende Unit Tests</title>
+      <title>2.1. Fehlende Unit-Tests</title>
       <link>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -149,7 +149,7 @@ Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</guid>
-      <description>Level GameObject Unit Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &amp;ldquo;graphicResource&amp;rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.
+      <description>Level GameObject Unit-Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &amp;ldquo;graphicResource&amp;rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.
 Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic.</description>
     </item>
     
@@ -170,7 +170,7 @@ Das Testlevel wurde mir von DALL-E generiert DALL-E hat mir einen Drachen generi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</guid>
-      <description>Nutzung eines Generics für unterschiedliche Rückgabetypen Nutzung von Parametern im Konstruktor für unterschiedliche Werte Universelle Methode Nutzung von ResourceService Alternative Lösung Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies wird um so einfacher, je mehr sich die Codestellen gleichen und je weniger Elemente von Außen genutzt werdem. Im einfachsten Fall kann man eine neue Methode erstellen, in die der doppelte Code kopiert wird. Die Elemte außerhalb des Codes werden zu Parametern und ein Ergebnis wird von der Methode zurück gegeben.</description>
+      <description>Nutzung eines Generics für unterschiedliche Rückgabetypen Nutzung von Parametern im Konstruktor für unterschiedliche Werte Universelle Methode Nutzung von ResourceService Alternative Lösung Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies wird um so einfacher, je mehr sich die Codestellen gleichen und je weniger Elemente von außen genutzt werdem. Im einfachsten Fall kann man eine neue Methode erstellen, in die der doppelte Code kopiert wird. Die Elemente außerhalb des Codes werden zu Parametern und ein Ergebnis wird von der Methode zurückgegeben.</description>
     </item>
     
     <item>
@@ -193,6 +193,26 @@ In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit 
       <description>Nun ist es endlich an der Zeit, den eigentlichen Client zu schreiben. Bei GUI Anwendungen ist es üblich, die Funktionalität nach einem Entwurfsmusster aufzuteilen. In unserem Programm wollen wir das MVC (Model-View-Controller) Entwurfsmuster umsetzen.
 MVC (Model-View-Controller) Bei dem Model-View-Controller Entwurfsmuster haben wir eine Aufteilung der Funktionalität in drei Bereiche:
 Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.</description>
+    </item>
+    
+    <item>
+      <title>2.7. Unit-Tests mit Mocking</title>
+      <link>https://jadventure.de/Lektion2/2.7-Unit-Tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.7-Unit-Tests/</guid>
+      <description>Bisher haben wir nur den Client implementiert aber haben dabei auf das Schreiben von Unit-Tests verzichtet. Dies müssen wir nun noch nachholen.
+ImageStoreTest Wenn wir die Klasse ImageStore testen wollen, dann stellen wir direkt fest: Diese Klasse benötigt einen ImageService. Wir könnten jetzt natürlich eine Instanz von ImageService erstellen und dann Tests aufbauen, die dann auf diesen ImageService zugreifen und z. B. Bilder aus dem resource-Ordner lädt. Das bedeutet aber, das Änderungen an ImageService auch Tests von ImageStore scheitern lässt.</description>
+    </item>
+    
+    <item>
+      <title>2.8. Statische Codeanalyse</title>
+      <link>https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/</guid>
+      <description>Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht habenm die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinander gesetzt.
+Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don&amp;rsquo;t Repeat Yourself) und auch in Bezug auf JavaDoc Kommentare.</description>
     </item>
     
     <item>
