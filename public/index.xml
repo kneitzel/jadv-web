@@ -254,6 +254,17 @@ Lassen sie die statische Codeanalyse aus Abschnitt 2.8 laufen und beheben sie di
     </item>
     
     <item>
+      <title>A4 - DALL-E Bilder</title>
+      <link>https://jadventure.de/Anhang/A4-Original-DALL-E-Bilder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jadventure.de/Anhang/A4-Original-DALL-E-Bilder/</guid>
+      <description>Viele Bilder, die ich in diesem JAdventure Kurs verwende, basieren auf Bilder, die von DALL-E generiert wurden.
+Die original DALL-E generierten Bilder, die ich dabei verwendet habe, zeige ich hier um die Basis der Bilder deutlich zu machen und als Basis falls es irgend welche Streitigkeiten bezüglich Copright geben sollte.
+DALL-E Anfrage Verwendetes Bild I need a drawn picture of weapons for a 2d graphical adventure I need a drawn picture of a small hill of gold coins for a 2d graphical adventure I need a picture of Coins for a 2D graphical adventure.</description>
+    </item>
+    
+    <item>
       <title>DRY - Don&#39;t Repeat Yourself</title>
       <link>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -280,7 +291,9 @@ Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libra
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/E2-maven/</guid>
-      <description> TODO </description>
+      <description>Bei Maven handelt es sich um ein Build Tool, welches vor allem für Java Projekte eingesetzt wird (aber nicht auf Java beschränkt ist).
+Lifecycle Maven ist Lifecycle basiert. Es gibt drei Lifecycle mit mehreren Schritten. Bei einem Maven Aufruf wird ein (oder mehrere) Ziel(e) angegeben. Maven arbeitet dann den entsprechenden Lifecycle ab bis einschließlich dem angegebenen Ziel.
+clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und besteht aus den Zielen / Schritten:</description>
     </item>
     
     <item>
