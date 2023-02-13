@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</guid>
-      <description>Model View Controller Framework für MVC Model Class View Class Controller Class Das MVC Entwurfsmuster unterteilt die eine Software in drei Komponenten. Zum einen das Datenmodell (Model), die Präsentation (View) und die Programmsteuerung (Controller). Ziel ist, ein möglichst flexiblen Aufbau zu bekommen, der Änderungen und Anpassungen in Zukunft erleichtern und wie Wiederverwendbarkeit erhöhen soll. So ist es denkbar, die Präsentationsebene anzupassen oder auszutauschen ohne irgend welche Anpassungen im Model oder Controller vorzunehmen.</description>
+      <description>Model View Controller: Framework für MVC Model Class View Class Controller Class Das MVC-Entwurfsmuster (Model-View-Controller) ist ein bekanntes Softwareentwicklungsmuster, das verwendet wird, um die Trennung von Benutzeroberfläche, Geschäftslogik und Datenmodell zu erreichen. Es sorgt dafür, dass die Komponenten unabhängig voneinander entwickelt und gewartet werden können, was es einfacher macht, Änderungen an der Benutzeroberfläche oder an der Geschäftslogik durchzuführen, ohne dass dabei andere Teile des Systems beeinträchtigt werden. Außerdem kann das MVC-Entwurfsmuster verwendet werden, um die Skalierbarkeit und Wartbarkeit von Anwendungen zu verbessern.</description>
     </item>
     
   </channel>

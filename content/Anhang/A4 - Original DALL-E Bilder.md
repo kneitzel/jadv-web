@@ -8,6 +8,7 @@ Die original DALL-E generierten Bilder, die ich dabei verwendet habe, zeige ich 
 
 | DALL-E Anfrage | Verwendetes Bild |
 | - | - |
+| For an 2D Adventure I need a simple player character, like a simple board game element | <img src="../DALL-E/DALL·E 2023-02-13 10.17.36 - For an 2D Adventure I need a simple player character, like a simple board game element.png" width="25%"> <img src="../DALL-E/DALL·E 2023-02-13 10.17.56 - For an 2D Adventure I need a simple player character, like a simple board game element.png" width="25%"> |
 | I need a drawn picture of weapons for a 2d graphical adventure | <img src="../DALL-E/DALL·E 2023-02-12 13.23.00 - I need a drawn picture of weapons for a 2d graphical adventure.png" width="25%"> <img src="../DALL-E/DALL·E 2023-02-12 13.23.14 - I need a drawn picture of weapons for a 2d graphical adventure.png" width="25%"> <img src="../DALL-E/DALL·E 2023-02-12 13.23.23 - I need a drawn picture of weapons for a 2d graphical adventure.png" width="25%">|
 | I need a drawn picture of a small hill of gold coins for a 2d graphical adventure | <img src="../DALL-E/DALL·E 2023-02-12 13.24.19 - I need a drawn picture of a small hill of gold coins for a 2d graphical adventure.png" width="25%"> <img src="../DALL-E/DALL·E 2023-02-12 13.25.37 - I need a picture of Coins for a 2D graphical adventure.png" width="25%">|
 | I need a picture of Coins for a 2D graphical adventure. | <img src="../DALL-E/DALL·E 2023-02-12 13.25.44 - I need a picture of Coins for a 2D graphical adventure.png" width="25%"> |

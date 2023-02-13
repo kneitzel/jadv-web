@@ -49,7 +49,7 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
 <meta property="article:section" content="Anhang" />
     <meta
       property="article:modified_time"
-      content="2023-02-11T18:27:50+01:00"
+      content="2023-02-12T14:43:36+01:00"
     />
 
 
@@ -69,7 +69,7 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
       "url" : "https://jadventure.de/Anhang/E2-maven/",
       "headline": "E2 - Maven (Übersicht)",
       "description": "Bei Maven handelt es sich um ein Build Tool, welches vor allem für Java Projekte eingesetzt wird (aber nicht auf Java beschränkt ist).\nLifecycle Maven ist Lifecycle basiert. Es gibt drei Lifecycle mit mehreren Schritten. Bei einem Maven Aufruf wird ein (oder mehrere) Ziel(e) angegeben. Maven arbeitet dann den entsprechenden Lifecycle ab bis einschließlich dem angegebenen Ziel.\nclean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und besteht aus den Zielen \/ Schritten:",
-      "wordCount" : "461",
+      "wordCount" : "1871",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -81,7 +81,7 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-02-11T18:27:50.00Z",
+      "dateModified": "2023-02-12T14:43:36.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -2186,7 +2186,16 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
         </a>
     </h2>
 </div>
-<p>Im build oder default Lifecycle wird das ganze Projekt gebaut. Die Ziele / Schritte des build Lifecycle sind:</p>
+<p>Der Maven Build Lifecycle besteht aus mehreren Phasen, die in einer bestimmten Reihenfolge durchgeführt werden. Hier ist eine Übersicht über die wichtigsten Phasen:</p>
+<p>validate: Überprüfung, ob das Projekt korrekt definiert ist und alle erforderlichen Informationen vorliegen.
+compile: Kompilierung des Quellcodes.
+test: Ausführung von Unit-Tests.
+package: Erstellung eines ausführbaren Pakets (z. B. JAR oder WAR).
+integration-test: Ausführung von Integrations-Tests.
+verify: Überprüfung der Integrität des Pakets.
+install: Installation des Pakets in den lokalen Maven-Repository.
+deploy: Bereitstellung des Pakets in ein Remote-Repository, damit es von anderen Projekten verwendet werden kann.
+Jede Phase kann spezifische Plugins aktivieren, die bestimmte Aktionen ausführen, um den Build-Prozess zu unterstützen. Jede Phase muss erfolgreich abgeschlossen werden, bevor die nächste Phase ausgeführt wird. Außerdem kann jede Phase übersprungen werden, indem man ein spezielles Ziel direkt aufruft, z. B. mvn install, um die Phasen validate bis install auszuführen.</p>
 <div class="table-wrap"> <table>
 <thead>
 <tr>
@@ -2197,7 +2206,7 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
 <tbody>
 <tr>
 <td>validate</td>
-<td>Validiert, dass das Projekt korrekt ist und alle notwendigen Informationen angegeben wurden.</td>
+<td>Überprüfung, ob das Projekt korrekt definiert ist und alle erforderlichen Informationen vorliegen.</td>
 </tr>
 <tr>
 <td>initialize</td>
@@ -2221,7 +2230,7 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
 </tr>
 <tr>
 <td>compile</td>
-<td>Übersetzt die Sourcen des Projektes</td>
+<td>Kompilierung des Quellcodes.</td>
 </tr>
 <tr>
 <td>process-classes</td>
@@ -2253,7 +2262,7 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
 </tr>
 <tr>
 <td>test</td>
-<td>Führt die Tests aus. Diese Tests sollten nicht benötigt werden um das Paket zu bauen oder zu deployen (Test kann übersprungen werdn!)</td>
+<td>Ausführung von Unit-Tests. Diese Tests sollten nicht benötigt werden um das Paket zu bauen oder zu deployen (Test kann übersprungen werden!)</td>
 </tr>
 <tr>
 <td>prepare-package</td>
@@ -2277,18 +2286,30 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
 </tr>
 <tr>
 <td>verify</td>
-<td>Schritte um sicher zu stellen, dass das gebaute Paket gültig ist und den Qualitätsansprüchen genügt.</td>
+<td>Überprüfung der Integrität des Pakets.</td>
 </tr>
 <tr>
 <td>install</td>
-<td>Installiert das Paket im lokalen Repository. Damit steht es anderen Paketen als Abhängigkeit zur Verfügung.</td>
+<td>Installation des Pakets in den lokalen Maven-Repository. Damit steht es anderen Projekten des Entwicklers als Abhängigkeit zur Verfügung.</td>
 </tr>
 <tr>
 <td> deploy</td>
-<td>Sollte in einem Integrations- und Produktionsumfeld ausgeführt werden. Kopiert das finale Paket in ein entferntes Repository um es anderen Entwicklern zugängig zu machen.</td>
+<td>Bereitstellung des Pakets in ein Remote-Repository, damit es von anderen Projekten verwendet werden kann. Sollte in einem Integrations- und Produktionsumfeld ausgeführt werden.</td>
 </tr>
 </tbody>
 </table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="beispiele-von-aufrufen">
+        Beispiele von Aufrufen
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#beispiele-von-aufrufen" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Beispiele von Aufrufen" aria-label="Anchor to: Beispiele von Aufrufen" href="#beispiele-von-aufrufen">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p><code>mvn clean package</code></p>
+<p>Es werden die beiden Ziele clean und package angegeben. clean ist ein Ziel des clean Lifecycle und package vom build Lifecycle.
+Daher durchläuft Maven hier erst den clean Lifecycle bis einschließlich clean: pre-clean, clean
+Danacg wird der build lifecycle durchlaufen bis einschließlich package: validate, initialize, generate-sources, process-sources, generare-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package</p>
 <div class="gdoc-page__anchorwrap">
     <h1 id="maven-wrapper">
         Maven Wrapper
@@ -2297,6 +2318,188 @@ clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und best
         </a>
     </h1>
 </div>
+<p>Der Maven Wrapper ist ein Mechanismus, der es ermöglicht, eine bestimmte Version von Maven in einem Projekt zu verwenden, unabhängig von den installierten Versionen auf einem System. Es besteht aus einer Reihe von Skripten und Konfigurationsdateien, die in einem Projekt bereitgestellt werden, um eine bestimmte Version von Maven zu verwenden, wenn das Projekt gebaut wird.</p>
+<p>Der Maven Wrapper wird verwendet, um folgendes zu erreichen:</p>
+<p>Reproduzierbarkeit: Indem eine bestimmte Version von Maven in einem Projekt verwendet wird, kann sichergestellt werden, dass dasselbe Ergebnis erzielt wird, unabhängig von den installierten Versionen auf einem System.</p>
+<p>Konsistenz: Indem eine bestimmte Version von Maven in einem Projekt verwendet wird, kann sichergestellt werden, dass alle Entwickler dasselbe Verhalten und dieselben Ergebnisse erhalten.</p>
+<p>Einfachheit: Durch die Verwendung des Maven Wrappers müssen Entwickler nicht selbst dafür sorgen, dass eine bestimmte Version von Maven installiert ist, was die Einrichtung des Projekts vereinfacht.</p>
+<p>Insgesamt ermöglicht der Maven Wrapper eine bessere Kontrolle über die verwendete Version von Maven in einem Projekt und erleichtert die Reproduzierbarkeit, Konsistenz und Einrichtung des Projekts.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="installation-des-maven-wrapper">
+        Installation des Maven Wrapper
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#installation-des-maven-wrapper" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Installation des Maven Wrapper" aria-label="Anchor to: Installation des Maven Wrapper" href="#installation-des-maven-wrapper">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Den maven wrapper kann man über das Maven, welches eine Entwicklungsumgebung mit sich bringt, installieren über einen Aufruf
+<code>mvn wrapper:wrapper</code>. In IntelliJ ist dies z.B. über das Maven Toolfenster möglich.</p>
+<p>Sollte dies nicht direkt funktionieren, weil Maven das wrapper Plugin nicht kennt, so kann dieses in der POM eingefügt werden:
+<a
+  class="gdoc-markdown__link"
+  href="https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-wrapper-plugin"
+>https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-wrapper-plugin</a></p>
+<p>Z.B. aktuell:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>maven-wrapper-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>3.1.1<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/plugin&gt;</span>
+</span></span></code></pre></div><p>Nach der Installation des Maven Wrappers können wir im Projektverzeichnis die mvnw Scripte nutzen, um Maven zu starten. Beim Aufruf wird somit nur das mvn durch mvnw ersetzt (bzw. ./mvnw bei Unix und Mac Systemen).</p>
+<p>Das heruntergleadene Maven findet sich dann im ~/.m2/wrapper Verzeichnis und wird auch von dort durch die Skripte gestartet.</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="maven-projekte">
+        Maven Projekte
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#maven-projekte" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Maven Projekte" aria-label="Anchor to: Maven Projekte" href="#maven-projekte">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Jedes Maven Projekt sollte eindeutig identifizierbar sein. Identifiziert wird dabei ein Projekt über:</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="groupid">
+        groupId
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#groupid" class="gdoc-page__anchor clip flex align-center" title="Anchor to: groupId" aria-label="Anchor to: groupId" href="#groupid">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Eine groupId identifiziert den Ersteller / Verantwortlichen für das Projekt. Dies kann eine Firma oder eien Gruppe sein. Wenn eine Gruppe / eine Person speziell ein Projekt bearbeitet, dann kann dies natürlich auch der Name des Projektes sein.</p>
+<p>Da dies eindeutig sein sollte, ist es eine gute Idee, hier einen umgedrehten Domainnamen zu verwenden. So habe ich die Kontrolle über jadv.org, daher ist die groupId bei mir org.jadv.</p>
+<p>Wenn man keine domain hat, über die man die Kontrolle hat, dann kann man prinzipiell</p>
+<ul>
+<li>direkt den Projektnamen verwenden (das könnte bei mir jadventure sein, prominente Beispiele sind z.B. JUnit, welche bei JUnit 4 noch junit als GroupId verwendet hat).</li>
+<li>es ist auch denkbar, eine bekannte Adresse zu nehmen, bei denen man einen Useraccount hat und da eben den Useraccount mit anzuhängen: com.github.kneitzel da ich bei github.com der user kneitzel bin.</li>
+</ul>
+<p><strong>Dies ist aber natürlich nur wichtig, wenn ich mein Projekt auch veröffentlichen möchte. Da man dies aber nicht immer vorher weiss, macht es Sinn, hier von Anfang an einen gültigen Namen zu wählen.</strong></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="artefactid">
+        artefactId
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#artefactid" class="gdoc-page__anchor clip flex align-center" title="Anchor to: artefactId" aria-label="Anchor to: artefactId" href="#artefactid">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Die ArtefactId bezeichnet das Projekt und sollte innerhalb der groupId eindeutig sein. Der Projektname ist bei JAdventure, so dass ich den Namen in Kleinbuchstaben als artefactId gewählt habe.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="version">
+        version
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#version" class="gdoc-page__anchor clip flex align-center" title="Anchor to: version" aria-label="Anchor to: version" href="#version">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Jede Veröffentlichung sollte eine klare Version haben. Hier sind 2 - 4 Zahlen, getrennt durch Punkte, üblich.</p>
+<p>An diese Version kann auch noch etwas angehängt werden. Dies findet man speziell für Alpha und Beta Versionen. Diese werden teilweise direkt als solche bezeichnet (-ALPHA, -BETA) oder es gibt Milestone Releases (-M1, -M2, &hellip;). Hier gibt es aber keine festen Vorgaben.</p>
+<p>Üblich ist aber ein -SNAPSHOT. Snapshot Versionen sind Versionen in der Entwicklung hin zu einer Version. 1.0.0-SNAPSHOT ist also eine Version die entwickelt wird und die später eine 1.0.0 werden soll.
+Snaptshot Versionen dienen nur in der Entwicklung - wenn man mehrere voneinander abhängige Projekte entwickelt, dann bezieht man so eine Version mit ein, die in Entwicklung ist. <strong>Diese Versionen sollten aber nie auf ein öffentliches Repository hochgeladen werden!</strong></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="project-object-model---pom">
+        Project Object Model - POM
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#project-object-model---pom" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Project Object Model - POM" aria-label="Anchor to: Project Object Model - POM" href="#project-object-model---pom">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Ein Projekt wird in einer pom.xml beschrieben. Dabei handelt es sich um ein XML Dokument, dessen Struktur auch über eine Schema Definition beschrieben wurde.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="minimales-projekt">
+        Minimales Projekt
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#minimales-projekt" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Minimales Projekt" aria-label="Anchor to: Minimales Projekt" href="#minimales-projekt">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Ein minimales Projekt beinhaltet lediglich die Modelversion und die Identifizierung des Projekts:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">&#34;http://maven.apache.org/POM/4.0.0&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">xmlns:xsi=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">xsi:schemaLocation=</span><span class="s">&#34;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.jadv<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>jadventure<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>1.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/project&gt;</span>
+</span></span></code></pre></div><p>Damit es keine Probleme bezüglich der Kodierung der Dateien und der verwendeten Java Version gibt, sollten diese in den Properties immer klar angegeben werden: Dies geschieht in einem Properties-Block:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;properties&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;maven.compiler.source&gt;</span>17<span class="nt">&lt;/maven.compiler.source&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;maven.compiler.target&gt;</span>17<span class="nt">&lt;/maven.compiler.target&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;project.build.sourceEncoding&gt;</span>UTF-8<span class="nt">&lt;/project.build.sourceEncoding&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/properties&gt;</span>
+</span></span></code></pre></div><p>In diesen Beispiel Properties setzen wir die Java Version auf 17 und bestimmen, dass Code-Dateien in UTF-8 gespeichert wurden.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="übergeordnetes-projekt">
+        Übergeordnetes Projekt
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#übergeordnetes-projekt" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Übergeordnetes Projekt" aria-label="Anchor to: Übergeordnetes Projekt" href="#%c3%bcbergeordnetes-projekt">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Jedes Projekt hat ein übergeordnetes Projekt - das sogenannte parent Projekt. Dies kann in der pom.xml angegeben werden:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;parent&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>artefact<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>group<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>version<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/parent&gt;</span>
+</span></span></code></pre></div><p>Das übergeordnete Projekt wird über artefactId, groupId und version eindeutig bestimmt. Die Details des Projekts werden dann aus dem Repository geladen und alle Einstellungen übernommen.</p>
+<p>Sollte kein übergeordnetes Projekt angegeben werden, so wird die sogenannte Super POM als übergeordnetes Projekt genommen. Diese enthält eine erste Konfiguration z.B. die Festlegung, wo die Sourcen (src/main/java und src/test/java) und die Ressourcen (src/main/resourcen und src/test/resourcen) zu finden sind. Aber auch diverse Plugins werden eingebunden wie z.B. das Compiler Plugin.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="module">
+        Module
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#module" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Module" aria-label="Anchor to: Module" href="#module">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Man kann untergeordnete Projekte haben. Dabei ist wichtig: Sobald ein Projekt untergeordnete Projekte, sogenannte Module, hat, kann das Projekt nichts anderes produzieren als eine eine pom mit Konfigurationen.
+Zu den Modulen gehört also auch immer die Einstellung: <code>&lt;packaging&gt;pom&lt;/packagiung&gt;</code></p>
+<p>Bei der Angabe von Modulen muss es dann mit dem gleichen Namen ein Unterverzeichnis geben. Maven schaut dann in dem Unterverzeichnis nach einer pom.xml um diese ebenfalls zu bearbeiten. Üblich ist, dass diese Module dann das übergeordnete Projekt als Parent angeben. Dies ist aber nicht verpflichtend.</p>
+<p>Die einzelnen Module sind in dem Element modules, so dass die Struktur so aussieht:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;packaging&gt;</span>pom<span class="nt">&lt;/packagiung&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;modules&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;module&gt;</span>someDir<span class="nt">&lt;/module&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;module&gt;</span>otherDir<span class="nt">&lt;/module&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/modules&gt;</span>
+</span></span></code></pre></div><p>Mit diesen Einträgen erwartet Maven die Unterverzeichnisse someDir und otherDir, die beide eine pom.xml enthalten müssen.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="dependencies--dependencymanagement">
+        Dependencies / DependencyManagement
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#dependencies--dependencymanagement" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Dependencies / DependencyManagement" aria-label="Anchor to: Dependencies / DependencyManagement" href="#dependencies--dependencymanagement">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Abhängigkeiten können verwaltet werden über ein Element dependencies. Jede Abhängigkeit wird mit groupId, archetypeId und Version definiert und Maven lädt die Abhängigkeit sowie alle davon abhängende Abhängigkeiten (transitive Abhängigkeiten).</p>
+<p>Das Element dependencyManagement konfiguriert Abhängigkeiten ebenso wie das dependency Element mit der Ausnahme, dass die Abhängigkeit nur bekannt gemacht wird mit Version und ggf. einer Konfiguration (z.B. dem Verhindern, dass Abhängigkeiten mit geladen werden). Diese Abhängigkeit kann dann in folgenden Objekten verwendet werden, ohne Details anzugeben.</p>
+<p>Wir können ein Beispiel konstruieren, dass in dem Paren Projekt eine Library festgelegt wird und dann das Unterprojekt nur noch die Abhängigkeit selbst angibt:</p>
+<p>Im Parent Projekt findet sich:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependencyManagement&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependencies&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;groupId&gt;</span>org.apache.logging.log4j<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;artifactId&gt;</span>log4j-core<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;version&gt;</span>2.19.0<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependencies&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependencyManagement&gt;</span>
+</span></span></code></pre></div><p>Im Modul wird dann die Abhängigkeit nur noch ohne Version angegeben:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.apache.logging.log4j<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>log4j-core<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><p>Dieses Vorgehen findet sich in einigen Franeworks. Spring Boot erzeugt Projekte, die ein Spring-boot-starter Parent haben, das dann von sehr vielen Abhängigkeiten die Version definiert. Im eigenen Spring Boot Projekt wird dann beid en Abhängigkeiten keine Version mehr angegeben und so wird sicher gestellt, dass es durch unterschiedliche Versionen nicht zu Inkompatibilitäten und Problemen kommen kann.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="plugins--plugin-dependencymanagement">
+        Plugins / Plugin DependencyManagement
+        <a data-clipboard-text="https://jadventure.de/Anhang/E2-maven/#plugins--plugin-dependencymanagement" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Plugins / Plugin DependencyManagement" aria-label="Anchor to: Plugins / Plugin DependencyManagement" href="#plugins--plugin-dependencymanagement">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>In dem build Element wird der eigentliche Build konfiguriert. In Maven werden die eigentlichen Tätigkeiten immer durch Plugins durchgeführt. Das Super POM bindet bereits einige Plugins ein und weitere Plugins können dann auch noch eingebunden werden.</p>
+<p>So wie bei dependencies ein dependencyManagement verfügbar ist, gibt es bei plugins auch ein pluginManagement. Hier kann bereits ein Plugin konfiguriert werden, ohne dass es direkt im Projekt verwendet wird. In untergeordneten Projekten kann das dann eingebunden werden, ohne die Version oder die Konfiguration noch einmal angeben zu müssen.</p>
 
   </article>
 
