@@ -3,6 +3,7 @@ title: A1 - Aktualisierungen / Versionen des Kurses
 ---
 | Version | Datum | Veränderung |
 |-|-|-|
+| 0.1.3 | 13.02.2023 | Abschluss Lektion 2 (ohne Videos), Start Level 3 Code. |
 | 0.1.2 | 09.02.2023 | Beschreibung MVC |
 | 0.1.2 | 06.02.2023 | Wechsel von Gitea zu GitHub |
 | 0.1.1 | 05.02.2023 | Start der Inhalte für Lektion 2 |

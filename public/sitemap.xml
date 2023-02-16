@@ -27,7 +27,7 @@
     <lastmod>2023-01-30T18:08:52+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</loc>
-    <lastmod>2023-01-22T13:59:26+01:00</lastmod>
+    <lastmod>2023-02-11T18:27:50+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</loc>
     <lastmod>2023-01-30T18:08:52+01:00</lastmod>
@@ -63,7 +63,7 @@
     <lastmod>2023-02-08T05:13:45+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.6-Client-Implementation/</loc>
-    <lastmod>2023-02-11T15:51:29+01:00</lastmod>
+    <lastmod>2023-02-11T16:29:32+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Lektion2/2.7-Unit-Tests/</loc>
     <lastmod>2023-02-10T23:34:16+01:00</lastmod>
@@ -74,13 +74,16 @@
     <loc>https://jadventure.de/Lektion2/2.9-%C3%9Cbungen/</loc>
   </url><url>
     <loc>https://jadventure.de/Anhang/A1-Aktualisierungen/</loc>
-    <lastmod>2023-02-10T09:58:12+01:00</lastmod>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/A2-abkuerzungen/</loc>
     <lastmod>2023-02-10T09:58:12+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/A3-technology/</loc>
     <lastmod>2023-01-22T13:59:26+01:00</lastmod>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/A4-Original-DALL-E-Bilder/</loc>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/</loc>
     <lastmod>2023-02-10T09:58:12+01:00</lastmod>
@@ -92,7 +95,7 @@
     <lastmod>2023-01-31T20:35:01+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/E2-maven/</loc>
-    <lastmod>2023-01-31T20:35:01+01:00</lastmod>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/J1-Java-Grundlagen/</loc>
     <lastmod>2023-02-01T05:14:08+01:00</lastmod>
@@ -104,22 +107,22 @@
     <lastmod>2023-02-10T09:58:12+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P2-Clean-Code/javadoc/</loc>
-    <lastmod>2023-02-10T09:58:12+01:00</lastmod>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/contact/</loc>
     <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</loc>
-    <lastmod>2023-02-10T17:05:40+01:00</lastmod>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P1-AgilesArbeiten/</loc>
     <lastmod>2023-02-05T21:39:20+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P2-Clean-Code/</loc>
-    <lastmod>2023-02-06T19:49:00+01:00</lastmod>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P3-Entwurfsmuster/</loc>
-    <lastmod>2023-02-05T21:39:20+01:00</lastmod>
+    <lastmod>2023-02-13T22:34:53+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/Anhang/P1-AgilesArbeiten/SCRUM/</loc>
     <lastmod>2023-02-05T21:39:20+01:00</lastmod>

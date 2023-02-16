@@ -49,7 +49,7 @@ Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starte
 <meta property="article:section" content="Lektion1" />
     <meta
       property="article:modified_time"
-      content="2023-01-22T13:59:26+01:00"
+      content="2023-02-11T18:27:50+01:00"
     />
 
 
@@ -69,7 +69,7 @@ Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starte
       "url" : "https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/",
       "headline": "1.4.1 Projekt in IntelliJ anlegen",
       "description": "Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:\n(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)\nMaven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!",
-      "wordCount" : "81",
+      "wordCount" : "215",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -81,7 +81,7 @@ Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starte
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-01-22T13:59:26.00Z",
+      "dateModified": "2023-02-11T18:27:50.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -1350,6 +1350,42 @@ Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starte
               
                 <span class="flex">
                   <a
+                    href="/Anhang/A4-Original-DALL-E-Bilder/"
+                    class="gdoc-nav__entry"
+                  >
+                    A4 - DALL-E Bilder
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/Anhang/E1-gson/"
                     class="gdoc-nav__entry"
                   >
@@ -2086,6 +2122,18 @@ Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starte
     </h1>
 </div>
 <p>Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!)</p>
+<p>Um den Maven Wrapper hinzu zu fügen können wir über die IDE das Ziel wrapper:wrapper anstarten. In IntelliJ kann dies über das Maven Toolfenster erfolgen: Dazu in der Symbolleiste des Maven Toolfensters &ldquo;Execute Maven Goal&rdquo; anclicken. Im dann erscheinenden Fenster kann das Ziel wrapper:wrapper angegeben werden. Durch diesen Aufruf werden im Projekt mvnw Scripte erzeigt sowie ein Verzeichnis .mvnw</p>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="aufruf-der-übersetzung">
+        Aufruf der Übersetzung
+        <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/#aufruf-der-übersetzung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Aufruf der Übersetzung" aria-label="Anchor to: Aufruf der Übersetzung" href="#aufruf-der-%c3%bcbersetzung">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Wir können sowohl mit der Entwicklungsumgebung als auch auf der Kommandozeile das Projekt übersetzen. Dazu können wir das Ziel &ldquo;package&rdquo; aufrufen. Wir können dies aber auch direkt auf der Kommandozeile machen mit dem Aufruf <code>mvnw package</code>.</p>
+<p>Beim Übersetzen wird ein Verzeichnis target angelegt und dort finden sich alle Dateien, die während des Builds erzeugt werden.</p>
+<p>Eine Bereinigung kann über das Ziel clean ausgeführt werden. <code>mvnw clean</code> wäre der Aufruf auf der Kommandozeile.</p>
 
   </article>
 

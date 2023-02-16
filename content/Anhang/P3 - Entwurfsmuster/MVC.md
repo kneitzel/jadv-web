@@ -4,24 +4,25 @@ title: Model-View-Controller (MVC)
 
 {{< toc >}}
 
-Das MVC Entwurfsmuster unterteilt die eine Software in drei Komponenten. Zum einen das Datenmodell (Model), die Präsentation (View) und die Programmsteuerung (Controller). Ziel ist, ein möglichst flexiblen Aufbau zu bekommen, der Änderungen und Anpassungen in Zukunft erleichtern und wie Wiederverwendbarkeit erhöhen soll. So ist es denkbar, die Präsentationsebene anzupassen oder auszutauschen ohne irgend welche Anpassungen im Model oder Controller vorzunehmen.
-Weiterhin ermöglicht diese Aufteilung eine einfache Arbeitsteilung zwischen Entwicklern, da unabhängig voneinander entwickelt werden kann.
+Das MVC-Entwurfsmuster (Model-View-Controller) ist ein bekanntes Softwareentwicklungsmuster, das verwendet wird, um die Trennung von Benutzeroberfläche, Geschäftslogik und Datenmodell zu erreichen. Es sorgt dafür, dass die Komponenten unabhängig voneinander entwickelt und gewartet werden können, was es einfacher macht, Änderungen an der Benutzeroberfläche oder an der Geschäftslogik durchzuführen, ohne dass dabei andere Teile des Systems beeinträchtigt werden. Außerdem kann das MVC-Entwurfsmuster verwendet werden, um die Skalierbarkeit und Wartbarkeit von Anwendungen zu verbessern.
 
-In der praktischen Entwicklungsarbeit ist ein großer Vorteil der sauberen Trennung, dass die ganze Logik in Datenmodell und Programmsteuerung über Unit Tests getestet werden kann. Lediglich für die Präsentation sind spezielle, meist komplexere, Oberflächentests (UI Tests) zu erstellen.
+Es besteht aus den folgenden drei Komponenten:
 
 ## Model
-Das Datenmodell enthält die Daten, die von der Präsentation bereit gestellt werden. Es ist von der Programmsteuerung und Präsentation unabhängig. Die Präsentation wird über das Beobachter-Entwurfsmuster (Observer-Pattern) über Änderungen informiert.
+Das Modell repräsentiert das Datenmodell und beinhaltet die Geschäftslogik. Es enthält Informationen über den Zustand des Systems und bietet Methoden, um diese Daten zu manipulieren. Es ist von der Programmsteuerung und Präsentation unabhängig. Die Präsentation wird über das Beobachter-Entwurfsmuster (Observer-Pattern) über Änderungen informiert.
 
 ## View
-Die Präsentation (View) ist zuständig für das Anzeigen der Daten aus dem Datenmodel und die Entgegennahme von Benutzer Interaktionen. Dazu kennt es das Datenmodell und wird über das Beobachter-Entwurfsmuster über Änderungen informiert. Vom Benutzer veränderte Daten können zurück in das Datenmodell geschrieben werden. Frameworks für Oberflächen bieten dazu teilweise sogenanntes Binding bereit.
+Die Präsentation (View) ist zuständig für das Anzeigen der Daten aus dem Datenmodel und die Entgegennahme von Benutzer Interaktionen. Dazu kennt es das Datenmodell und wird über das Beobachter-Entwurfsmuster über Änderungen am Model informiert. Vom Benutzer veränderte Daten können zurück in das Datenmodell geschrieben werden. Frameworks für Oberflächen bieten dazu teilweise sogenanntes Binding bereit.
 Über das Beobachter-Entwurfsmuster informiert die Präsentation die Programmsteuerung über vom Benutzer getriggerte Aktionen. Dies findet in der Regel über eine Abstraktion statt, d.h. die Programmsteuerung bekommt lediglich die Intention mitgeteilt aber nicht wie diese mitgeteilt wurde. Beispiel: Der Anwender drückt den "Beenden" Knopf. Daher wird die Programmsteuerung informiert, dass der Anwender die Anwendung beenden möchte. Das dies über den Beenden Knopf erfolgte und z.B. nicht über das Datei Menü ist dabei in der Regel uninteressant.
 
-## Controller
-Die Programmsteuerung (Controller) ist verantwortlch für das Datenmodell und die Präsentation. So füllt es die notwendigen Daten in das Datenmodell und übergibt das Datenmodell an die Präsentation. Der Controller trägt sich als Beobachter bei der Präsentation ein, um Aktionen des Anwenders zu erfahren und um diese dann zu verarbeiten. Dabei können die Daten im Datenmodell angepasst werden. Bei Änderungen informiert das Datenmodell die Präsentation, so dass die Anzeige aktualisiert werden kann.
+
+## Controller:
+Der Controller  (Programmsteuerung) verwaltet die Interaktion zwischen View und Modell. Es reagiert auf Benutzereingaben, die es als Observer von der View bekommt und manipuliert das Modell entsprechend.
+
 
 # Framework für MVC
 
-Wie das MVC Pattern aufgebaut wird, kann man an dem Framework erkennen, das im Rahmen dieses Kurses entstanden ist.
+Den Aufbau des MVC Entwurfsmuster verdeutlichen wir im Folgenden an einem kleinen Framework, welches Basisklassen für Model, View und Controller bereit stellt.
 
 ## Model Class
 

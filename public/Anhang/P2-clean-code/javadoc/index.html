@@ -49,7 +49,7 @@ Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare st
 <meta property="article:section" content="Anhang" />
     <meta
       property="article:modified_time"
-      content="2023-02-10T09:58:12+01:00"
+      content="2023-02-13T22:34:53+01:00"
     />
 
 
@@ -69,7 +69,7 @@ Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare st
       "url" : "https://jadventure.de/Anhang/P2-Clean-Code/javadoc/",
       "headline": "JavaDoc",
       "description": "Es ist oft hilfreichm die API im Detail zu dokumentieren. Dies geschieht am einfachsten direkt im Source Code mit Hilfe von JavaDoc.\nJavaDoc Kommentare können vor\nKlassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit \/\/\/ oder sie bilden einen Kommentarblock per \/** und beenden diesen mit *\/. Viele Entwicklungsumgebungen unterstützen den Entwickler indem sie bei Start einer JavaDoc Kommentares direkt einen Block mit den üblichen Angaben erzeugen.",
-      "wordCount" : "81",
+      "wordCount" : "317",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -81,7 +81,7 @@ Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare st
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-02-10T09:58:12.00Z",
+      "dateModified": "2023-02-13T22:34:53.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -1350,6 +1350,42 @@ Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare st
               
                 <span class="flex">
                   <a
+                    href="/Anhang/A4-Original-DALL-E-Bilder/"
+                    class="gdoc-nav__entry"
+                  >
+                    A4 - DALL-E Bilder
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/Anhang/E1-gson/"
                     class="gdoc-nav__entry"
                   >
@@ -2076,14 +2112,68 @@ gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit <code>///</co
 </ul>
 <p>Viele Entwicklungsumgebungen unterstützen den Entwickler indem sie bei Start einer JavaDoc Kommentares direkt einen Block mit den üblichen Angaben erzeugen.</p>
 <div class="gdoc-page__anchorwrap">
-    <h1 id="todo-details-zu-den-möglichen-javadoc-kommentaren-schreiben">
-        TODO Details zu den möglichen JavaDoc Kommentaren schreiben.
-        <a data-clipboard-text="https://jadventure.de/Anhang/P2-Clean-Code/javadoc/#todo-details-zu-den-möglichen-javadoc-kommentaren-schreiben" class="gdoc-page__anchor clip flex align-center" title="Anchor to: TODO Details zu den möglichen JavaDoc Kommentaren schreiben." aria-label="Anchor to: TODO Details zu den möglichen JavaDoc Kommentaren schreiben." href="#todo-details-zu-den-m%c3%b6glichen-javadoc-kommentaren-schreiben">
+    <h1 id="javadoc-auf-einer-klasse">
+        JavaDoc auf einer Klasse
+        <a data-clipboard-text="https://jadventure.de/Anhang/P2-Clean-Code/javadoc/#javadoc-auf-einer-klasse" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JavaDoc auf einer Klasse" aria-label="Anchor to: JavaDoc auf einer Klasse" href="#javadoc-auf-einer-klasse">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
 </div>
-
+<p>Die wichtigsten Elemente, die in der JavaDoc-Dokumentation einer Klasse enthalten sein sollten, sind:</p>
+<p>Überschrift: Eine Überschrift, die den Namen der Klasse enthält.</p>
+<p>Beschreibung: Eine kurze Beschreibung, die das Ziel und den Zweck der Klasse beschreibt.</p>
+<p>@author: Der Name des Autors der Klasse.</p>
+<p>@version: Die Version der Klasse.</p>
+<p>@see: Verweise auf ähnliche oder verwandte Klassen oder Methoden.</p>
+<p>Beispiele: Beispiele, wie die Klasse verwendet wird, um ein besseres Verständnis zu ermöglichen.</p>
+<p>Beispiel:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">* Die Klasse Circle repräsentiert einen Kreis mit einem Radius.
+</span></span></span><span class="line"><span class="cl"><span class="cm">*
+</span></span></span><span class="line"><span class="cl"><span class="cm">* @author Jane Doe
+</span></span></span><span class="line"><span class="cl"><span class="cm">* @version 1.0
+</span></span></span><span class="line"><span class="cl"><span class="cm">* @see java.lang.Math#PI
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="javadoc-auf-einem-feld">
+        JavaDoc auf einem Feld
+        <a data-clipboard-text="https://jadventure.de/Anhang/P2-Clean-Code/javadoc/#javadoc-auf-einem-feld" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JavaDoc auf einem Feld" aria-label="Anchor to: JavaDoc auf einem Feld" href="#javadoc-auf-einem-feld">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Ein JavaDoc-Kommentar auf einem Feld sollte eine kurze Beschreibung des Zweckes des Feldes enthalten.</p>
+<p>Beispiel:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">* Der Radius des Kreises.
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="kt">double</span> <span class="n">radius</span><span class="o">;</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h1 id="javadoc-auf-einer-methode">
+        JavaDoc auf einer Methode
+        <a data-clipboard-text="https://jadventure.de/Anhang/P2-Clean-Code/javadoc/#javadoc-auf-einer-methode" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JavaDoc auf einer Methode" aria-label="Anchor to: JavaDoc auf einer Methode" href="#javadoc-auf-einer-methode">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div>
+<p>Ein JavaDoc-Kommentar auf einer Methode kann folgende Informationen enthalten:</p>
+<p>Überschrift: Eine Überschrift, die den Namen der Methode enthält.</p>
+<p>Beschreibung: Eine kurze Beschreibung des Zweckes und der Funktionalität der Methode.</p>
+<p>@param: Eine Liste der Parameter, die die Methode erwartet, inklusive einer kurzen Beschreibung jedes Parameters.</p>
+<p>@return: Eine Beschreibung der Rückgabewerte der Methode, falls vorhanden.</p>
+<p>@throws: Eine Liste der Ausnahmen, die von der Methode ausgelöst werden können, inklusive einer kurzen Beschreibung jeder Ausnahme.</p>
+<p>Beispiele: Beispiele, wie die Methode verwendet wird, um ein besseres Verständnis zu ermöglichen.</p>
+<p>Beispiel:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">* Berechnet den Umfang des Kreises.
+</span></span></span><span class="line"><span class="cl"><span class="cm">*
+</span></span></span><span class="line"><span class="cl"><span class="cm">* @return Der Umfang des Kreises.
+</span></span></span><span class="line"><span class="cl"><span class="cm">* @see java.lang.Math#PI
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">double</span> <span class="nf">getCircumference</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">Math</span><span class="o">.</span><span class="na">PI</span> <span class="o">*</span> <span class="n">radius</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
   </article>
 
 
