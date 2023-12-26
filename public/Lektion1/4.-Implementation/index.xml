@@ -5,69 +5,49 @@
     <link>https://jadventure.de/Lektion1/4.-Implementation/</link>
     <description>Recent content in 1.4. Implementation on JAdventure - Kurs zur Softwareentwicklung</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language><atom:link href="https://jadventure.de/Lektion1/4.-Implementation/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language>
+    <atom:link href="https://jadventure.de/Lektion1/4.-Implementation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.4.1 Projekt in IntelliJ anlegen</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</guid>
-      <description>Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
-(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)
-Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!</description>
+      <description>Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:&#xA;(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)&#xA;Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!</description>
     </item>
-    
     <item>
       <title>1.4.2 Entities</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</guid>
-      <description>LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll
-String name int width int height List&amp;lt;GameObject&amp;gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:
-/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level.</description>
+      <description>LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll&#xA;String name int width int height List&amp;lt;GameObject&amp;gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:&#xA;/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level.</description>
     </item>
-    
     <item>
       <title>1.4.3 Serialisierung</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/</guid>
-      <description>Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
-Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson.</description>
+      <description>Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:&#xA;Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson.</description>
     </item>
-    
     <item>
       <title>1.4.4 Unit Test</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</guid>
-      <description>Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
-Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
-Dies bringt aber einige Nachteile mit sich:</description>
+      <description>Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:&#xA;Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.&#xA;Dies bringt aber einige Nachteile mit sich:</description>
     </item>
-    
     <item>
       <title>1.4.5 Entities und Klassendiagramm</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</guid>
       <description>Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org.</description>
     </item>
-    
     <item>
       <title>1.4.6 Übungen</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-Uebungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-Uebungen/</guid>
-      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
-Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.
-Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein neues Projekt und schreibe die genannten Klassen ohne bei der fertigen Implementation zu &amp;ldquo;spicken&amp;rdquo;.</description>
+      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.&#xA;Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.&#xA;Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein neues Projekt und schreibe die genannten Klassen ohne bei der fertigen Implementation zu &amp;ldquo;spicken&amp;rdquo;.</description>
     </item>
-    
   </channel>
 </rss>

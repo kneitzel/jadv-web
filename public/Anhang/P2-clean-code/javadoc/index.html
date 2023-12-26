@@ -9,7 +9,7 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.110.0">
+<meta name="generator" content="Hugo 0.121.1">
 
 
   <meta name="description" content="Es ist oft hilfreichm die API im Detail zu dokumentieren. Dies geschieht am einfachsten direkt im Source Code mit Hilfe von JavaDoc.
@@ -1723,6 +1723,42 @@ Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare st
               
                 <span class="flex">
                   <a
+                    href="/Anhang/P2-Clean-Code/ifsequenzen/"
+                    class="gdoc-nav__entry"
+                  >
+                    if Sequenzen vermeiden
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/Anhang/P2-Clean-Code/javadoc/"
                     class="gdoc-nav__entry is-active"
                   >
@@ -2133,8 +2169,8 @@ gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit <code>///</co
 </span></span></span><span class="line"><span class="cl"><span class="cm">* @author Jane Doe
 </span></span></span><span class="line"><span class="cl"><span class="cm">* @version 1.0
 </span></span></span><span class="line"><span class="cl"><span class="cm">* @see java.lang.Math#PI
-</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">
+</span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
     <h1 id="javadoc-auf-einem-feld">
         JavaDoc auf einem Feld
         <a data-clipboard-text="https://jadventure.de/Anhang/P2-Clean-Code/javadoc/#javadoc-auf-einem-feld" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JavaDoc auf einem Feld" aria-label="Anchor to: JavaDoc auf einem Feld" href="#javadoc-auf-einem-feld">
@@ -2146,9 +2182,9 @@ gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit <code>///</co
 <p>Beispiel:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">* Der Radius des Kreises.
-</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
-</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="kt">double</span> <span class="n">radius</span><span class="o">;</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">private</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
     <h1 id="javadoc-auf-einer-methode">
         JavaDoc auf einer Methode
         <a data-clipboard-text="https://jadventure.de/Anhang/P2-Clean-Code/javadoc/#javadoc-auf-einer-methode" class="gdoc-page__anchor clip flex align-center" title="Anchor to: JavaDoc auf einer Methode" aria-label="Anchor to: JavaDoc auf einer Methode" href="#javadoc-auf-einer-methode">
@@ -2169,11 +2205,11 @@ gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit <code>///</co
 </span></span></span><span class="line"><span class="cl"><span class="cm">*
 </span></span></span><span class="line"><span class="cl"><span class="cm">* @return Der Umfang des Kreises.
 </span></span></span><span class="line"><span class="cl"><span class="cm">* @see java.lang.Math#PI
-</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">double</span> <span class="nf">getCircumference</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">Math</span><span class="o">.</span><span class="na">PI</span> <span class="o">*</span> <span class="n">radius</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">getCircumference</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="na">PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div>
   </article>
 
 

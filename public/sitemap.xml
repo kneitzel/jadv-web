@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jadventure.de/datenschutz/</loc>
-    <priority>0</priority>
+    <lastmod>2023-01-11T22:05:26+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/impressum/</loc>
-    <priority>0</priority>
+    <lastmod>2023-01-11T10:16:06+01:00</lastmod>
   </url><url>
     <loc>https://jadventure.de/0.Uebersicht/</loc>
     <lastmod>2023-02-06T15:35:06+01:00</lastmod>
@@ -96,6 +96,8 @@
   </url><url>
     <loc>https://jadventure.de/Anhang/E2-maven/</loc>
     <lastmod>2023-02-13T22:34:53+01:00</lastmod>
+  </url><url>
+    <loc>https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/</loc>
   </url><url>
     <loc>https://jadventure.de/Anhang/J1-Java-Grundlagen/</loc>
     <lastmod>2023-02-01T05:14:08+01:00</lastmod>
