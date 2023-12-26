@@ -5,338 +5,231 @@
     <link>https://jadventure.de/</link>
     <description>Recent content in JAdventure - Kurs zur Softwareentwicklung in Java on JAdventure - Kurs zur Softwareentwicklung</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language><atom:link href="https://jadventure.de/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language>
+    <atom:link href="https://jadventure.de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://jadventure.de/datenschutz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/datenschutz/</guid>
-      <description>Verantwortlich / Ansprechpartner Konrad Neitzel
-Bornstr. 5
-61250 Usingen
-eMail: konrad@kneitzel.de
-Datenschutz ist mir wichtig! So vermeide ich – soweit möglich – die Verwendung von Add-Ons und Tools, die Anwender tracken.
-Cookies Diese Webseite ist eine statische Webseite und somit sind keine Cookies notwendig.
-Links Ich verweise auch auf andere Sites. Wenn Sie einem Link folgen, dann übermitteln sie personenbezogene Daten (z.B. Ihre IP Ardesse) an den Zielserver, der diese dann auswerten kann.</description>
+      <description>Verantwortlich / Ansprechpartner Konrad Neitzel&#xA;Bornstr. 5&#xA;61250 Usingen&#xA;eMail: konrad@kneitzel.de&#xA;Datenschutz ist mir wichtig! So vermeide ich – soweit möglich – die Verwendung von Add-Ons und Tools, die Anwender tracken.&#xA;Cookies Diese Webseite ist eine statische Webseite und somit sind keine Cookies notwendig.&#xA;Links Ich verweise auch auf andere Sites. Wenn Sie einem Link folgen, dann übermitteln sie personenbezogene Daten (z.B. Ihre IP Ardesse) an den Zielserver, der diese dann auswerten kann.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://jadventure.de/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/impressum/</guid>
-      <description>Die Webseite https://jadventure.de ist die persönliche Webseite von Konrad Neitzel.
-Die Webseite wird betrieben von Konrad Neitzel
-Bornstraße 5
-61250 Usingen
-Telefon: +49 (1575) 83 16 414
-eMail: konrad@kneitzel.de
-Inhaber und Webmaster: Konrad Neitzel
-Für den Inhalt verantwortlich: Konrad Neitzel
-Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seiten dürfen nur nach vorheriger schriftlicher Einwilligung zum eigenen Gebrauch vervielfältigt, geändert, gedruckt, weitergegeben oder in sonstiger Art und Weise reproduziert werden.</description>
+      <description>Die Webseite https://jadventure.de ist die persönliche Webseite von Konrad Neitzel.&#xA;Die Webseite wird betrieben von Konrad Neitzel&#xA;Bornstraße 5&#xA;61250 Usingen&#xA;Telefon: +49 (1575) 83 16 414&#xA;eMail: konrad@kneitzel.de&#xA;Inhaber und Webmaster: Konrad Neitzel&#xA;Für den Inhalt verantwortlich: Konrad Neitzel&#xA;Copyright Alle Texte, Logos und Grafiken unterliegen dem Urheberrecht. Die Seiten dürfen nur nach vorheriger schriftlicher Einwilligung zum eigenen Gebrauch vervielfältigt, geändert, gedruckt, weitergegeben oder in sonstiger Art und Weise reproduziert werden.</description>
     </item>
-    
     <item>
       <title>1.1. Vision</title>
       <link>https://jadventure.de/Lektion1/1.Vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/1.Vision/</guid>
-      <description>JAdventure Vision PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.
-Es sind Interaktionen möglich:
-Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.</description>
+      <description>JAdventure Vision PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation JAdventure Vision JAdventure soll ein MMORPG werden, also ein Massive Multiplayer Online Role Playing Game. Es soll eine virtuelle Spielwelt geben welche mit 2D Grafiken angezeigt wird. In der Welt soll es Lebewesen geben: Teilweise vom Computer gesteuert (NPC = Non Player Character), teilweise vom Spieler gesteuert. Es gibt im Spiel Gegenstände.&#xA;Es sind Interaktionen möglich:&#xA;Spieler können Gegenstände aufheben (so vom Gegenstand vorgesehen) Spieler können Gegenstände nutzen (z.</description>
     </item>
-    
     <item>
       <title>1.2. Schritte</title>
       <link>https://jadventure.de/Lektion1/2.Schritte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/2.Schritte/</guid>
-      <description>PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Den Umfang dieses Abschnitts halten wir kurz und notieren hier nur die Schritte, die wir wirklich als Erstes angehen werden.
-In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
+      <description>PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Den Umfang dieses Abschnitts halten wir kurz und notieren hier nur die Schritte, die wir wirklich als Erstes angehen werden.&#xA;In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
     </item>
-    
     <item>
       <title>1.3. Tasks / TODO Liste</title>
       <link>https://jadventure.de/Lektion1/3.Tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/3.Tasks/</guid>
-      <description>Im nächsten Schritt wird der Arbeitsumfang für den folgenden Implementationsschritt festgelegt. Von den erfassten Schritten nehmen wir die ersten paar, die gut zusammen passen und sich gut zusammen entwickeln lassen werden:
-In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
+      <description>Im nächsten Schritt wird der Arbeitsumfang für den folgenden Implementationsschritt festgelegt. Von den erfassten Schritten nehmen wir die ersten paar, die gut zusammen passen und sich gut zusammen entwickeln lassen werden:&#xA;In dem Spiel soll es Level geben. Diese sollen ein rechteckiges Gebiet fester Größe darstellen. Level haben einen eindeutigen Namen, der ein Level identifiziert. In einem Level können an beliebigen Stellen Elemente sein. In dem Spiel gibt es Gegenstände. Gegenstände haben einen Namen, eine Ausdehnung und eine Position in dem übergeordneten Objekt.</description>
     </item>
-    
     <item>
       <title>1.4.1 Projekt in IntelliJ anlegen</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.1-NewProject/</guid>
-      <description>Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:
-(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)
-Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!</description>
+      <description>Neues Projekt erstellen Wir erstellen in IntelliJ ein neues Maven Projekt. Dazu reicht es es aus, einfach unter New Project folgende Auswahl zu treffen:&#xA;(Die Lokation ist das Parent-Verzeichnis für das Projekt. Dieses bitte nach eigenen Bedürfnissen anpassen!)&#xA;Maven Wrapper Um auch auf der Kommandozeile das Projekt bauen zu können, starten wir über das Maven Toolfenster ein wrapper:wrapper Lauf. Dabei wird der Maven Wrapper dem Projekt hinzugefügt. (Wenn Du das Projekt von GitHub hädst, dann kannst Du diesen Punkt auch überspringen!</description>
     </item>
-    
     <item>
       <title>1.4.2 Entities</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.2-Entities/</guid>
-      <description>LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll
-String name int width int height List&amp;lt;GameObject&amp;gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:
-/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level.</description>
+      <description>LEVEL Aus den Beschreibungen entnehmen wir erst einmal, dass ein Level die folgenden Attribute haben soll&#xA;String name int width int height List&amp;lt;GameObject&amp;gt; childs Damit lässt sich relativ einfach und schnell eine Klasse Level schreiben:&#xA;/** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode public class Level { /** * Name of the Level. */ private String name; /** * Width of the level. */ private int width; /** * Height of the level.</description>
     </item>
-    
     <item>
       <title>1.4.3 Serialisierung</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/</guid>
-      <description>Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
-Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson.</description>
+      <description>Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:&#xA;Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String json = gson.</description>
     </item>
-    
     <item>
       <title>1.4.4 Unit Test</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.4-UnitTests/</guid>
-      <description>Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:
-Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.
-Dies bringt aber einige Nachteile mit sich:</description>
+      <description>Testumfang Level SavedObjectAdapter Test der Serialisierung Test der Serialisierung mit SavedObject Test der Deserialisierung Test des Fehlers: Klasse nicht vorhanden ListOfSavedObjectAdapter Serialisierung Deserialisierung Test Objekte Wenn wir irgend welchen Code schreiben, dann müssen wir diesen auch testen. Dabei haben wir mehrere Möglichkeiten:&#xA;Manuelle Tests Es ist natürlich immer möglich, dass man manuell ein paar Tests durchführt. Dazu wird z.B. die Anwendung gestartet und werden die Funktionalitäten manuell durchgetestet.&#xA;Dies bringt aber einige Nachteile mit sich:</description>
     </item>
-    
     <item>
       <title>1.4.5 Entities und Klassendiagramm</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.5-Klassendiagramm/</guid>
       <description>Die Klassen SavedObject Container Level GameObject Size CircleSize RectangleSize Position SavedObjectAdapter ListOfSavedObjectAdapter Klassendiagramm Die Klassen SavedObject package org.jadv.model; import com.google.gson.annotations.JsonAdapter; import lombok.EqualsAndHashCode; import lombok.Getter; import org.jadv.serialization.SavedObjectAdapter; /** * An instance that can be saved through an Adapter and contains the name of the class as field. */ @EqualsAndHashCode @JsonAdapter(SavedObjectAdapter.class) public abstract class SavedObject { /** * Class name of the instance. */ @Getter private final String type = getClass().getName(); } Container package org.</description>
     </item>
-    
     <item>
       <title>1.4.6 Übungen</title>
       <link>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-Uebungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion1/4.-Implementation/1.4.6-Uebungen/</guid>
-      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.
-Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.
-Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein neues Projekt und schreibe die genannten Klassen ohne bei der fertigen Implementation zu &amp;ldquo;spicken&amp;rdquo;.</description>
+      <description>Das Projekt bis hier her noch einmal selbst nachbauen Unit Test für Level.getChildren Unit Test der das Löschen eines nicht vorhandenen Objects aus einem Level testet Hier finden sich ein paar Dinge, die Du machen kannst um die Elemente dieser Lektion zu vertiefen oder zu verinnerlichen.&#xA;Fragen kannst Du gerne im Java Forum stellen oder mir per Email an konrad@kneitzel.de senden.&#xA;Das Projekt bis hier her noch einmal selbst nachbauen Starte einfach selbst ein neues Projekt und schreibe die genannten Klassen ohne bei der fertigen Implementation zu &amp;ldquo;spicken&amp;rdquo;.</description>
     </item>
-    
     <item>
       <title>2.1. Fehlende Unit-Tests</title>
       <link>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/</guid>
-      <description>Unit-Test für Level.getChildren() Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.
-Unit-Test für Level.getChildren() Bei der Methode getChildren() können wir so vorgehen:
-Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren() die Liste mit den GameObjects zurückliefert. /** * Tests the getObjects method. */ @Test public void testGetChildren() { Level level = new Level(&amp;#34;TestLevel&amp;#34;, 1000, 1000); GameObject obj = GameObject.</description>
+      <description>Unit-Test für Level.getChildren() Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.&#xA;Unit-Test für Level.getChildren() Bei der Methode getChildren() können wir so vorgehen:&#xA;Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren() die Liste mit den GameObjects zurückliefert. /** * Tests the getObjects method. */ @Test public void testGetChildren() { Level level = new Level(&amp;#34;TestLevel&amp;#34;, 1000, 1000); GameObject obj = GameObject.</description>
     </item>
-    
     <item>
       <title>2.2. Erweiterung des Modells</title>
       <link>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.2-Erweiterung-des-Models/</guid>
-      <description>Level GameObject Unit-Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &amp;ldquo;graphicResource&amp;rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.
-Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic.</description>
+      <description>Level GameObject Unit-Tests Konstruktor von Level nimmt nun einen Parameter mehr Das JSON des serialisierten Level ändert sich Level und GameObject erhalten ein zusätzliches Feld &amp;ldquo;graphicResource&amp;rdquo;. Da dies einfach ein Name ist, ist dies einfach ein String.&#xA;Level package org.jadv.model.level; // ... /** * JAdventure Level */ @Getter @NoArgsConstructor @AllArgsConstructor @ToString @EqualsAndHashCode(callSuper=true) public class Level extends SavedObject implements Container { // ... /** * Height of the level. */ private int height; /** * Resource name of a graphic.</description>
     </item>
-    
     <item>
       <title>2.3. Laden von Ressourcen</title>
       <link>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.3-Laden-von-Ressourcen/</guid>
-      <description>Bereitstellung von Ressourcen Bilder Level Laden der Bilder Laden der Level Bereitstellung von Ressourcen Bilder Wir brauchen ein paar Bilder für unser Spiel, die wir als Ressourcen in unser Projekt unter src/main/resources einfügen:
-Eine Grafik für einen Level-Hintergrund Mehrere Grafiken für Spielobjekte. Ich nutze dazu einfach die Grafiken, die ich bereits habe:
-Das Testlevel wurde mir von DALL-E generiert DALL-E hat mir einen Drachen generiert, bei dem ich den Hintergrund nur noch transparent machen muss (Ich habe das nur grob auf die Schnelle gemacht und die Qualität ist dementsprechend schlecht in dieser ersten Version.</description>
+      <description>Bereitstellung von Ressourcen Bilder Level Laden der Bilder Laden der Level Bereitstellung von Ressourcen Bilder Wir brauchen ein paar Bilder für unser Spiel, die wir als Ressourcen in unser Projekt unter src/main/resources einfügen:&#xA;Eine Grafik für einen Level-Hintergrund Mehrere Grafiken für Spielobjekte. Ich nutze dazu einfach die Grafiken, die ich bereits habe:&#xA;Das Testlevel wurde mir von DALL-E generiert DALL-E hat mir einen Drachen generiert, bei dem ich den Hintergrund nur noch transparent machen muss (Ich habe das nur grob auf die Schnelle gemacht und die Qualität ist dementsprechend schlecht in dieser ersten Version.</description>
     </item>
-    
     <item>
       <title>2.4. Clean Code: Kein doppelter Code!</title>
       <link>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.4-Clean-Code-Refactoring-Doppelter-Code/</guid>
       <description>Nutzung eines Generics für unterschiedliche Rückgabetypen Nutzung von Parametern im Konstruktor für unterschiedliche Werte Universelle Methode Nutzung von ResourceService Alternative Lösung Eines der wichtigsten Refactorings in der Softwareentwicklung ist die Eliminierung von doppeltem Code. Dies wird um so einfacher, je mehr sich die Codestellen gleichen und je weniger Elemente von außen genutzt werdem. Im einfachsten Fall kann man eine neue Methode erstellen, in die der doppelte Code kopiert wird. Die Elemente außerhalb des Codes werden zu Parametern und ein Ergebnis wird von der Methode zurückgegeben.</description>
     </item>
-    
     <item>
       <title>2.5. Clean Code: JavaDoc</title>
       <link>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.5-Clean-Code-JavaDoc/</guid>
-      <description>Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java-Framework kennt.
-Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.
-In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten.</description>
+      <description>Eine Dokumentation der Funktionalität ist sehr wichtig. Clean Code soll sich selbst erklären, aber dennoch macht es Sinn, Klassen und Methoden zu dokumentieren. Dadurch entsteht dann eine Dokumentation der API, wie man dies z.B. vom Java-Framework kennt.&#xA;Wir haben in 2.3 eine Klasse ResourceService geschrieben und haben diese ohne Kommentare erstellt. Das erschwert die Nutzung durch Dritte, daher sollten wir hier noch eine Dokumentation anlegen.&#xA;In dem meisten Entwicklungsumgebungen sollte es ausreichen, einen Kommentar mit /** zu starten, um dann einen Rahmen für JavaDoc zu erhalten.</description>
     </item>
-    
     <item>
       <title>2.6. Client Implementation</title>
       <link>https://jadventure.de/Lektion2/2.6-Client-Implementation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.6-Client-Implementation/</guid>
-      <description>Nun ist es endlich an der Zeit, den eigentlichen Client zu schreiben. Bei GUI Anwendungen ist es üblich, die Funktionalität nach einem Entwurfsmusster aufzuteilen. In unserem Programm wollen wir das MVC (Model-View-Controller) Entwurfsmuster umsetzen.
-MVC (Model-View-Controller) Bei dem Model-View-Controller Entwurfsmuster haben wir eine Aufteilung der Funktionalität in drei Bereiche:
-Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.</description>
+      <description>Nun ist es endlich an der Zeit, den eigentlichen Client zu schreiben. Bei GUI Anwendungen ist es üblich, die Funktionalität nach einem Entwurfsmusster aufzuteilen. In unserem Programm wollen wir das MVC (Model-View-Controller) Entwurfsmuster umsetzen.&#xA;MVC (Model-View-Controller) Bei dem Model-View-Controller Entwurfsmuster haben wir eine Aufteilung der Funktionalität in drei Bereiche:&#xA;Model Das Model enthält in erster Linie die Daten, die angezeigt werden bzw. die eingegeben werden. Die hier verwendeten Klassen können auch Business-Logik und andere Funktionalitätem beinhalten, aber diese spielen bei der Nutzung im MVC Pattern keien Rolle.</description>
     </item>
-    
     <item>
       <title>2.7. Unit-Tests mit Mocking</title>
       <link>https://jadventure.de/Lektion2/2.7-Unit-Tests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.7-Unit-Tests/</guid>
-      <description>Bisher haben wir nur den Client implementiert aber haben dabei auf das Schreiben von Unit-Tests verzichtet. Dies müssen wir nun noch nachholen.
-ImageStoreTest Wenn wir die Klasse ImageStore testen wollen, dann stellen wir direkt fest: Diese Klasse benötigt einen ImageService. Wir könnten jetzt natürlich eine Instanz von ImageService erstellen und dann Tests aufbauen, die dann auf diesen ImageService zugreifen und z. B. Bilder aus dem resource-Ordner lädt. Das bedeutet aber, das Änderungen an ImageService auch Tests von ImageStore scheitern lässt.</description>
+      <description>Bisher haben wir nur den Client implementiert aber haben dabei auf das Schreiben von Unit-Tests verzichtet. Dies müssen wir nun noch nachholen.&#xA;ImageStoreTest Wenn wir die Klasse ImageStore testen wollen, dann stellen wir direkt fest: Diese Klasse benötigt einen ImageService. Wir könnten jetzt natürlich eine Instanz von ImageService erstellen und dann Tests aufbauen, die dann auf diesen ImageService zugreifen und z. B. Bilder aus dem resource-Ordner lädt. Das bedeutet aber, das Änderungen an ImageService auch Tests von ImageStore scheitern lässt.</description>
     </item>
-    
     <item>
       <title>2.8. Statische Codeanalyse</title>
       <link>https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.8-Statische-Codeanalyse/</guid>
-      <description>Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht haben, die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinandergesetzt.
-Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don&amp;rsquo;t Repeat Yourself) und auch in Bezug auf JavaDoc-Kommentare.</description>
+      <description>Wir haben jetzt schon einigen Code geschrieben, aber haben wir in dem Code soweit alles richtig gemacht? Gibt es eventuell Dinge, die wir gemacht haben, die unüblich sind? Und vor allem: Auf was sollte man denn eigentlich alles achten? Wir haben uns da bisher noch nicht wirklich mit auseinandergesetzt.&#xA;Bei jedem Projekt ist es von Anfang an wichtig, auf die Qualität zu achten. Das Thema Clean Code ist schon etwas angesprochen worden - speziell in Bezug auf doppelten Code (DRY - Don&amp;rsquo;t Repeat Yourself) und auch in Bezug auf JavaDoc-Kommentare.</description>
     </item>
-    
     <item>
       <title>2.9. Übungen</title>
       <link>https://jadventure.de/Lektion2/2.9-%C3%9Cbungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Lektion2/2.9-%C3%9Cbungen/</guid>
-      <description>Nach Abschluss des Levels können sie folgende Schritte machen:
-Prüfen sie die Unit Tests. Lassen sie diese mit Coverage laufen und schauen sie, was noch fehlt. Schreiben sie noch fehlende Unit Tests.
-Lassen sie die statische Codeanalyse aus Abschnitt 2.8 laufen und beheben sie die Fehler soweit möglich (und nicht in Kapitel 2.8 ausgeschlossen).</description>
+      <description>Nach Abschluss des Levels können sie folgende Schritte machen:&#xA;Prüfen sie die Unit Tests. Lassen sie diese mit Coverage laufen und schauen sie, was noch fehlt. Schreiben sie noch fehlende Unit Tests.&#xA;Lassen sie die statische Codeanalyse aus Abschnitt 2.8 laufen und beheben sie die Fehler soweit möglich (und nicht in Kapitel 2.8 ausgeschlossen).</description>
     </item>
-    
     <item>
       <title>A1 - Aktualisierungen / Versionen des Kurses</title>
       <link>https://jadventure.de/Anhang/A1-Aktualisierungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/A1-Aktualisierungen/</guid>
       <description>Version Datum Veränderung 0.1.3 13.02.2023 Abschluss Lektion 2 (ohne Videos), Start Level 3 Code. 0.1.2 09.02.2023 Beschreibung MVC 0.1.2 06.02.2023 Wechsel von Gitea zu GitHub 0.1.1 05.02.2023 Start der Inhalte für Lektion 2 0.1.0 05.02.2023 Fehlerkorrekturen, Einbinden der ersten Videos, Youtube nur extern Peertube embedded und extern 0.0.6 31.01.2023 Übungen am Ende eingefügt. Dokumentation Unit Tests. Aufnahme der Idee, im Anhang auch Bereiche zu Java Franmework Klassen und zur Java Programmiersprache zu bieten.</description>
     </item>
-    
     <item>
       <title>A2 - Abkürzungen</title>
       <link>https://jadventure.de/Anhang/A2-abkuerzungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/A2-abkuerzungen/</guid>
       <description> JSON JavaScript Object Notation MMORPG Massive Multiplayer Online Role Playing Game MVC Model-View-Controller (Entwurfsmuster) NPC Non Player Character, vom Computer gesteuerte Figur. </description>
     </item>
-    
     <item>
       <title>A3 - Verwendete Technologien</title>
       <link>https://jadventure.de/Anhang/A3-technology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/A3-technology/</guid>
       <description> Website Hugo (extern) Ein Generator für statische Webseiten. Geekdocs (extern) Ein Hugo Template unter MIT Lizenz. Gitea (extern) Ein selbst gehosteter Git Service. Erstellung von Medien-Inhalten OBS Studio (extern) für Videoaufnahmen. iMovie von Apple zum Video-Schnitt und der Audio Nachbearbeitung Abricotine (extern) - ein Open Source Markdown Editor Apple MacBook Pro M1 UR 22 mk II von Steinberg zur Steuerung meine Microfons Entwicklung IntelliJ (extern) als Entwicklungsumgebung Maven (extern) als Build-Werkzeug </description>
     </item>
-    
     <item>
       <title>A4 - DALL-E Bilder</title>
       <link>https://jadventure.de/Anhang/A4-Original-DALL-E-Bilder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/A4-Original-DALL-E-Bilder/</guid>
-      <description>Viele Bilder, die ich in diesem JAdventure Kurs verwende, basieren auf Bilder, die von DALL-E generiert wurden.
-Die original DALL-E generierten Bilder, die ich dabei verwendet habe, zeige ich hier um die Basis der Bilder deutlich zu machen und als Basis falls es irgend welche Streitigkeiten bezüglich Copright geben sollte.
-DALL-E Anfrage Verwendetes Bild For an 2D Adventure I need a simple player character, like a simple board game element I need a drawn picture of weapons for a 2d graphical adventure I need a drawn picture of a small hill of gold coins for a 2d graphical adventure I need a picture of Coins for a 2D graphical adventure.</description>
+      <description>Viele Bilder, die ich in diesem JAdventure Kurs verwende, basieren auf Bilder, die von DALL-E generiert wurden.&#xA;Die original DALL-E generierten Bilder, die ich dabei verwendet habe, zeige ich hier um die Basis der Bilder deutlich zu machen und als Basis falls es irgend welche Streitigkeiten bezüglich Copright geben sollte.&#xA;DALL-E Anfrage Verwendetes Bild For an 2D Adventure I need a simple player character, like a simple board game element I need a drawn picture of weapons for a 2d graphical adventure I need a drawn picture of a small hill of gold coins for a 2d graphical adventure I need a picture of Coins for a 2D graphical adventure.</description>
     </item>
-    
     <item>
       <title>DRY - Don&#39;t Repeat Yourself</title>
       <link>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</guid>
-      <description>Doppelten Code erkennen Doppelten Code eliminieren Eine Fehlerquelle kann doppelter Code sein. Wenn etwas mehrfach im Code umgesetzt wurde, dann besteht die Gefahr, dass bei der Notwendigkeit einer Änderung nicht alle Stellen geändert werden.
-Desweiteren wird der Code dadurch unnötig aufgebläht und damit unübersichtlicher.
-Doppelten Code erkennen Im einfachsten Fall weist einen die Entwicklungsumgebung auf doppelten Code hin. IntelliJ markiert dann den Anfang eines Blockes und zeigt die Warnung an, dass die nächsten x Zeilen an anderer Stelle noch einmal vorkommen.</description>
+      <description>Doppelten Code erkennen Doppelten Code eliminieren Eine Fehlerquelle kann doppelter Code sein. Wenn etwas mehrfach im Code umgesetzt wurde, dann besteht die Gefahr, dass bei der Notwendigkeit einer Änderung nicht alle Stellen geändert werden.&#xA;Desweiteren wird der Code dadurch unnötig aufgebläht und damit unübersichtlicher.&#xA;Doppelten Code erkennen Im einfachsten Fall weist einen die Entwicklungsumgebung auf doppelten Code hin. IntelliJ markiert dann den Anfang eines Blockes und zeigt die Warnung an, dass die nächsten x Zeilen an anderer Stelle noch einmal vorkommen.</description>
     </item>
-    
     <item>
       <title>E1 - Gson</title>
       <link>https://jadventure.de/Anhang/E1-gson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/E1-gson/</guid>
-      <description>Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).
-Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.</description>
+      <description>Wichtig Die Codebeispiele in dieser Beschreibung sind natürlich angelehnt an das Projekt, aber der Code im Projekt weicht von den Beispielen ab! Ein oft genutztes Format um Daten zu speichern oder zu übertragen ist JSON (JavaScript Object Notation - JSON auf Wikipedia (extern) ).&#xA;Für die Umwandlung von Java Objekten in JSON oder zurück gibt es mehrere Libraries. Die am meisten genutzt dürften Jackson und Gson sein. In diesem Kurs werden wir für diese Aufgabe auf Gson zurück greifen.</description>
     </item>
-    
     <item>
       <title>E2 - Maven (Übersicht)</title>
       <link>https://jadventure.de/Anhang/E2-maven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/E2-maven/</guid>
-      <description>Bei Maven handelt es sich um ein Build Tool, welches vor allem für Java Projekte eingesetzt wird (aber nicht auf Java beschränkt ist).
-Lifecycle Maven ist Lifecycle basiert. Es gibt drei Lifecycle mit mehreren Schritten. Bei einem Maven Aufruf wird ein (oder mehrere) Ziel(e) angegeben. Maven arbeitet dann den entsprechenden Lifecycle ab bis einschließlich dem angegebenen Ziel.
-clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und besteht aus den Zielen / Schritten:</description>
+      <description>Bei Maven handelt es sich um ein Build Tool, welches vor allem für Java Projekte eingesetzt wird (aber nicht auf Java beschränkt ist).&#xA;Lifecycle Maven ist Lifecycle basiert. Es gibt drei Lifecycle mit mehreren Schritten. Bei einem Maven Aufruf wird ein (oder mehrere) Ziel(e) angegeben. Maven arbeitet dann den entsprechenden Lifecycle ab bis einschließlich dem angegebenen Ziel.&#xA;clean Lifecycle Der clean Lifecycle dient der Bereinigung des Projektes und besteht aus den Zielen / Schritten:</description>
     </item>
-    
+    <item>
+      <title>if Sequenzen vermeiden</title>
+      <link>https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/</guid>
+      <description>In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.&#xA;Ein typisches Beispiel für eine solche Situation ist im Folgenden dargestellt.</description>
+    </item>
     <item>
       <title>JavaDoc</title>
       <link>https://jadventure.de/Anhang/P2-Clean-Code/javadoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/P2-Clean-Code/javadoc/</guid>
-      <description>Es ist oft hilfreichm die API im Detail zu dokumentieren. Dies geschieht am einfachsten direkt im Source Code mit Hilfe von JavaDoc.
-JavaDoc Kommentare können vor
-Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit /// oder sie bilden einen Kommentarblock per /** und beenden diesen mit */. Viele Entwicklungsumgebungen unterstützen den Entwickler indem sie bei Start einer JavaDoc Kommentares direkt einen Block mit den üblichen Angaben erzeugen.</description>
+      <description>Es ist oft hilfreichm die API im Detail zu dokumentieren. Dies geschieht am einfachsten direkt im Source Code mit Hilfe von JavaDoc.&#xA;JavaDoc Kommentare können vor&#xA;Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit /// oder sie bilden einen Kommentarblock per /** und beenden diesen mit */. Viele Entwicklungsumgebungen unterstützen den Entwickler indem sie bei Start einer JavaDoc Kommentares direkt einen Block mit den üblichen Angaben erzeugen.</description>
     </item>
-    
     <item>
       <title>Konrad Neitzel</title>
       <link>https://jadventure.de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/contact/</guid>
-      <description>Sie erreichen mich:
-Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 KonradN bei https://java-forum.org Social Media Mastodon @konrad@mastodon.kneitzel.de PeerTube https://cliptube.org/a/konradn YouTube https://www.youtube.com/@KonradN Spendenmöglichkeit Falls sie meine Arbeit mit einer Spende unterstützen wollen:
-Paypal konrad@kneitzel.de </description>
+      <description>Sie erreichen mich:&#xA;Email: konrad@kneitzel.de Telefon: +49 (1575) 83 16 414 KonradN bei https://java-forum.org Social Media Mastodon @konrad@mastodon.kneitzel.de PeerTube https://cliptube.org/a/konradn YouTube https://www.youtube.com/@KonradN Spendenmöglichkeit Falls sie meine Arbeit mit einer Spende unterstützen wollen:&#xA;Paypal konrad@kneitzel.de </description>
     </item>
-    
     <item>
       <title>Model-View-Controller (MVC)</title>
       <link>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/P3-Entwurfsmuster/MVC/</guid>
       <description>Model View Controller: Framework für MVC Model Class View Class Controller Class Das MVC-Entwurfsmuster (Model-View-Controller) ist ein bekanntes Softwareentwicklungsmuster, das verwendet wird, um die Trennung von Benutzeroberfläche, Geschäftslogik und Datenmodell zu erreichen. Es sorgt dafür, dass die Komponenten unabhängig voneinander entwickelt und gewartet werden können, was es einfacher macht, Änderungen an der Benutzeroberfläche oder an der Geschäftslogik durchzuführen, ohne dass dabei andere Teile des Systems beeinträchtigt werden. Außerdem kann das MVC-Entwurfsmuster verwendet werden, um die Skalierbarkeit und Wartbarkeit von Anwendungen zu verbessern.</description>
     </item>
-    
     <item>
       <title>SCRUM</title>
       <link>https://jadventure.de/Anhang/P1-AgilesArbeiten/SCRUM/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/P1-AgilesArbeiten/SCRUM/</guid>
-      <description>TODO: Noch nicht abgeschlossene Beschreibung!
-Ein Verfahren, dass sehr oft angewendet wird, ist SCRUM.
-SCRUM Pillars Transparency Inspection Adaptation SCRUM Values Commitment Openness Courage Respect Focus SCRUM Artifacts Product Backlog Spring Backlog SCRUM Rollen Produktowner SCRUM Master Development Team Aktivitäten Sprint Planing Meeting Team Breakout Sprint (mit Daily SCRUM Meetings) Sprint Review Sprint Retrospective </description>
+      <description>TODO: Noch nicht abgeschlossene Beschreibung!&#xA;Ein Verfahren, dass sehr oft angewendet wird, ist SCRUM.&#xA;SCRUM Pillars Transparency Inspection Adaptation SCRUM Values Commitment Openness Courage Respect Focus SCRUM Artifacts Product Backlog Spring Backlog SCRUM Rollen Produktowner SCRUM Master Development Team Aktivitäten Sprint Planing Meeting Team Breakout Sprint (mit Daily SCRUM Meetings) Sprint Review Sprint Retrospective </description>
     </item>
-    
   </channel>
 </rss>

@@ -12,10 +12,10 @@
 <meta name="generator" content="Hugo 0.121.1">
 
 
-  <meta name="description" content="PeerTube &amp; YouTube Video 1. Vision 2. Verwaltung der Features Abhängigkeiten Gewichtung 3. Planung der nächsten Entwicklung 4. Implementation 5. Präsentation und Review PeerTube &amp; YouTube Video PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Wenn man etwas programmieren will, dann ist es immer notwendig, sich erst einmal darüber klar zu werden, was man bauen möchte.
-Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen gewohnt, dass man sich darüber nicht den Kopf zerbrechen musste." />
+  <meta name="description" content="In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.
+Ein typisches Beispiel für eine solche Situation ist im Folgenden dargestellt." />
 
-    <title>1. Erste Planungen / Implementationen | JAdventure - Kurs zur Softwareentwicklung</title>
+    <title>if Sequenzen vermeiden | JAdventure - Kurs zur Softwareentwicklung</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -36,49 +36,45 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
     
   <meta
     property="og:title"
-    content="1. Erste Planungen / Implementationen"
+    content="if Sequenzen vermeiden"
   />
   <meta property="og:site_name" content="JAdventure - Kurs zur Softwareentwicklung" />
-  <meta property="og:description" content="PeerTube &amp; YouTube Video 1. Vision 2. Verwaltung der Features Abhängigkeiten Gewichtung 3. Planung der nächsten Entwicklung 4. Implementation 5. Präsentation und Review PeerTube &amp; YouTube Video PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Wenn man etwas programmieren will, dann ist es immer notwendig, sich erst einmal darüber klar zu werden, was man bauen möchte.
-Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen gewohnt, dass man sich darüber nicht den Kopf zerbrechen musste." />
+  <meta property="og:description" content="In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.
+Ein typisches Beispiel für eine solche Situation ist im Folgenden dargestellt." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jadventure.de/Lektion1/" />
+<meta property="og:url" content="https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/" />
 
-<meta property="article:section" content="Lektion1" />
-    <meta
-      property="article:modified_time"
-      content="2023-02-06T09:52:47+01:00"
-    />
+<meta property="article:section" content="Anhang" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="1. Erste Planungen / Implementationen" />
-  <meta name="twitter:description" content="PeerTube &amp; YouTube Video 1. Vision 2. Verwaltung der Features Abhängigkeiten Gewichtung 3. Planung der nächsten Entwicklung 4. Implementation 5. Präsentation und Review PeerTube &amp; YouTube Video PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Wenn man etwas programmieren will, dann ist es immer notwendig, sich erst einmal darüber klar zu werden, was man bauen möchte.
-Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen gewohnt, dass man sich darüber nicht den Kopf zerbrechen musste." />
+<meta name="twitter:title" content="if Sequenzen vermeiden" />
+  <meta name="twitter:description" content="In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.
+Ein typisches Beispiel für eine solche Situation ist im Folgenden dargestellt." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Lektion1",
-      "name": "1. Erste Planungen / Implementationen",
-      "url" : "https://jadventure.de/Lektion1/",
-      "headline": "1. Erste Planungen / Implementationen",
-      "description": "PeerTube \u0026 YouTube Video 1. Vision 2. Verwaltung der Features Abhängigkeiten Gewichtung 3. Planung der nächsten Entwicklung 4. Implementation 5. Präsentation und Review PeerTube \u0026 YouTube Video PeerTube (extern) (abspielen) YouTube (extern) PowerPoint Präsentation Wenn man etwas programmieren will, dann ist es immer notwendig, sich erst einmal darüber klar zu werden, was man bauen möchte.\nGerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen gewohnt, dass man sich darüber nicht den Kopf zerbrechen musste.",
-      "wordCount" : "1005",
+      "articleSection": "Anhang",
+      "name": "if Sequenzen vermeiden",
+      "url" : "https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/",
+      "headline": "if Sequenzen vermeiden",
+      "description": "In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.\nEin typisches Beispiel für eine solche Situation ist im Folgenden dargestellt.",
+      "wordCount" : "2107",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://jadventure.de/Lektion1/"
+          "@id": "https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/"
       },
       "copyrightHolder" : "JAdventure - Kurs zur Softwareentwicklung",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-02-06T09:52:47.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "JAdventure - Kurs zur Softwareentwicklung",
@@ -156,7 +152,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
   href="/custom.css"
   media="all"
 />
-  <link href="https://jadventure.de/Lektion1/" rel="canonical" type="text/html" />
+  <link href="https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -334,7 +330,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-383dbd0a"
-                checked
+                
               
             />
             <label
@@ -346,7 +342,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
                 <span class="flex">
                   <a
                     href="/Lektion1/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     1. Erste Planungen / Implementationen
                   </a>
@@ -1174,7 +1170,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-4ff10e6e"
-                
+                checked
               
             />
             <label
@@ -1619,7 +1615,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-a22bc931"
-                
+                checked
               
             />
             <label
@@ -1721,7 +1717,7 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
                 <span class="flex">
                   <a
                     href="/Anhang/P2-Clean-Code/ifsequenzen/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     if Sequenzen vermeiden
                   </a>
@@ -2134,176 +2130,181 @@ Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen 
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>1. Erste Planungen / Implementationen</h1>
-    <div class="gdoc-toc gdoc-toc__level--3">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#peertube--youtube-video">PeerTube &amp; YouTube Video</a></li>
-    <li><a href="#1-vision">1. Vision</a></li>
-    <li><a href="#2-verwaltung-der-features">2. Verwaltung der Features</a>
-      <ul>
-        <li><a href="#abhängigkeiten">Abhängigkeiten</a></li>
-        <li><a href="#gewichtung">Gewichtung</a></li>
-      </ul>
-    </li>
-    <li><a href="#3-planung-der-nächsten-entwicklung">3. Planung der nächsten Entwicklung</a></li>
-    <li><a href="#4-implementation">4. Implementation</a></li>
-    <li><a href="#5-präsentation-und-review">5. Präsentation und Review</a></li>
-  </ul>
-</nav>
-      <hr />
-    </div>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="peertube--youtube-video">
-        PeerTube &amp; YouTube Video
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#peertube--youtube-video" class="gdoc-page__anchor clip flex align-center" title="Anchor to: PeerTube &amp; YouTube Video" aria-label="Anchor to: PeerTube &amp; YouTube Video" href="#peertube--youtube-video">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<iframe id="video1" width="800" height="460"></iframe>
-<script>
-  var iframe = document.getElementById("video1");
-  var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-  iframeDoc.body.innerHTML = "<img src=\"\/files\/video-images\/1-übersicht.png\" width=\"100%\">";
-  function peertube() {
-    iframe.src="https:\/\/cliptube.org\/w\/2FdxtQd5BTc2g4pLBuEWNm";
-  }
-  function youtube() {
-    iframe.src="https:\/\/youtu.be\/DtWiY4Jidmw";
-    console.log("https:\/\/youtu.be\/DtWiY4Jidmw");
-  }
-</script>
-<div class="table-wrap"> <table> 
-  <tr>
-    <td>
-      <a href="https://cliptube.org/w/2FdxtQd5BTc2g4pLBuEWNm" target="_blank">PeerTube (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-      <a href="javascript:peertube()">(abspielen)</a>
-    </td>
-    <td>
-      <a href="https://youtu.be/DtWiY4Jidmw" target="_blank">YouTube (extern) <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a>
-    </td>
-    
-      <td span=2><a href="/files/pp/JAdventure_1-%c3%9cbersicht.pptx"> PowerPoint Präsentation <img src="/files/images/Flagge-Deutschland-klein.png" width="30"></img>
-</a></td>
-    
-  </tr> 
-</table> </div>
-
-<p>Wenn man etwas programmieren will, dann ist es immer notwendig, sich erst einmal darüber klar zu werden, was man bauen möchte.</p>
-<p>Gerade am Anfang ist dies ein schwerer Schritt, denn man ist bei allen Übungen gewohnt, dass man sich darüber nicht den Kopf zerbrechen musste. Die Übung, die zu bearbeiten war, hat schon im Detail gesagt, was benötigt wurde.</p>
-<p>In dieser ersten Lektion wird es nun weniger um Java sondern mehr um das Projekt gehen.</p>
-<p>Dabei sind mehrere Schritte sinnvoll und bilden eine Art Grundgerüst für ein agiles Vorgehen (die konkreten agilen Verfahren haben dies detaillierter spezifiziert, aber der grobe Rahmen ist immer gleich). Diese Schritte werden in Zyklen immer wieder von Anfang an durchlaufen.</p>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="1-vision">
-        1. Vision
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#1-vision" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Vision" aria-label="Anchor to: 1. Vision" href="#1-vision">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Bei der Vision überlegen wir uns, was wir denn am Ende haben wollen. Wo wollen wir hin? Was sind unsere Träume? Hier ruhig alle Ideen aufsammeln. Ob, wie und in welchem Zeitrahmen diese umgesetzt werden können, ist dabei nebensächlich.</p>
-<p>Verantwortlich ist hier oft eine spezielle Rolle, die oft als Productowner oder Productmanagement bezeichnet wird.</p>
-<p>In einem beruflichen Umfeld würde man hier noch einiges vertiefen. So ist es üblich, den Markt zu analysieren: Gibt es sowas evtl. schon? Ist der Markt überhaupt da für so ein Produkt, wie wir es uns vorstellen? Was würden Kunden dafür denn vermutlich zahlen wollen?</p>
-<p>All diese Fragen sind für uns aber erst einmal uninteressant. Unser Ziel ist es, eine Software zu entwickeln, um dabei eine mögliche Vorgehensweise zu lernen.</p>
-<div class="table-wrap"> <table>
-<thead>
-<tr>
-<th>Wichtig</th>
-<th>Dieser Schritt kann in zukünftigen Iterationen auch entfallen oder stark verkürzt werden.</th>
-</tr>
-</thead>
-</table> </div>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="2-verwaltung-der-features">
-        2. Verwaltung der Features
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#2-verwaltung-der-features" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Verwaltung der Features" aria-label="Anchor to: 2. Verwaltung der Features" href="#2-verwaltung-der-features">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Aus der Vision muss man konkrete Features ableiten. Diese Features kann man in verschiedenen Weisen dokumentieren. Eine übliche Form sind User Stories, die man schreiben kann.</p>
-<p>Eine mögliche Form einer User Story kann ein einfacher Satz sein:</p>
-<p>Als &lt;Rolle&gt; möchte ich &lt;Beschreibung&gt; damit ich &lt;Beschreibung&gt;.</p>
-<p>Optional kommen bereits Abnahmekriterien dazu. Was muss erfüllt sein, damit ich das als erfüllt ansehe? Dies muss noch nicht zwingend dokumentiert werden aber es sollte ein gutes Verständnis geben.</p>
-<div class="table-wrap"> <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Beispiel</td>
-<td>Als <strong>Spieler</strong> möchte ich <strong>mich auf der Karte bewegen können</strong> damit ich <strong>die Gegend erkunden kann</strong>.</td>
-</tr>
-</tbody>
-</table> </div>
-<p>Diese Liste an Anforderungen bilden eine Grundlage für die Entwicklung. Eine Bezeichnung, die man oft hört (und in SCRUM verwendet wird) ist Backlog.</p>
-<p>Dieses Backlog bildet sozusagen unseren Arbeitsvorrat und enthält die Dinge, die wir entwicklen müssen.</p>
-<p>Wichtig ist, dass wir hier noch nicht sofort für alle Elemente in irgendwelche Details gehen. Dies kommt erst, sobald eine Story in Frage kommt für eine Implementierung.</p>
-<p>Sobald so ein Backlog Item in Frage kommt, muss überlegt werden, ob es bereits konkret genug formuliert wurde. Ist etwas zu allgemein oder zu umfangreich, dann muss dies in mehrere Features aufgeteilt werden. Ein Beispiel ist schnell konstruiert:</p>
-<p><strong>Als Geschäftsführer möchte ich ein MMORPG haben, damit ich es verkaufen und damit viel Geld verdienen kann.</strong></p>
-<p>Hier ist sofort klar: Das ist nichts, das man behandeln kann.</p>
-<p>Um hier eine Aussage zu treffen werden die Backlog Items gewichtet: Jeder Eintrag bekommt eine Wertung. Hier sollte eine erste Aufwandsabschätzung erfolgen und dazu können alle Entwickler abstimmen. Dabei kann z.B mit Werten 1, 2, 4, 8 und unendlich gearbeitet werden. Hier geht es nicht um konkrete Aufwände, sondern eine grobe Abschätzung untereinander - Eine Wertung 4 sollte ca. so lange dauern wie zwei Wertung-2-Einträge. Unendlich besagt, dass es auf jeden Fall weiter unterteilt werden muss.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="abhängigkeiten">
-        Abhängigkeiten
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#abhängigkeiten" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Abhängigkeiten" aria-label="Anchor to: Abhängigkeiten" href="#abh%c3%a4ngigkeiten">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>Die einzelnen Backlog Items können Abhängigkeiten haben. So ist klar, dass ich ein Spielfeld erst anzeigen kann, wenn ich ein Spielfeld habe. Oder auf dem Spielfeld kann sich ein Spieler erst bewegen, wenn es das Spielfeld und den Spieler als Objekte gibt.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="gewichtung">
-        Gewichtung
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#gewichtung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Gewichtung" aria-label="Anchor to: Gewichtung" href="#gewichtung">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>Der Produktverantwortliche bewertet die einzelnen Einträge. Was ist ihm am wichtigsten? Was ist am unwichtigsten? In diese Bewertung können auch Kriterien einfließen wie der Aufwand, denn zwei 1er Einträge können natürlich mehr Wert haben als ein 2er Eintrag.</p>
-<p>Durch die Gewichtung und die Abhängigkeiten können die Backlog Items in eine klare Reihenfolge gebracht werden. Diese Reihenfolge dient der Priorisierung der Entwicklung.</p>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="3-planung-der-nächsten-entwicklung">
-        3. Planung der nächsten Entwicklung
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#3-planung-der-nächsten-entwicklung" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Planung der nächsten Entwicklung" aria-label="Anchor to: 3. Planung der nächsten Entwicklung" href="#3-planung-der-n%c3%a4chsten-entwicklung">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Mit der Priorisierung der Backlock Entries kann nun die konkrete Entwicklung geplant werden. Dazu wird geschaut, wie viel Kapazität in der nächsten Entwicklungsphasae zur Verfügung steht und abgeschätzt, wie viele Elemente der Liste abgearbeitet werden können.</p>
-<p>Diese top Elemente werden dann für die weitere Planung genommen und betrachtet.</p>
-<p>Für jeden Eintrag werden nun noch die Abnahmekriterien geprüft und vervollständigt. Es wird also klar gesagt, was erfüllt sein muss. Beim Bewegen des Spielers über die Karte wäre das z.B., dass der Spieler keine Felder betreten kann, die blockiert sind.</p>
-<p>Sobald dies mit dem Product Owner erfolgt ist, können die Entwickler für sich jeden Eintrag in einzelne Tasks zerlegen: Was muss konkret getan werden, damit man diesen Backlog Entry erfüllt?</p>
-<p>Jeder Task wird auch bezüglich des Zeitbedarfs bewertet. Ein Task sollte in der Regel in einem Tag oder weniger zu erfüllen sein. In Ausnahmefällen mag es auch etwas mehr sein, aber nie mehr wie zwei Tage!</p>
-<p>Ergebnis dieser Phase ist dann eine Liste von Tasks, die abzuarbeiten sind.</p>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="4-implementation">
-        4. Implementation
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#4-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Implementation" aria-label="Anchor to: 4. Implementation" href="#4-implementation">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Der nächste Schritt ist die Umsetzung der geplanten Tasks. Diese - und wenn möglich wirklich nur diese - werden umgesetzt.</p>
-<p>Dabei ist eine Sache zu beachten:
-Ein Task umfasst neben der Implementation selbst immer auch die Dokumentation und den Test eben dieses Tasks. Nur mit Test und Dokumentation kann ein Task als abgeschlossen angesehen werden.</p>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="5-präsentation-und-review">
-        5. Präsentation und Review
-        <a data-clipboard-text="https://jadventure.de/Lektion1/#5-präsentation-und-review" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. Präsentation und Review" aria-label="Anchor to: 5. Präsentation und Review" href="#5-pr%c3%a4sentation-und-review">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div>
-<p>Ein ganz wichtiger Punkt ist immer die Präsentation der Ergebnisse und ein Review des Prozesses.</p>
-<p>Die fertig gestellten Tasks sollten, wenn möglich, ein (teilweise) einsetzbares Produkt ergeben. Dieses kann präsentiert und vorgeführt werden und wird dann im idealen Fall auch eingesetzt.</p>
-<p>Es ist aber auch immer wichtig, sich zusammenzusetzen und zu überlegen: Was ist gut gelaufen? Was ist schlecht gelaufen? Kann (oder muss) der Prozess geändert werden? Stimmt soweit alles? Hier ist die klare Festlegung, wie weiter verfahren wird.</p>
+    <h1>if Sequenzen vermeiden</h1>
+    <p>In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.</p>
+<p>Ein typisches Beispiel für eine solche Situation ist im Folgenden dargestellt. Hier sehen wir, wie leicht sich ein scheinbar einfaches if-Elseif-Konstrukt in einen unübersichtlichen und fehleranfälligen Code verwandeln kann. Diese Art von Code ist nicht nur schwer zu lesen, sondern birgt auch das Risiko von Fehlern bei zukünftigen Änderungen und Erweiterungen.</p>
+<p>In diesem Dokument werden wir verschiedene Methoden und Techniken untersuchen, um solche if-Sequenzen effizienter zu gestalten. Unser Ziel ist es, die Lesbarkeit, Wartbarkeit und Skalierbarkeit des Codes durch den Einsatz von Best Practices und fortgeschrittenen Programmierkonzepten zu verbessern.</p>
+<p>Beispiel:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">someVar</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">SOME_VALUE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c1">// ....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">someVar</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">SOME_OTHER_VALUE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c1">// ....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">someVar</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ANOTHER_VALUE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c1">// ....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="p">....</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Prüfung der Notwendigkeit: Vermeidung von Verteiler Methoden</strong></p>
+<p>Ein wesentlicher erster Schritt in der effizienten Gestaltung von Code ist es, die Notwendigkeit von sogenannten &ldquo;Verteiler Methoden&rdquo; kritisch zu hinterfragen. Oftmals können diese Methoden, die lediglich dazu dienen, Aktionen auf Basis bestimmter Bedingungen zu verteilen, komplett vermieden werden, was zu einer klareren und wartbareren Code-Struktur führt.</p>
+<p>Ein klassisches Beispiel hierfür sind die in der Vergangenheit häufig eingesetzten ActionListener-Implementierungen in Benutzeroberflächen. In einem solchen Szenario implementiert eine Klasse das ActionListener-Interface und in der actionPerformed-Methode wird dann überprüft, welches UI-Element (z.B. ein Button) das Event ausgelöst hat. Anschließend werden entsprechende Aktionen ausgeführt, abhängig von der Quelle des Events.</p>
+<p>Ein modernerer und effizienterer Ansatz ist es, jedem UI-Control direkt eine spezifische Methode zuzuweisen. Dies kann über eine Methodenreferenz oder eine Lambda-Expression erfolgen. So wird für jedes UI-Element eine individuelle Reaktionslogik definiert, die direkt und deklarativ mit dem Element verbunden ist.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Beispiel mit Methodenreferenz</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">meinButton</span><span class="p">.</span><span class="na">addActionListener</span><span class="p">(</span><span class="k">this</span><span class="p">::</span><span class="n">handleButtonAction</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Beispiel mit Lambda-Expression</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">meinButton</span><span class="p">.</span><span class="na">addActionListener</span><span class="p">(</span><span class="n">e</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Aktion für den Button</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">});</span><span class="w">
+</span></span></span></code></pre></div><p>Das Prinzip, Verteiler Methoden durch spezifischere und direkt zugeordnete Funktionen zu ersetzen, ist nicht nur auf UI-Events beschränkt, sondern lässt sich auf eine Vielzahl von Szenarien in der Softwareentwicklung anwenden. Im Kern jeder Verteiler Methode steht die Entscheidungslogik, die auf Basis von Parametern unterschiedliche Aktionen auslöst. Diese Struktur findet sich in vielen Bereichen der Programmierung wieder, sei es bei der Verarbeitung von API-Anfragen, der Steuerung von Workflow-Abläufen oder anderen situationsspezifischen Entscheidungspunkten.</p>
+<p>Anstatt einen einzigen Methodenaufruf zu verwenden, der intern eine Vielzahl von Bedingungen und Verzweigungen abarbeitet, können wir das Konzept der direkten Zuweisung spezifischer Funktionen nutzen. Durch die direkte Zuweisung einer konkreten Funktion oder Aktion, die auf den spezifischen Kontext und die jeweiligen Parameter abgestimmt ist, kann die Notwendigkeit einer zentralen Verteilungsfunktion häufig umgangen werden.</p>
+<p><strong>Vom Problem zur ersten Lösung: Die Switch-Anweisung</strong></p>
+<p>Nachdem wir nun die typischen Schwierigkeiten verstanden haben, die durch umfangreiche if-Sequenzen entstehen, wenden wir uns der ersten potenziellen Lösung zu: der Switch-Anweisung. Diese stellt in vielen Fällen eine direktere und übersichtlichere Alternative zu verschachtelten if-Elseif-Strukturen dar.</p>
+<p>Die Switch-Anweisung in Java ermöglicht es uns, eine Variable gegen eine Reihe von Werten zu prüfen und entsprechend unterschiedliche Aktionen durchzuführen. Anstatt mehrere if-Anweisungen zu verwenden, können wir mit einem einzigen Switch-Block verschiedene Fälle effizient abhandeln. Diese Struktur trägt dazu bei, den Code zu vereinfachen und verbessert seine Lesbarkeit, indem sie eine klare Trennung der verschiedenen Handlungsstränge bietet.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">someVar</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">SOME_VALUE</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// ....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">SOME_OTHER_VALUE</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// ....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">....</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Obwohl die Switch-Anweisung eine erhebliche Verbesserung gegenüber verschachtelten if-Elseif-Strukturen darstellen kann, gibt es bestimmte Situationen, in denen sie an ihre Grenzen stößt. Diese Einschränkungen zu verstehen, ist entscheidend, um zu erkennen, wann alternative Ansätze erforderlich sind.</p>
+<ul>
+<li>
+<p><em>Komplexe Bedingungen</em>: Switch-Anweisungen sind ideal für den Vergleich eines einzelnen Variablenwerts mit festen Konstanten. Wenn jedoch komplexere Bedingungen erforderlich sind, wie mehrere Variablen oder Bereiche von Werten, dann sind Switch-Anweisungen nicht geeignet. In solchen Fällen erfordert die Logik eine Reihe von if-Elseif-Anweisungen oder eine andere fortgeschrittene Methode.</p>
+</li>
+<li>
+<p><em>Dynamische Fallauswahl</em>: Die Fälle in einer Switch-Anweisung müssen bei der Kompilierung bekannt und konstant sein. Dynamische oder zur Laufzeit bestimmte Fälle können nicht direkt in eine Switch-Anweisung integriert werden.</p>
+</li>
+<li>
+<p><em>Begrenzung auf vergleichbare Datentypen</em>: Switch-Anweisungen in Java sind auf bestimmte Datentypen beschränkt, wie int, char, String und Enums. Wenn Sie mit anderen Datentypen oder komplexen Objekten arbeiten, müssen Sie auf andere Strukturen zurückgreifen.</p>
+</li>
+</ul>
+<p><strong>Innovativer Ansatz: Einsatz von Maps und funktionalen Interfaces</strong></p>
+<p>Nachdem wir die Einschränkungen der Switch-Anweisung betrachtet haben, richten wir unseren Blick auf einen fortschrittlicheren und flexibleren Ansatz zur Handhabung von bedingten Aktionen: die Kombination einer Map mit funktionalen Interfaces. Dieser Ansatz nutzt die Map-Struktur, um Schlüssel-Wert-Paare zu definieren, wobei der Schlüssel (Key) der zu prüfende Wert und der Wert (Value) ein funktionales Interface ist, das die gewünschte Aktion kapselt.</p>
+<p>Die Wahl des funktionalen Interfaces richtet sich nach den spezifischen Anforderungen Ihres Anwendungsfalls. Java bietet eine Vielzahl von funktionalen Interfaces im Paket java.util.function, die für die meisten Anforderungen passend sind. Alternativ können Sie auch ein benutzerdefiniertes funktionales Interface erstellen, um spezifische Anforderungen zu erfüllen.</p>
+<p>Der Einsatz einer Map in Verbindung mit funktionalen Interfaces ermöglicht eine klare Trennung zwischen der Entscheidungslogik und den auszuführenden Aktionen. Dies verbessert nicht nur die Lesbarkeit des Codes, sondern erhöht auch die Wartbarkeit und Erweiterbarkeit, da neue Fälle einfach durch Hinzufügen neuer Schlüssel-Wert-Paare zur Map berücksichtigt werden können.</p>
+<p>Ein konkretes Beispiel für diese Methode könnte wie folgt aussehen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Das funktionale Interface. Wir geben im Beispiel nichts zurück und nutzen keine Parameter ...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Interface</span><span class="w"> </span><span class="n">MyFunctionalInterface</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">doSomething</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Aufbau der Map. Hier einfach mit Lambda Expressions, aber ich empfehle Methoden-Referenzen für eine gute Lesbarkeit!</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Map</span><span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span><span class="w"> </span><span class="n">MyFunctionalInterface</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myActions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">map</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">0</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;0&#34;</span><span class="p">)</span><span class="w"> </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">map</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;1&#34;</span><span class="p">)</span><span class="w"> </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">map</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;2&#34;</span><span class="p">)</span><span class="w"> </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Der Ersatz für die switch Anweisung oder die ifs</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">MyFunctionalInterface</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myActions</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">someVar</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">action</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">action</span><span class="p">.</span><span class="na">doSomething</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// throw Exception or handle the unknown value somehow.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Während der Einsatz von Maps in Verbindung mit funktionalen Interfaces eine flexible und leistungsfähige Methode zur Handhabung bedingter Logik darstellt, gibt es einige wichtige Einschränkungen und Überlegungen, die berücksichtigt werden sollten:</p>
+<ul>
+<li>
+<p><em>Komplexität der Initialisierung</em>: Der Aufbau und die Initialisierung der Map können komplex werden, besonders wenn viele verschiedene Fälle und Aktionen beteiligt sind. Dies kann den Code an der Stelle, an der die Map konfiguriert wird, unübersichtlich machen.</p>
+</li>
+<li>
+<p><em>Leistungseinbußen bei großen Maps</em>: Bei einer großen Anzahl von Schlüsseln kann der Zugriff auf die Map weniger effizient sein als eine einfache if-Elseif-Struktur oder eine Switch-Anweisung. Dies gilt insbesondere, wenn der Schlüsselvergleich selbst aufwendig ist.</p>
+</li>
+<li>
+<p><em>Verwaltung des Zustands</em>: Da funktionale Interfaces oft zustandslos sind, kann die Handhabung von Zuständen innerhalb der Aktionen schwierig sein. Dies kann zu Problemen führen, wenn die auszuführenden Aktionen auf den Zustand der Anwendung oder auf vorherige Aktionen angewiesen sind.</p>
+</li>
+<li>
+<p><em>Behandlung fehlender Schlüssel</em>: Es muss eine Strategie für den Fall implementiert werden, dass kein passender Schlüssel in der Map gefunden wird. Dies erfordert oft zusätzlichen Code zur Fehlerbehandlung oder für Standardaktionen.</p>
+</li>
+<li>
+<p><em>Lesbarkeit und Wartbarkeit</em>: Obwohl diese Methode die Hauptlogik vereinfacht, kann sie die Lesbarkeit beeinträchtigen, insbesondere für Entwickler, die nicht vertraut mit funktionalen Programmierkonzepten sind. Außerdem kann die Wartung dieser Struktur anspruchsvoller sein, besonders wenn Änderungen an den Aktionen oder Schlüsseln vorgenommen werden müssen.</p>
+</li>
+</ul>
+<p>Zusammenfassend bietet die Verwendung von Maps mit funktionalen Interfaces zwar eine leistungsstarke Lösung für bestimmte Szenarien, erfordert jedoch sorgfältige Planung und Überlegung bezüglich der Komplexität, Leistung, Zustandsverwaltung, Fehlerbehandlung und allgemeinen Wartbarkeit.</p>
+<p><strong>Einsatz von Enumerations mit Funktionen für klare und erweiterbare Code-Strukturen</strong></p>
+<p>In unserem vorherigen Beispiel haben wir die Nutzung von int-Werten zur Darstellung einer
+begrenzten Anzahl von Möglichkeiten erkundet.
+Eine solche Herangehensweise öffnet jedoch die Tür für unerwünschte oder illegale Werte.
+Eine elegante und robuste Lösung für dieses Problem ist der Einsatz von Enumerations (Enums),
+welche in Java nicht nur als einfache Wertelisten dienen, sondern auch komplexe Verhaltensweisen kapseln können.</p>
+<p>Enums in Java sind weitaus mächtiger als ihre Pendants in vielen anderen Sprachen.
+Sie sind im Grunde genommen vollwertige Klassen, die neben den festgelegten Konstanten auch
+Instanzvariablen, Methoden und Konstruktoren enthalten können. Diese Eigenschaften ermöglichen
+es uns, Enums zu verwenden, um komplexe Entscheidungslogik auf eine saubere und wartbare Weise
+zu strukturieren. Anstatt sich auf externe if-Sequenzen oder Switch-Anweisungen zu verlassen,
+können wir das benötigte Verhalten direkt in den Enum-Mitgliedern einbetten. Dies führt nicht
+nur zu einem klareren und leichter zu wartenden Code, sondern erhöht auch die Sicherheit, da
+nur die vordefinierten Enum-Werte verwendet werden können.</p>
+<p>Im folgenden Abschnitt illustrieren wir, wie Enums mit eingebetteten Funktionen eingesetzt
+werden können, um eine strukturierte und leicht erweiterbare Lösung für die Verarbeitung
+verschiedener Fälle zu bieten.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Das funktionale Interface, wir geben mal nichts zurück und nutzen keine Parameter ...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Interface</span><span class="w"> </span><span class="n">MyFunctionalInterface</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">doSomething</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Die Enumeration</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">enum</span><span class="w"> </span><span class="n">MyValues</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">SOME_VALUE</span><span class="p">(</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;SOME_VALUE&#34;</span><span class="p">)</span><span class="w"> </span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">SOME_OTHER_VALUE</span><span class="p">(</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;some other value&#34;</span><span class="p">)</span><span class="w"> </span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">private</span><span class="w"> </span><span class="n">MyFunctionalInterface</span><span class="w"> </span><span class="n">action</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">MyValues</span><span class="p">(</span><span class="n">MyFunctionalInterface</span><span class="w"> </span><span class="n">action</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">action</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">doAction</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">action</span><span class="p">.</span><span class="na">doSomething</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Die Nutzung wird einfach, da myVal nun vom Typ der Enumeration ist:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">myVal</span><span class="p">.</span><span class="na">doAction</span><span class="p">();</span><span class="w">
+</span></span></span></code></pre></div><p>Die Implementierung von Enumerations mit eingebetteten Funktionen in Java ist eine fortschrittliche Technik, die für bestimmte Szenarien sehr nützlich sein kann. Jedoch bringt dieser Ansatz auch spezifische Einschränkungen und Herausforderungen mit sich, die es zu berücksichtigen gilt:</p>
+<ul>
+<li>
+<p><em>Begrenzte Flexibilität</em>: Enums in Java sind statisch, was bedeutet, dass die Anzahl und Art der Fälle (Enum-Konstanten) zur Kompilierzeit festgelegt werden müssen. Dies schränkt die Flexibilität ein, da dynamische oder zur Laufzeit generierte Fälle nicht ohne weiteres integriert werden können.</p>
+</li>
+<li>
+<p><em>Komplexität und Verständlichkeit</em>: Die Verwendung von Funktionen innerhalb von Enums kann den Code komplexer und schwerer verständlich machen, insbesondere für Entwickler, die nicht vertraut mit fortgeschrittenen Konzepten in Java sind. Dies kann die Wartbarkeit und Erweiterbarkeit des Codes beeinträchtigen.</p>
+</li>
+<li>
+<p><em>Überladung der Enums</em>: Enums sind in erster Linie für die Darstellung einer festen Menge von Konstanten gedacht. Durch das Hinzufügen von Verhaltenslogik können Enums überladen wirken, was gegen das Prinzip der Trennung von Zuständigkeit (Separation of Concerns) verstößt.</p>
+</li>
+<li>
+<p><em>Speicherbedarf</em>: Jede Enum-Instanz enthält Referenzen auf die zugehörigen funktionalen Interfaces. Bei einer großen Anzahl von Enums kann dies zu einem erhöhten Speicherbedarf führen, besonders wenn die eingebetteten Funktionen umfangreiche Ressourcen benötigen.</p>
+</li>
+<li>
+<p><em>Einschränkungen bei der Wiederverwendbarkeit</em>: Da die Funktionen eng mit den spezifischen Enums verknüpft sind, ist ihre Wiederverwendbarkeit in anderen Kontexten oft begrenzt. Dies kann zu einer Duplizierung von Code führen, wenn ähnliche Funktionen in unterschiedlichen Teilen des Programms benötigt werden.</p>
+</li>
+<li>
+<p><em>Testbarkeit</em>: Das Testen von Enums mit eingebetteten Funktionen kann komplizierter sein, da jede Funktion möglicherweise in einem eng gekoppelten Kontext mit der Enum-Definition steht. Dies kann die Erstellung isolierter und fokussierter Tests erschweren.</p>
+</li>
+</ul>
+<p>Insgesamt bietet die Verwendung von Enums mit eingebetteten Funktionen eine interessante Möglichkeit zur Strukturierung des Codes, jedoch sollten diese Einschränkungen und Herausforderungen sorgfältig abgewogen werden, um zu entscheiden, ob dieser Ansatz für ein gegebenes Problem angemessen ist.</p>
+<p><strong>Vertiefung und Erweiterung des Themas: Weiterführende Entwurfsmuster und Konzepte</strong></p>
+<p>Für Entwickler, die sich intensiver mit der Optimierung und Strukturierung von Code beschäftigen möchten, bieten folgende Entwurfsmuster und Konzepte interessante Ansätze, die über die grundlegenden Techniken hinausgehen:</p>
+<ul>
+<li>
+<p><em>Strategy Pattern (Strategiemuster)</em>: Dieses Muster ermöglicht es, eine Familie von Algorithmen zu definieren, sie in separate Klassen zu kapseln und sie austauschbar zu machen. Das Strategiemuster eignet sich besonders gut, um spezifische Verhaltensweisen oder Algorithmen dynamisch zur Laufzeit auszuwählen, was die Flexibilität und Erweiterbarkeit des Codes erhöht.</p>
+</li>
+<li>
+<p><em>Command Pattern (Kommandomuster)</em>: Das Kommandomuster wandelt Anfragen oder einfache Operationen in Objekte um. Dies ermöglicht die Parametrisierung von Objekten mit Operationen, die Verzögerung oder das Zurückstellen der Ausführung von Operationen und die Speicherung von Operationen in einer Warteschlange. Es ist besonders nützlich, um Operationen zu entkoppeln, die ausführende von der auslösenden Klasse zu trennen und komplexe Kommandosequenzen zu implementieren.</p>
+</li>
+<li>
+<p><em>Observer Pattern (Beobachtermuster)</em>: Das Observer Pattern ist nützlich in Szenarien, in denen sich der Zustand eines Objekts ändern kann und andere abhängige Objekte automatisch über diese Änderungen informiert werden müssen. Dieses Muster fördert eine lose Kopplung, da das Zielobjekt nicht direkt mit den beobachtenden Objekten interagieren muss.</p>
+</li>
+<li>
+<p><em>Factory Method Pattern (Fabrikmethode)</em>: Dieses Muster bietet eine Schnittstelle zur Erstellung von Objekten, lässt aber die genaue Klasse der zu erstellenden Objekte offen und delegiert die Entscheidung an Unterklassen. Es ist besonders vorteilhaft, wenn ein System gegenüber zukünftigen Erweiterungen offen bleiben soll.</p>
+</li>
+<li>
+<p><em>Decorator Pattern (Dekorierermuster)</em>: Das Dekorierermuster ermöglicht die dynamische Erweiterung der Funktionalität eines Objekts zur Laufzeit. Es bietet eine flexible Alternative zur Unterklassenbildung zur Erweiterung von Funktionalitäten.</p>
+</li>
+</ul>
+<p>Jedes dieser Muster bietet einzigartige Vorteile und Lösungsansätze für bestimmte Software-Design-Probleme. Die Wahl des richtigen Musters hängt von den spezifischen Anforderungen des Projekts und den zu lösenden Problemen ab. Die Beschäftigung mit diesen Mustern kann Entwicklern nicht nur helfen, bestehende Herausforderungen effektiver zu bewältigen, sondern auch ihr Verständnis für strukturierte und wartbare Software-Architektur vertiefen.</p>
 
   </article>
 

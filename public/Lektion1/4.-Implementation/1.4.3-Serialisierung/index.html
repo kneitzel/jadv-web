@@ -9,7 +9,7 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.110.0">
+<meta name="generator" content="Hugo 0.121.1">
 
 
   <meta name="description" content="Einfache Serialisierung mit Gson Serialisierung von abgeleiteten Klassen Speichern des Namens der Klasse Adapter für SavedObject Serialisieren einer SavedObject instanz Deserialisieren Veränderungen an den Entities Zweites Problem: Zirkuläre Referenz Interface Container Serialisierung von Listen mit GameObjects Einfache Serialisierung mit Gson Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:
@@ -1720,6 +1720,42 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
               
                 <span class="flex">
                   <a
+                    href="/Anhang/P2-Clean-Code/ifsequenzen/"
+                    class="gdoc-nav__entry"
+                  >
+                    if Sequenzen vermeiden
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/Anhang/P2-Clean-Code/javadoc/"
                     class="gdoc-nav__entry"
                   >
@@ -2134,12 +2170,12 @@ Gson gson = new Gson(); Level level = ....; // Beliebige Initialisierung String 
     </h1>
 </div>
 <p>Die Serialisierung mit Gson ist relatov einfach und gradlinig. So kann ein Level einfach serialisiert und deserialisiert werden:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="o">....;</span> <span class="c1">// Beliebige Initialisierung
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">String</span> <span class="n">json</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">level</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// Serialisierung
-</span></span></span><span class="line"><span class="cl"><span class="c1">// ...
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="n">Level</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">fromJson</span><span class="o">(</span><span class="n">json</span><span class="o">,</span> <span class="n">Level</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// Deserialisierung
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">Gson</span><span class="w"> </span><span class="n">gson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Gson</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Level</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">....;</span><span class="w"> </span><span class="c1">// Beliebige Initialisierung</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">String</span><span class="w"> </span><span class="n">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gson</span><span class="p">.</span><span class="na">toJson</span><span class="p">(</span><span class="n">level</span><span class="p">,</span><span class="w"> </span><span class="n">Level</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w"> </span><span class="c1">// Serialisierung</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// ...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Level</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gson</span><span class="p">.</span><span class="na">fromJson</span><span class="p">(</span><span class="n">json</span><span class="p">,</span><span class="w"> </span><span class="n">Level</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w"> </span><span class="c1">// Deserialisierung</span><span class="w">
 </span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
     <h1 id="serialisierung-von-abgeleiteten-klassen">
         Serialisierung von abgeleiteten Klassen
@@ -2163,17 +2199,17 @@ Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json
 <p>Jeder Klasse, die gepeichert werden soll, soll auch den Namen der Klasse enthalten. Eine Möglichkeit ist dabei einfach ein Feld, das den Namen der Klasse enthält. Dies hätte auch den Vorteil, dass wir bei der Serialisierung keinen Adapter benötigen:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * An instance that can be saved through an Adapter and contains the name of the class as field.
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="nd">@EqualsAndHashCode</span>
-</span></span><span class="line"><span class="cl"><span class="nd">@JsonAdapter</span><span class="o">(</span><span class="n">SavedObjectAdapter</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">SavedObject</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@EqualsAndHashCode</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@JsonAdapter</span><span class="p">(</span><span class="n">SavedObjectAdapter</span><span class="p">.</span><span class="na">class</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SavedObject</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Class name of the instance.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Getter</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">type</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Hinweise:</p>
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Getter</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Hinweise:</p>
 <ul>
 <li>Hier wurde schon der Adapter mit angegeben, den wir im Anschluss noch erstellen.</li>
 <li>Streng genommen könnte man auf die Instanzvariable type verzichten und dieses Element im Adapter ins Json schreiben.</li>
@@ -2187,8 +2223,8 @@ Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json
     </h2>
 </div>
 <p>Um einen Adapter zu implementieren schreiben wir eine Klasse, die JsonSerializer und JsonDeserializer implementiert:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="o">{</span>
-</span></span></code></pre></div><p>Zur Implementation gehören dann die Methoden zum serialisieren und deserialisieren.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">final</span><span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SavedObjectAdapter</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span></code></pre></div><p>Zur Implementation gehören dann die Methoden zum serialisieren und deserialisieren.</p>
 <div class="gdoc-page__anchorwrap">
     <h3 id="serialisieren-einer-savedobject-instanz">
         Serialisieren einer SavedObject instanz
@@ -2198,20 +2234,20 @@ Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json
     </h3>
 </div>
 <p>Bei der genannten Veriante haben wir bereits gesagt: Die Instanz muss einfach als genau ihre Klasse serialisiert werden.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes an SavedObject to JSON. Makes sure that the serialization is using the correct class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object Object to serialize.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized object.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">object</span><span class="o">,</span> <span class="n">object</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="nf">serialize</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">SavedObject</span><span class="w"> </span><span class="n">object</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">interfaceType</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                 </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonSerializationContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">object</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">serialize</span><span class="p">(</span><span class="n">object</span><span class="p">,</span><span class="w"> </span><span class="n">object</span><span class="p">.</span><span class="na">getClass</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
     <h3 id="deserialisieren">
         Deserialisieren
         <a data-clipboard-text="https://jadventure.de/Lektion1/4.-Implementation/1.4.3-Serialisierung/#deserialisieren" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Deserialisieren" aria-label="Anchor to: Deserialisieren" href="#deserialisieren">
@@ -2220,52 +2256,52 @@ Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json
     </h3>
 </div>
 <p>Beim Deserialisieren müssen dann erst auslesen, welche Klasse genau serialisiert wurde um dann diese Klasse zu lesen.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Es wird erst der Typ ausgelesen. Dazu wurde eine Hilfsmethode getType geschrieben:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">SavedObject</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">elem</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">interfaceType</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonDeserializationContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">JsonParseException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonObject</span><span class="w"> </span><span class="n">wrapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">JsonObject</span><span class="p">)</span><span class="w"> </span><span class="n">elem</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">typeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getType</span><span class="p">(</span><span class="n">wrapper</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">actualType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">typeForName</span><span class="p">(</span><span class="n">typeName</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">SavedObject</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="na">deserialize</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span><span class="w"> </span><span class="n">actualType</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Es wird erst der Typ ausgelesen. Dazu wurde eine Hilfsmethode getType geschrieben:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the type for a given name.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param typeElem JsonElement with classname inside.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the class is not available / known.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Type</span> <span class="nf">typeForName</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeElem</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">typeElem</span><span class="o">.</span><span class="na">getAsString</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Im Anschluss wird vom Element mit dem Type eine Klasse geholt:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="nf">typeForName</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">typeElem</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">JsonParseException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Class</span><span class="p">.</span><span class="na">forName</span><span class="p">(</span><span class="n">typeElem</span><span class="p">.</span><span class="na">getAsString</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ClassNotFoundException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonParseException</span><span class="p">(</span><span class="n">e</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Im Anschluss wird vom Element mit dem Type eine Klasse geholt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the type for a given name.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param typeElem JsonElement with classname inside.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The requested class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Thrown if the class is not available / known.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Type</span> <span class="nf">typeForName</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeElem</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">try</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">typeElem</span><span class="o">.</span><span class="na">getAsString</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ClassNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Damit können wir nun beliebige Elemente Serialisieren, die von SavedObject erben.</p>
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="nf">typeForName</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">typeElem</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">JsonParseException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">Class</span><span class="p">.</span><span class="na">forName</span><span class="p">(</span><span class="n">typeElem</span><span class="p">.</span><span class="na">getAsString</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ClassNotFoundException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonParseException</span><span class="p">(</span><span class="n">e</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Damit können wir nun beliebige Elemente Serialisieren, die von SavedObject erben.</p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="veränderungen-an-den-entities">
         Veränderungen an den Entities
@@ -2297,49 +2333,49 @@ Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json
 <p>Zur Erkennung solcher Klassen führen wir einfach ein Interface Container ein:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * A Container has a list of GameObject as children.
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Container</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">Container</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Gets the List of GameObject children.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return List of GameObjects.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span> <span class="nf">getChildren</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Dieses Interface implementiert dann Level.</p>
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">List</span><span class="o">&lt;</span><span class="n">GameObject</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getChildren</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Dieses Interface implementiert dann Level.</p>
 <p>In der Deserialisierung von SavedObjects können wir dies nun noch abprüfen:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the SavedInstance from a json.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored instance with correct class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">SavedObject</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                   <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonObject</span> <span class="n">wrapper</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonObject</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">typeName</span> <span class="o">=</span> <span class="n">getType</span><span class="o">(</span><span class="n">wrapper</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">Type</span> <span class="n">actualType</span> <span class="o">=</span> <span class="n">typeForName</span><span class="o">(</span><span class="n">typeName</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">SavedObject</span> <span class="n">result</span> <span class="o">=</span>  <span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">elem</span><span class="o">,</span> <span class="n">actualType</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">setParentReferencesIfRequired</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">SavedObject</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">elem</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">interfaceType</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonDeserializationContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">JsonParseException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonObject</span><span class="w"> </span><span class="n">wrapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">JsonObject</span><span class="p">)</span><span class="w"> </span><span class="n">elem</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">typeName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getType</span><span class="p">(</span><span class="n">wrapper</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">actualType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">typeForName</span><span class="p">(</span><span class="n">typeName</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">SavedObject</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">context</span><span class="p">.</span><span class="na">deserialize</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span><span class="w"> </span><span class="n">actualType</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">setParentReferencesIfRequired</span><span class="p">(</span><span class="n">result</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * The parent reference inside the Position of a GameObject is transient and is not saved.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * So when deserializing a container, we have to set the parent again.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param object SavedObject to check and set Parent if required.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setParentReferencesIfRequired</span><span class="o">(</span><span class="kd">final</span> <span class="n">SavedObject</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">object</span> <span class="k">instanceof</span> <span class="n">Container</span> <span class="n">container</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">container</span><span class="o">.</span><span class="na">getChildren</span><span class="o">().</span><span class="na">stream</span><span class="o">()</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">GameObject</span><span class="o">::</span><span class="n">getPosition</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">Objects</span><span class="o">::</span><span class="n">nonNull</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">p</span> <span class="o">-&gt;</span> <span class="n">p</span><span class="o">.</span><span class="na">setParent</span><span class="o">(</span><span class="n">container</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><p>Bei der Deserialisierung wird eine Methode aufgerufen, die bei einem Container alle Elemente durchgeht und wenn diese eine Position haben, dann wird in der Position die Parent Instanz gesetzt.</p>
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setParentReferencesIfRequired</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">SavedObject</span><span class="w"> </span><span class="n">object</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">object</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">Container</span><span class="w"> </span><span class="n">container</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">container</span><span class="p">.</span><span class="na">getChildren</span><span class="p">().</span><span class="na">stream</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="p">.</span><span class="na">map</span><span class="p">(</span><span class="n">GameObject</span><span class="p">::</span><span class="n">getPosition</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="p">.</span><span class="na">filter</span><span class="p">(</span><span class="n">Objects</span><span class="p">::</span><span class="n">nonNull</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="p">.</span><span class="na">forEach</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="na">setParent</span><span class="p">(</span><span class="n">container</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Bei der Deserialisierung wird eine Methode aufgerufen, die bei einem Container alle Elemente durchgeht und wenn diese eine Position haben, dann wird in der Position die Parent Instanz gesetzt.</p>
 <div class="gdoc-page__anchorwrap">
     <h1 id="serialisierung-von-listen-mit-gameobjects">
         Serialisierung von Listen mit GameObjects
@@ -2352,44 +2388,44 @@ Bei der Deserialisierung wird erst der Name der Klasse gelesen und dann das Json
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Gson Adapter to (de-)serialize a List of SavedObjects
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Prefix the List with @JsonAdapter(ListOfSavedObjectAdapter.class) to use this Adapter
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListOfSavedObjectAdapter</span> <span class="kd">implements</span> <span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;,</span> <span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;&gt;</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">final</span><span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ListOfSavedObjectAdapter</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">JsonSerializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SavedObject</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">JsonDeserializer</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SavedObject</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Serializes a list of SavedInstance to JSON.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param list Object to serialize.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType Not used.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Serialization context.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The JsonElement that holds the serialized list.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                 <span class="kd">final</span> <span class="n">JsonSerializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">list</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JsonArray</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">SavedObject</span> <span class="n">obj</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">array</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">serialize</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">array</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="nf">serialize</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SavedObject</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">interfaceType</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                 </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonSerializationContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">list</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonArray</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JsonArray</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">SavedObject</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">list</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">array</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">context</span><span class="p">.</span><span class="na">serialize</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="w"> </span><span class="n">SavedObject</span><span class="p">.</span><span class="na">class</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">array</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Deserializes the list of SavedInstance from a json.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param elem Json element to deserialize
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param interfaceType not used.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @param context Deserialization context.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @return The restored list with elements with correct class.
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws JsonParseException Throws an JsonParseException if deserialization is not possible.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">SavedObject</span><span class="o">&gt;</span> <span class="nf">deserialize</span><span class="o">(</span><span class="kd">final</span> <span class="n">JsonElement</span> <span class="n">elem</span><span class="o">,</span> <span class="kd">final</span> <span class="n">Type</span> <span class="n">interfaceType</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">                                         <span class="kd">final</span> <span class="n">JsonDeserializationContext</span> <span class="n">context</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">final</span> <span class="n">JsonArray</span> <span class="n">array</span> <span class="o">=</span> <span class="o">(</span><span class="n">JsonArray</span><span class="o">)</span> <span class="n">elem</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">JsonElement</span> <span class="n">element</span> <span class="o">:</span> <span class="n">array</span><span class="o">.</span><span class="na">asList</span><span class="o">())</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">result</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">deserialize</span><span class="o">(</span><span class="n">element</span><span class="o">,</span> <span class="n">SavedObject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SavedObject</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">deserialize</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JsonElement</span><span class="w"> </span><span class="n">elem</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Type</span><span class="w"> </span><span class="n">interfaceType</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                         </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonDeserializationContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">JsonParseException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="n">SavedObject</span><span class="o">&gt;</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JsonArray</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">JsonArray</span><span class="p">)</span><span class="w"> </span><span class="n">elem</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">JsonElement</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">array</span><span class="p">.</span><span class="na">asList</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">result</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">context</span><span class="p">.</span><span class="na">deserialize</span><span class="p">(</span><span class="n">element</span><span class="p">,</span><span class="w"> </span><span class="n">SavedObject</span><span class="p">.</span><span class="na">class</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div>
   </article>
 
 

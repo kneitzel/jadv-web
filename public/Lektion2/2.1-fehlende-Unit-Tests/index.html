@@ -9,7 +9,7 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.110.0">
+<meta name="generator" content="Hugo 0.121.1">
 
 
   <meta name="description" content="Unit-Test für Level.getChildren() Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet Für die Übungsaufgaben am Ende von Lektion 1 möchte ich als erstes ein paar mögliche Lösungen geben.
@@ -1723,6 +1723,42 @@ Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren(
               
                 <span class="flex">
                   <a
+                    href="/Anhang/P2-Clean-Code/ifsequenzen/"
+                    class="gdoc-nav__entry"
+                  >
+                    if Sequenzen vermeiden
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/Anhang/P2-Clean-Code/javadoc/"
                     class="gdoc-nav__entry"
                   >
@@ -2125,18 +2161,18 @@ Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren(
 <li>Wir legen ein Level mit einem GameObject an.</li>
 <li>Danach prüfen wir, ob getChildren() die Liste mit den GameObjects zurückliefert.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Tests the getObjects method.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testGetChildren</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject&#34;</span><span class="o">).</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">assertEquals</span><span class="o">(</span><span class="n">level</span><span class="o">.</span><span class="na">getObjects</span><span class="o">(),</span> <span class="n">level</span><span class="o">.</span><span class="na">getChildren</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testGetChildren</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Level</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Level</span><span class="p">(</span><span class="s">&#34;TestLevel&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">1000</span><span class="p">,</span><span class="w"> </span><span class="n">1000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">GameObject</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GameObject</span><span class="p">.</span><span class="na">builder</span><span class="p">().</span><span class="na">name</span><span class="p">(</span><span class="s">&#34;TestObject&#34;</span><span class="p">).</span><span class="na">size</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">RectangleSize</span><span class="p">(</span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">)).</span><span class="na">build</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">level</span><span class="p">.</span><span class="na">addObject</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">assertEquals</span><span class="p">(</span><span class="n">level</span><span class="p">.</span><span class="na">getObjects</span><span class="p">(),</span><span class="w"> </span><span class="n">level</span><span class="p">.</span><span class="na">getChildren</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><div class="gdoc-page__anchorwrap">
     <h2 id="unit-test-der-das-löschen-eines-nicht-vorhandenen-objects-aus-einem-level-testet">
         Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet
         <a data-clipboard-text="https://jadventure.de/Lektion2/2.1-fehlende-Unit-Tests/#unit-test-der-das-löschen-eines-nicht-vorhandenen-objects-aus-einem-level-testet" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet" aria-label="Anchor to: Unit-Test, der das Löschen eines nicht vorhandenen Objects aus einem Level testet" href="#unit-test-der-das-l%c3%b6schen-eines-nicht-vorhandenen-objects-aus-einem-level-testet">
@@ -2150,21 +2186,21 @@ Wir legen ein Level mit einem GameObject an. Danach prüfen wir, ob getChildren(
 <li>Dann versuchen wir, ein weiteres GameObject zu löschen, das wir aber nicht hinzugefügt haben.</li>
 <li>Danach prüfen wir, ob die Anzahl der Elemente stimmt und das erste Objekt noch in der Liste enthalten ist</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl">    <span class="cm">/**
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">     * Tests remove does not throw an exception on Object that is not inside the Instance.
-</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
-</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testRemoveOfNotAddedObject</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">Level</span> <span class="n">level</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">&#34;TestLevel&#34;</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj1</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject&#34;</span><span class="o">).</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="n">obj1</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">GameObject</span> <span class="n">obj2</span> <span class="o">=</span> <span class="n">GameObject</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">name</span><span class="o">(</span><span class="s">&#34;TestObject2&#34;</span><span class="o">).</span><span class="na">size</span><span class="o">(</span><span class="k">new</span> <span class="n">RectangleSize</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">)).</span><span class="na">build</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">.</span><span class="na">removeObject</span><span class="o">(</span><span class="n">obj2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="n">assertEquals</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">level</span><span class="o">.</span><span class="na">getObjects</span><span class="o">().</span><span class="na">size</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testRemoveOfNotAddedObject</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Level</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Level</span><span class="p">(</span><span class="s">&#34;TestLevel&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">1000</span><span class="p">,</span><span class="w"> </span><span class="n">1000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">GameObject</span><span class="w"> </span><span class="n">obj1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GameObject</span><span class="p">.</span><span class="na">builder</span><span class="p">().</span><span class="na">name</span><span class="p">(</span><span class="s">&#34;TestObject&#34;</span><span class="p">).</span><span class="na">size</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">RectangleSize</span><span class="p">(</span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">)).</span><span class="na">build</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">level</span><span class="p">.</span><span class="na">addObject</span><span class="p">(</span><span class="n">obj1</span><span class="p">,</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">GameObject</span><span class="w"> </span><span class="n">obj2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GameObject</span><span class="p">.</span><span class="na">builder</span><span class="p">().</span><span class="na">name</span><span class="p">(</span><span class="s">&#34;TestObject2&#34;</span><span class="p">).</span><span class="na">size</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">RectangleSize</span><span class="p">(</span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">10</span><span class="p">)).</span><span class="na">build</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">level</span><span class="p">.</span><span class="na">removeObject</span><span class="p">(</span><span class="n">obj2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">assertEquals</span><span class="p">(</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">level</span><span class="p">.</span><span class="na">getObjects</span><span class="p">().</span><span class="na">size</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div>
   </article>
 
 

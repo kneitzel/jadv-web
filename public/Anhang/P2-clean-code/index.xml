@@ -5,28 +5,28 @@
     <link>https://jadventure.de/Anhang/P2-Clean-Code/</link>
     <description>Recent content in P2 - Clean Code (Übersicht) on JAdventure - Kurs zur Softwareentwicklung</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language><atom:link href="https://jadventure.de/Anhang/P2-Clean-Code/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language>
+    <atom:link href="https://jadventure.de/Anhang/P2-Clean-Code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DRY - Don&#39;t Repeat Yourself</title>
       <link>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/P2-Clean-Code/refactoring-double-code/</guid>
-      <description>Doppelten Code erkennen Doppelten Code eliminieren Eine Fehlerquelle kann doppelter Code sein. Wenn etwas mehrfach im Code umgesetzt wurde, dann besteht die Gefahr, dass bei der Notwendigkeit einer Änderung nicht alle Stellen geändert werden.
-Desweiteren wird der Code dadurch unnötig aufgebläht und damit unübersichtlicher.
-Doppelten Code erkennen Im einfachsten Fall weist einen die Entwicklungsumgebung auf doppelten Code hin. IntelliJ markiert dann den Anfang eines Blockes und zeigt die Warnung an, dass die nächsten x Zeilen an anderer Stelle noch einmal vorkommen.</description>
+      <description>Doppelten Code erkennen Doppelten Code eliminieren Eine Fehlerquelle kann doppelter Code sein. Wenn etwas mehrfach im Code umgesetzt wurde, dann besteht die Gefahr, dass bei der Notwendigkeit einer Änderung nicht alle Stellen geändert werden.&#xA;Desweiteren wird der Code dadurch unnötig aufgebläht und damit unübersichtlicher.&#xA;Doppelten Code erkennen Im einfachsten Fall weist einen die Entwicklungsumgebung auf doppelten Code hin. IntelliJ markiert dann den Anfang eines Blockes und zeigt die Warnung an, dass die nächsten x Zeilen an anderer Stelle noch einmal vorkommen.</description>
     </item>
-    
+    <item>
+      <title>if Sequenzen vermeiden</title>
+      <link>https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jadventure.de/Anhang/P2-Clean-Code/ifsequenzen/</guid>
+      <description>In der Welt der Softwareentwicklung begegnen wir häufig Situationen, in denen die Ausführung von Code von den Werten bestimmter Variablen abhängt. Diese Abhängigkeit führt oft zu einer Kette von if-Anweisungen, die jeweils unterschiedliche Aktionen basierend auf dem Wert der Variablen auslösen. Solche if-Sequenzen sind zwar grundlegend für die bedingte Logik in der Programmierung, können jedoch schnell zu komplexen und schwer wartbaren Code-Strukturen führen.&#xA;Ein typisches Beispiel für eine solche Situation ist im Folgenden dargestellt.</description>
+    </item>
     <item>
       <title>JavaDoc</title>
       <link>https://jadventure.de/Anhang/P2-Clean-Code/javadoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://jadventure.de/Anhang/P2-Clean-Code/javadoc/</guid>
-      <description>Es ist oft hilfreichm die API im Detail zu dokumentieren. Dies geschieht am einfachsten direkt im Source Code mit Hilfe von JavaDoc.
-JavaDoc Kommentare können vor
-Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit /// oder sie bilden einen Kommentarblock per /** und beenden diesen mit */. Viele Entwicklungsumgebungen unterstützen den Entwickler indem sie bei Start einer JavaDoc Kommentares direkt einen Block mit den üblichen Angaben erzeugen.</description>
+      <description>Es ist oft hilfreichm die API im Detail zu dokumentieren. Dies geschieht am einfachsten direkt im Source Code mit Hilfe von JavaDoc.&#xA;JavaDoc Kommentare können vor&#xA;Klassen Feldern Konstruktoren und Methoden gesetzt werden. JavaDoc Kommentare starten entweder jede Zeile mit /// oder sie bilden einen Kommentarblock per /** und beenden diesen mit */. Viele Entwicklungsumgebungen unterstützen den Entwickler indem sie bei Start einer JavaDoc Kommentares direkt einen Block mit den üblichen Angaben erzeugen.</description>
     </item>
-    
   </channel>
 </rss>
