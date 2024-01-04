@@ -2509,7 +2509,7 @@ Zu den Modulen gehört also auch immer die Einstellung: <code>&lt;packaging&gt;p
 </div>
 <p>Abhängigkeiten können verwaltet werden über ein Element dependencies. Jede Abhängigkeit wird mit groupId, archetypeId und Version definiert und Maven lädt die Abhängigkeit sowie alle davon abhängende Abhängigkeiten (transitive Abhängigkeiten).</p>
 <p>Das Element dependencyManagement konfiguriert Abhängigkeiten ebenso wie das dependency Element mit der Ausnahme, dass die Abhängigkeit nur bekannt gemacht wird mit Version und ggf. einer Konfiguration (z.B. dem Verhindern, dass Abhängigkeiten mit geladen werden). Diese Abhängigkeit kann dann in folgenden Objekten verwendet werden, ohne Details anzugeben.</p>
-<p>Wir können ein Beispiel konstruieren, dass in dem Paren Projekt eine Library festgelegt wird und dann das Unterprojekt nur noch die Abhängigkeit selbst angibt:</p>
+<p>Wir können ein Beispiel konstruieren, dass in dem Parent Projekt eine Library festgelegt wird und dann das Unterprojekt nur noch die Abhängigkeit selbst angibt:</p>
 <p>Im Parent Projekt findet sich:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependencyManagement&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependencies&gt;</span>
