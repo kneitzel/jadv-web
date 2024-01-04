@@ -215,7 +215,7 @@ Abhängigkeiten können verwaltet werden über ein Element dependencies. Jede Ab
 
 Das Element dependencyManagement konfiguriert Abhängigkeiten ebenso wie das dependency Element mit der Ausnahme, dass die Abhängigkeit nur bekannt gemacht wird mit Version und ggf. einer Konfiguration (z.B. dem Verhindern, dass Abhängigkeiten mit geladen werden). Diese Abhängigkeit kann dann in folgenden Objekten verwendet werden, ohne Details anzugeben.
 
-Wir können ein Beispiel konstruieren, dass in dem Paren Projekt eine Library festgelegt wird und dann das Unterprojekt nur noch die Abhängigkeit selbst angibt:
+Wir können ein Beispiel konstruieren, dass in dem Parent Projekt eine Library festgelegt wird und dann das Unterprojekt nur noch die Abhängigkeit selbst angibt:
 
 Im Parent Projekt findet sich:
 ```xml
